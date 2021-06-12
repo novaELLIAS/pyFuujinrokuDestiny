@@ -1,3 +1,6 @@
+# bullet.py
+# 这个模块用来维护子弹类
+
 import pygame
 
 from math import *
@@ -7,8 +10,6 @@ import globe
 import cache
 import item
 
-import scene.menu
-
 global plpoint
 
 
@@ -17,6 +18,7 @@ def bl_inter_collide(embullet):
     blpoint = embullet.orbit.point
     area = embullet.bltype.area
 
+    # 类型自适应
     if type(area) == float or type(area) == int:
         if ((blpoint[0] - plpoint[0]) ** 2 + (blpoint[1] - plpoint[1]) ** 2) < area ** 2:
             return True
@@ -35,24 +37,20 @@ def bl_inter_collide(embullet):
 
 
 def bl_inter_outscr(embullet):
+    # 子弹出界
     blpoint = embullet.orbit.point
-    if globe.playrc.inflate(50, 50).collidepoint(blpoint) == False:
+    if not globe.playrc.inflate(50, 50).collidepoint(blpoint):
         return True
 
 
 class BulletManager(object):
-    # time
-
-    # plbullet1=set of rect
-    # plimg={}
-    # plrc
-    # plspeed
 
     def __init__(self):
         self.time = 0
 
         self.plimg = []
 
+        # 自机弹幕
         self.plimg.append(cache.cache_set_alpha(cache.cache_rotate(globe.destiny.rsManager.anime["ziji"][5], 90), 128))
         self.plimg.append(cache.cache_set_alpha(cache.cache_rotate(globe.destiny.rsManager.anime["ziji"][6], 90), 128))
         self.plimg.append(cache.cache_set_alpha(cache.cache_flip(self.plimg[1]), 128))
@@ -90,7 +88,6 @@ class BulletManager(object):
         else:
             for i in self.enbullet:
                 if bl_inter_collide(i):
-                    # globe.destiny.call(scene_menu.Scene_Menu)
                     enbl_tmp.append(i)
                     globe.scgame.player.hit()
                 else:
@@ -140,8 +137,3 @@ class BulletType(object):
         self.image = img
         self.area = area
         self.rect = img.get_rect()
-
-# orbit:
-# __init__(self,point,*args...)
-# update()
-# point

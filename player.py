@@ -45,7 +45,7 @@ class Player(object):
         # anime index, 动画的编号
         self.power = 200
         # 灵力
-        self.life = 100
+        self.life = 3
         # 残机数量
         self.frame = 0
         # 帧数计数器
