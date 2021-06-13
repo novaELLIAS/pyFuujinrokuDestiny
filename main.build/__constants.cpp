@@ -3,7 +3,7 @@
 #include "structseq.h"
 
 // Global constants storage
-PyObject *global_constants[67];
+PyObject *global_constants[68];
 
 // Sentinel PyObject to be used for all our call iterator endings. It will
 // become a PyCObject pointing to NULL. It's address is unique, and that's
@@ -27,9 +27,9 @@ static void _createGlobalConstants(void) {
     PySys_SetObject(
         (char *)"executable",
 #ifndef _NUITKA_STANDALONE
-        global_constants[66]
+        global_constants[67]
 #else
-        getStandaloneSysExecutablePath(global_constants[66])
+        getStandaloneSysExecutablePath(global_constants[67])
 #endif
     );
 

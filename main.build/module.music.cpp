@@ -33,7 +33,7 @@ PyObject *module_music;
 PyDictObject *moduledict_music;
 
 /* The declarations of module constants used, if any. */
-static PyObject *mod_consts[48];
+static PyObject *mod_consts[49];
 
 static PyObject *module_filename_obj = NULL;
 
@@ -76,18 +76,21 @@ static PyCodeObject *codeobj_1ccbb3a796838f593bd5680d64cc8b39;
 static PyCodeObject *codeobj_ff496bed4269f636b5fc8fe71c7a7fc4;
 
 static void createModuleCodeObjects(void) {
-    module_filename_obj = MAKE_RELATIVE_PATH(mod_consts[43]); CHECK_OBJECT(module_filename_obj);
-    codeobj_ba3655a2762d893a91086974e77a9bd3 = MAKE_CODEOBJECT(module_filename_obj, 1, CO_NOFREE, mod_consts[44], NULL, NULL, 0, 0, 0);
-    codeobj_b746212aa68be7d16a9fa654339f192a = MAKE_CODEOBJECT(module_filename_obj, 7, CO_NOFREE, mod_consts[25], mod_consts[45], NULL, 0, 0, 0);
-    codeobj_e9ec85740222eb001ee08476e402f2be = MAKE_CODEOBJECT(module_filename_obj, 9, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[32], mod_consts[46], NULL, 1, 0, 0);
-    codeobj_afc4c3b45ed022d336088b71509dd7c1 = MAKE_CODEOBJECT(module_filename_obj, 27, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[12], mod_consts[46], NULL, 1, 0, 0);
-    codeobj_1ff1449a517df9e65375d773131414c8 = MAKE_CODEOBJECT(module_filename_obj, 20, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[38], mod_consts[47], NULL, 3, 0, 0);
-    codeobj_f99374bbfa7600f599e2233d6d099322 = MAKE_CODEOBJECT(module_filename_obj, 14, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[35], mod_consts[47], NULL, 3, 0, 0);
-    codeobj_1ccbb3a796838f593bd5680d64cc8b39 = MAKE_CODEOBJECT(module_filename_obj, 33, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[14], mod_consts[46], NULL, 1, 0, 0);
-    codeobj_ff496bed4269f636b5fc8fe71c7a7fc4 = MAKE_CODEOBJECT(module_filename_obj, 30, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[13], mod_consts[46], NULL, 1, 0, 0);
+    module_filename_obj = MAKE_RELATIVE_PATH(mod_consts[44]); CHECK_OBJECT(module_filename_obj);
+    codeobj_ba3655a2762d893a91086974e77a9bd3 = MAKE_CODEOBJECT(module_filename_obj, 1, CO_NOFREE, mod_consts[45], NULL, NULL, 0, 0, 0);
+    codeobj_b746212aa68be7d16a9fa654339f192a = MAKE_CODEOBJECT(module_filename_obj, 7, CO_NOFREE, mod_consts[25], mod_consts[46], NULL, 0, 0, 0);
+    codeobj_e9ec85740222eb001ee08476e402f2be = MAKE_CODEOBJECT(module_filename_obj, 9, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[32], mod_consts[47], NULL, 1, 0, 0);
+    codeobj_afc4c3b45ed022d336088b71509dd7c1 = MAKE_CODEOBJECT(module_filename_obj, 27, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[12], mod_consts[47], NULL, 1, 0, 0);
+    codeobj_1ff1449a517df9e65375d773131414c8 = MAKE_CODEOBJECT(module_filename_obj, 20, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[38], mod_consts[48], NULL, 3, 0, 0);
+    codeobj_f99374bbfa7600f599e2233d6d099322 = MAKE_CODEOBJECT(module_filename_obj, 14, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[35], mod_consts[48], NULL, 3, 0, 0);
+    codeobj_1ccbb3a796838f593bd5680d64cc8b39 = MAKE_CODEOBJECT(module_filename_obj, 33, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[14], mod_consts[47], NULL, 1, 0, 0);
+    codeobj_ff496bed4269f636b5fc8fe71c7a7fc4 = MAKE_CODEOBJECT(module_filename_obj, 30, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[13], mod_consts[47], NULL, 1, 0, 0);
 }
 
 // The module function declarations.
+NUITKA_CROSS_MODULE PyObject *impl___main__$$$function__1__mro_entries_conversion(PyObject **python_pars);
+
+
 static PyObject *MAKE_FUNCTION_music$$$function__1___init__();
 
 
@@ -2330,11 +2333,28 @@ PyObject *modulecode_music(PyObject *module, struct Nuitka_MetaPathBasedLoaderEn
         }
         UPDATE_STRING_DICT1(moduledict_music, (Nuitka_StringObject *)mod_consts[0], tmp_assign_source_5);
     }
+    // Tried code:
     {
         PyObject *tmp_assign_source_6;
-        tmp_assign_source_6 = mod_consts[22];
+        PyObject *tmp_dircall_arg1_1;
+        tmp_dircall_arg1_1 = mod_consts[22];
+        Py_INCREF(tmp_dircall_arg1_1);
+
+        {
+            PyObject *dir_call_args[] = {tmp_dircall_arg1_1};
+            tmp_assign_source_6 = impl___main__$$$function__1__mro_entries_conversion(dir_call_args);
+        }
+        if (tmp_assign_source_6 == NULL) {
+            assert(ERROR_OCCURRED());
+
+            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+
+
+            exception_lineno = 7;
+
+            goto try_except_handler_1;
+        }
         assert(tmp_class_creation_1__bases == NULL);
-        Py_INCREF(tmp_assign_source_6);
         tmp_class_creation_1__bases = tmp_assign_source_6;
     }
     {
@@ -2343,7 +2363,6 @@ PyObject *modulecode_music(PyObject *module, struct Nuitka_MetaPathBasedLoaderEn
         assert(tmp_class_creation_1__class_decl_dict == NULL);
         tmp_class_creation_1__class_decl_dict = tmp_assign_source_7;
     }
-    // Tried code:
     {
         PyObject *tmp_assign_source_8;
         PyObject *tmp_metaclass_name_1;
@@ -2352,6 +2371,8 @@ PyObject *modulecode_music(PyObject *module, struct Nuitka_MetaPathBasedLoaderEn
         PyObject *tmp_dict_arg_name_1;
         PyObject *tmp_dict_arg_name_2;
         PyObject *tmp_key_name_2;
+        nuitka_bool tmp_condition_result_2;
+        int tmp_truth_name_1;
         PyObject *tmp_type_arg_1;
         PyObject *tmp_expression_name_1;
         PyObject *tmp_subscript_name_1;
@@ -2385,6 +2406,25 @@ PyObject *modulecode_music(PyObject *module, struct Nuitka_MetaPathBasedLoaderEn
         goto condexpr_end_1;
         condexpr_false_1:;
         CHECK_OBJECT(tmp_class_creation_1__bases);
+        tmp_truth_name_1 = CHECK_IF_TRUE(tmp_class_creation_1__bases);
+        if (tmp_truth_name_1 == -1) {
+            assert(ERROR_OCCURRED());
+
+            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+
+
+            exception_lineno = 7;
+
+            goto try_except_handler_1;
+        }
+        tmp_condition_result_2 = tmp_truth_name_1 == 0 ? NUITKA_BOOL_FALSE : NUITKA_BOOL_TRUE;
+        if (tmp_condition_result_2 == NUITKA_BOOL_TRUE) {
+            goto condexpr_true_2;
+        } else {
+            goto condexpr_false_2;
+        }
+        condexpr_true_2:;
+        CHECK_OBJECT(tmp_class_creation_1__bases);
         tmp_expression_name_1 = tmp_class_creation_1__bases;
         tmp_subscript_name_1 = mod_consts[21];
         tmp_type_arg_1 = LOOKUP_SUBSCRIPT_CONST(tmp_expression_name_1, tmp_subscript_name_1, 0);
@@ -2410,6 +2450,11 @@ PyObject *modulecode_music(PyObject *module, struct Nuitka_MetaPathBasedLoaderEn
 
             goto try_except_handler_1;
         }
+        goto condexpr_end_2;
+        condexpr_false_2:;
+        tmp_metaclass_name_1 = (PyObject *)&PyType_Type;
+        Py_INCREF(tmp_metaclass_name_1);
+        condexpr_end_2:;
         condexpr_end_1:;
         CHECK_OBJECT(tmp_class_creation_1__bases);
         tmp_bases_name_1 = tmp_class_creation_1__bases;
@@ -2429,7 +2474,7 @@ PyObject *modulecode_music(PyObject *module, struct Nuitka_MetaPathBasedLoaderEn
         tmp_class_creation_1__metaclass = tmp_assign_source_8;
     }
     {
-        nuitka_bool tmp_condition_result_2;
+        nuitka_bool tmp_condition_result_3;
         PyObject *tmp_key_name_3;
         PyObject *tmp_dict_arg_name_3;
         tmp_key_name_3 = mod_consts[23];
@@ -2437,8 +2482,8 @@ PyObject *modulecode_music(PyObject *module, struct Nuitka_MetaPathBasedLoaderEn
         tmp_dict_arg_name_3 = tmp_class_creation_1__class_decl_dict;
         tmp_res = DICT_HAS_ITEM(tmp_dict_arg_name_3, tmp_key_name_3);
         assert(!(tmp_res == -1));
-        tmp_condition_result_2 = (tmp_res != 0) ? NUITKA_BOOL_TRUE : NUITKA_BOOL_FALSE;
-        if (tmp_condition_result_2 == NUITKA_BOOL_TRUE) {
+        tmp_condition_result_3 = (tmp_res != 0) ? NUITKA_BOOL_TRUE : NUITKA_BOOL_FALSE;
+        if (tmp_condition_result_3 == NUITKA_BOOL_TRUE) {
             goto branch_yes_1;
         } else {
             goto branch_no_1;
@@ -2461,13 +2506,13 @@ PyObject *modulecode_music(PyObject *module, struct Nuitka_MetaPathBasedLoaderEn
     }
     branch_no_1:;
     {
-        nuitka_bool tmp_condition_result_3;
+        nuitka_bool tmp_condition_result_4;
         PyObject *tmp_expression_name_2;
         CHECK_OBJECT(tmp_class_creation_1__metaclass);
         tmp_expression_name_2 = tmp_class_creation_1__metaclass;
         tmp_result = HAS_ATTR_BOOL(tmp_expression_name_2, mod_consts[24]);
-        tmp_condition_result_3 = (tmp_result) ? NUITKA_BOOL_TRUE : NUITKA_BOOL_FALSE;
-        if (tmp_condition_result_3 == NUITKA_BOOL_TRUE) {
+        tmp_condition_result_4 = (tmp_result) ? NUITKA_BOOL_TRUE : NUITKA_BOOL_FALSE;
+        if (tmp_condition_result_4 == NUITKA_BOOL_TRUE) {
             goto branch_yes_2;
         } else {
             goto branch_no_2;
@@ -2520,7 +2565,7 @@ PyObject *modulecode_music(PyObject *module, struct Nuitka_MetaPathBasedLoaderEn
         tmp_class_creation_1__prepared = tmp_assign_source_9;
     }
     {
-        nuitka_bool tmp_condition_result_4;
+        nuitka_bool tmp_condition_result_5;
         PyObject *tmp_operand_name_1;
         PyObject *tmp_expression_name_4;
         CHECK_OBJECT(tmp_class_creation_1__prepared);
@@ -2538,8 +2583,8 @@ PyObject *modulecode_music(PyObject *module, struct Nuitka_MetaPathBasedLoaderEn
 
             goto try_except_handler_1;
         }
-        tmp_condition_result_4 = (tmp_res == 0) ? NUITKA_BOOL_TRUE : NUITKA_BOOL_FALSE;
-        if (tmp_condition_result_4 == NUITKA_BOOL_TRUE) {
+        tmp_condition_result_5 = (tmp_res == 0) ? NUITKA_BOOL_TRUE : NUITKA_BOOL_FALSE;
+        if (tmp_condition_result_5 == NUITKA_BOOL_TRUE) {
             goto branch_yes_3;
         } else {
             goto branch_no_3;
@@ -2855,6 +2900,45 @@ PyObject *modulecode_music(PyObject *module, struct Nuitka_MetaPathBasedLoaderEn
 
         goto try_except_handler_3;
         skip_nested_handling_1:;
+        {
+            nuitka_bool tmp_condition_result_6;
+            PyObject *tmp_compexpr_left_1;
+            PyObject *tmp_compexpr_right_1;
+            CHECK_OBJECT(tmp_class_creation_1__bases);
+            tmp_compexpr_left_1 = tmp_class_creation_1__bases;
+            tmp_compexpr_right_1 = mod_consts[22];
+            tmp_condition_result_6 = RICH_COMPARE_NE_NBOOL_OBJECT_TUPLE(tmp_compexpr_left_1, tmp_compexpr_right_1);
+            if (tmp_condition_result_6 == NUITKA_BOOL_EXCEPTION) {
+                assert(ERROR_OCCURRED());
+
+                FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+
+
+                exception_lineno = 7;
+
+                goto try_except_handler_3;
+            }
+            if (tmp_condition_result_6 == NUITKA_BOOL_TRUE) {
+                goto branch_yes_4;
+            } else {
+                goto branch_no_4;
+            }
+            assert(tmp_condition_result_6 != NUITKA_BOOL_UNASSIGNED);
+        }
+        branch_yes_4:;
+        tmp_dictset_value = mod_consts[22];
+        tmp_res = PyObject_SetItem(locals_music$$$class__1_SoundManager_7, mod_consts[43], tmp_dictset_value);
+        if (tmp_res != 0) {
+            assert(ERROR_OCCURRED());
+
+            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+
+
+            exception_lineno = 7;
+
+            goto try_except_handler_3;
+        }
+        branch_no_4:;
         {
             PyObject *tmp_assign_source_12;
             PyObject *tmp_called_name_2;

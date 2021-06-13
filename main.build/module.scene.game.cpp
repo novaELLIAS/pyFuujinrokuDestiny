@@ -33,7 +33,7 @@ PyObject *module_scene$game;
 PyDictObject *moduledict_scene$game;
 
 /* The declarations of module constants used, if any. */
-static PyObject *mod_consts[121];
+static PyObject *mod_consts[119];
 
 static PyObject *module_filename_obj = NULL;
 
@@ -67,29 +67,32 @@ void checkModuleConstants_scene$game(void) {
 
 // The module code objects.
 static PyCodeObject *codeobj_e4af1f224038721004e7dab74a41b9b8;
-static PyCodeObject *codeobj_7c19a39bcf9a22f53eea6c21d05d338e;
-static PyCodeObject *codeobj_8080d914771aedcf909c0f057d559a8d;
-static PyCodeObject *codeobj_47175bc254e55b9989bfc521c8ee862b;
-static PyCodeObject *codeobj_c85717a93bb3bb231f1a8452cd08e418;
-static PyCodeObject *codeobj_00547e73df5f8bcba8490e1a3b50c19b;
-static PyCodeObject *codeobj_ba7564b74e60087b16d3afc9c8d6209b;
-static PyCodeObject *codeobj_af41925b6dd60bcc1082d41aaa906324;
-static PyCodeObject *codeobj_18f07c267f47eda7ee61b1ab5c56bf51;
+static PyCodeObject *codeobj_ece836381aceee32ef1984763e88da0a;
+static PyCodeObject *codeobj_d68812a74263b1ed9e95e7b7c35657cf;
+static PyCodeObject *codeobj_0177281a3151edc2e7c92a464ee0f944;
+static PyCodeObject *codeobj_06e4a95b698221a84147910e5af703c8;
+static PyCodeObject *codeobj_21b6fe04cf0b0dab8ec1a68a8ce2bf53;
+static PyCodeObject *codeobj_25b2bfd79c236cfde4be053030ea8850;
+static PyCodeObject *codeobj_a7b752124475b7fbbda2fb165dd43e4d;
+static PyCodeObject *codeobj_445461ace2fbd92a744aecb86d2aedef;
 
 static void createModuleCodeObjects(void) {
-    module_filename_obj = MAKE_RELATIVE_PATH(mod_consts[115]); CHECK_OBJECT(module_filename_obj);
-    codeobj_e4af1f224038721004e7dab74a41b9b8 = MAKE_CODEOBJECT(module_filename_obj, 1, CO_NOFREE, mod_consts[116], NULL, NULL, 0, 0, 0);
-    codeobj_7c19a39bcf9a22f53eea6c21d05d338e = MAKE_CODEOBJECT(module_filename_obj, 27, CO_NOFREE, mod_consts[96], mod_consts[117], NULL, 0, 0, 0);
-    codeobj_8080d914771aedcf909c0f057d559a8d = MAKE_CODEOBJECT(module_filename_obj, 29, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[104], mod_consts[118], NULL, 1, 0, 0);
-    codeobj_47175bc254e55b9989bfc521c8ee862b = MAKE_CODEOBJECT(module_filename_obj, 110, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[77], mod_consts[119], NULL, 2, 0, 0);
-    codeobj_c85717a93bb3bb231f1a8452cd08e418 = MAKE_CODEOBJECT(module_filename_obj, 66, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[107], mod_consts[118], NULL, 1, 0, 0);
-    codeobj_00547e73df5f8bcba8490e1a3b50c19b = MAKE_CODEOBJECT(module_filename_obj, 63, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[41], mod_consts[118], NULL, 1, 0, 0);
-    codeobj_ba7564b74e60087b16d3afc9c8d6209b = MAKE_CODEOBJECT(module_filename_obj, 72, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[111], mod_consts[118], NULL, 1, 0, 0);
-    codeobj_af41925b6dd60bcc1082d41aaa906324 = MAKE_CODEOBJECT(module_filename_obj, 69, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[109], mod_consts[118], NULL, 1, 0, 0);
-    codeobj_18f07c267f47eda7ee61b1ab5c56bf51 = MAKE_CODEOBJECT(module_filename_obj, 75, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[73], mod_consts[120], NULL, 1, 0, 0);
+    module_filename_obj = MAKE_RELATIVE_PATH(mod_consts[113]); CHECK_OBJECT(module_filename_obj);
+    codeobj_e4af1f224038721004e7dab74a41b9b8 = MAKE_CODEOBJECT(module_filename_obj, 1, CO_NOFREE, mod_consts[114], NULL, NULL, 0, 0, 0);
+    codeobj_ece836381aceee32ef1984763e88da0a = MAKE_CODEOBJECT(module_filename_obj, 26, CO_NOFREE, mod_consts[93], mod_consts[115], NULL, 0, 0, 0);
+    codeobj_d68812a74263b1ed9e95e7b7c35657cf = MAKE_CODEOBJECT(module_filename_obj, 28, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[101], mod_consts[116], NULL, 1, 0, 0);
+    codeobj_0177281a3151edc2e7c92a464ee0f944 = MAKE_CODEOBJECT(module_filename_obj, 109, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[77], mod_consts[117], NULL, 2, 0, 0);
+    codeobj_06e4a95b698221a84147910e5af703c8 = MAKE_CODEOBJECT(module_filename_obj, 65, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[104], mod_consts[116], NULL, 1, 0, 0);
+    codeobj_21b6fe04cf0b0dab8ec1a68a8ce2bf53 = MAKE_CODEOBJECT(module_filename_obj, 62, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[41], mod_consts[116], NULL, 1, 0, 0);
+    codeobj_25b2bfd79c236cfde4be053030ea8850 = MAKE_CODEOBJECT(module_filename_obj, 71, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[108], mod_consts[116], NULL, 1, 0, 0);
+    codeobj_a7b752124475b7fbbda2fb165dd43e4d = MAKE_CODEOBJECT(module_filename_obj, 68, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[106], mod_consts[116], NULL, 1, 0, 0);
+    codeobj_445461ace2fbd92a744aecb86d2aedef = MAKE_CODEOBJECT(module_filename_obj, 74, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[73], mod_consts[118], NULL, 1, 0, 0);
 }
 
 // The module function declarations.
+NUITKA_CROSS_MODULE PyObject *impl___main__$$$function__1__mro_entries_conversion(PyObject **python_pars);
+
+
 static PyObject *MAKE_FUNCTION_scene$game$$$function__1___init__();
 
 
@@ -120,7 +123,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
 
     // Local variable declarations.
     PyObject *par_self = python_pars[0];
-    struct Nuitka_FrameObject *frame_8080d914771aedcf909c0f057d559a8d;
+    struct Nuitka_FrameObject *frame_d68812a74263b1ed9e95e7b7c35657cf;
     NUITKA_MAY_BE_UNUSED char const *type_description_1 = NULL;
     PyObject *exception_type = NULL;
     PyObject *exception_value = NULL;
@@ -128,7 +131,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
     NUITKA_MAY_BE_UNUSED int exception_lineno = 0;
     bool tmp_result;
     NUITKA_MAY_BE_UNUSED nuitka_void tmp_unused;
-    static struct Nuitka_FrameObject *cache_frame_8080d914771aedcf909c0f057d559a8d = NULL;
+    static struct Nuitka_FrameObject *cache_frame_d68812a74263b1ed9e95e7b7c35657cf = NULL;
     PyObject *tmp_return_value = NULL;
     PyObject *exception_keeper_type_1;
     PyObject *exception_keeper_value_1;
@@ -137,31 +140,31 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
 
     // Actual function body.
     // Tried code:
-    if (isFrameUnusable(cache_frame_8080d914771aedcf909c0f057d559a8d)) {
-        Py_XDECREF(cache_frame_8080d914771aedcf909c0f057d559a8d);
+    if (isFrameUnusable(cache_frame_d68812a74263b1ed9e95e7b7c35657cf)) {
+        Py_XDECREF(cache_frame_d68812a74263b1ed9e95e7b7c35657cf);
 
 #if _DEBUG_REFCOUNTS
-        if (cache_frame_8080d914771aedcf909c0f057d559a8d == NULL) {
+        if (cache_frame_d68812a74263b1ed9e95e7b7c35657cf == NULL) {
             count_active_frame_cache_instances += 1;
         } else {
             count_released_frame_cache_instances += 1;
         }
         count_allocated_frame_cache_instances += 1;
 #endif
-        cache_frame_8080d914771aedcf909c0f057d559a8d = MAKE_FUNCTION_FRAME(codeobj_8080d914771aedcf909c0f057d559a8d, module_scene$game, sizeof(void *));
+        cache_frame_d68812a74263b1ed9e95e7b7c35657cf = MAKE_FUNCTION_FRAME(codeobj_d68812a74263b1ed9e95e7b7c35657cf, module_scene$game, sizeof(void *));
 #if _DEBUG_REFCOUNTS
     } else {
         count_hit_frame_cache_instances += 1;
 #endif
     }
-    assert(cache_frame_8080d914771aedcf909c0f057d559a8d->m_type_description == NULL);
-    frame_8080d914771aedcf909c0f057d559a8d = cache_frame_8080d914771aedcf909c0f057d559a8d;
+    assert(cache_frame_d68812a74263b1ed9e95e7b7c35657cf->m_type_description == NULL);
+    frame_d68812a74263b1ed9e95e7b7c35657cf = cache_frame_d68812a74263b1ed9e95e7b7c35657cf;
 
     // Push the new frame as the currently active one.
-    pushFrameStack(frame_8080d914771aedcf909c0f057d559a8d);
+    pushFrameStack(frame_d68812a74263b1ed9e95e7b7c35657cf);
 
     // Mark the frame object as in use, ref count 1 will be up for reuse.
-    assert(Py_REFCNT(frame_8080d914771aedcf909c0f057d559a8d) == 2); // Frame stack
+    assert(Py_REFCNT(frame_d68812a74263b1ed9e95e7b7c35657cf) == 2); // Frame stack
 
     // Framed code:
     {
@@ -181,7 +184,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 31;
+            exception_lineno = 30;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -192,7 +195,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 31;
+            exception_lineno = 30;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -214,7 +217,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 32;
+            exception_lineno = 31;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -225,7 +228,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 32;
+            exception_lineno = 31;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -237,7 +240,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 32;
+            exception_lineno = 31;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -251,7 +254,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 32;
+            exception_lineno = 31;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -272,11 +275,11 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 34;
+            exception_lineno = 33;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
-        frame_8080d914771aedcf909c0f057d559a8d->m_frame.f_lineno = 34;
+        frame_d68812a74263b1ed9e95e7b7c35657cf->m_frame.f_lineno = 33;
         tmp_assattr_name_3 = CALL_FUNCTION_WITH_ARGS4(tmp_called_name_1, &PyTuple_GET_ITEM(mod_consts[6], 0));
 
         if (tmp_assattr_name_3 == NULL) {
@@ -285,7 +288,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 34;
+            exception_lineno = 33;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -301,7 +304,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
             Py_DECREF(tmp_assattr_name_3);
 
-            exception_lineno = 34;
+            exception_lineno = 33;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -313,7 +316,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 34;
+            exception_lineno = 33;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -334,11 +337,11 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 36;
+            exception_lineno = 35;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
-        frame_8080d914771aedcf909c0f057d559a8d->m_frame.f_lineno = 36;
+        frame_d68812a74263b1ed9e95e7b7c35657cf->m_frame.f_lineno = 35;
         tmp_assattr_name_4 = CALL_FUNCTION_NO_ARGS(tmp_called_name_2);
         if (tmp_assattr_name_4 == NULL) {
             assert(ERROR_OCCURRED());
@@ -346,7 +349,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 36;
+            exception_lineno = 35;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -360,7 +363,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 36;
+            exception_lineno = 35;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -378,7 +381,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 37;
+            exception_lineno = 36;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -399,11 +402,11 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 39;
+            exception_lineno = 38;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
-        frame_8080d914771aedcf909c0f057d559a8d->m_frame.f_lineno = 39;
+        frame_d68812a74263b1ed9e95e7b7c35657cf->m_frame.f_lineno = 38;
         tmp_assattr_name_6 = CALL_METHOD_NO_ARGS(tmp_called_instance_1, mod_consts[13]);
         if (tmp_assattr_name_6 == NULL) {
             assert(ERROR_OCCURRED());
@@ -411,7 +414,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 39;
+            exception_lineno = 38;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -425,7 +428,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 39;
+            exception_lineno = 38;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -444,7 +447,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 40;
+            exception_lineno = 39;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -456,7 +459,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 40;
+            exception_lineno = 39;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -477,11 +480,11 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 41;
+            exception_lineno = 40;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
-        frame_8080d914771aedcf909c0f057d559a8d->m_frame.f_lineno = 41;
+        frame_d68812a74263b1ed9e95e7b7c35657cf->m_frame.f_lineno = 40;
         tmp_assattr_name_8 = CALL_METHOD_NO_ARGS(tmp_called_instance_2, mod_consts[17]);
         if (tmp_assattr_name_8 == NULL) {
             assert(ERROR_OCCURRED());
@@ -489,7 +492,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 41;
+            exception_lineno = 40;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -500,7 +503,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 41;
+            exception_lineno = 40;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -514,7 +517,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 41;
+            exception_lineno = 40;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -535,11 +538,11 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 42;
+            exception_lineno = 41;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
-        frame_8080d914771aedcf909c0f057d559a8d->m_frame.f_lineno = 42;
+        frame_d68812a74263b1ed9e95e7b7c35657cf->m_frame.f_lineno = 41;
         tmp_assattr_name_9 = CALL_METHOD_NO_ARGS(tmp_called_instance_3, mod_consts[21]);
         if (tmp_assattr_name_9 == NULL) {
             assert(ERROR_OCCURRED());
@@ -547,7 +550,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 42;
+            exception_lineno = 41;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -558,7 +561,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 42;
+            exception_lineno = 41;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -572,7 +575,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 42;
+            exception_lineno = 41;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -593,11 +596,11 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 43;
+            exception_lineno = 42;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
-        frame_8080d914771aedcf909c0f057d559a8d->m_frame.f_lineno = 43;
+        frame_d68812a74263b1ed9e95e7b7c35657cf->m_frame.f_lineno = 42;
         tmp_assattr_name_10 = CALL_METHOD_NO_ARGS(tmp_called_instance_4, mod_consts[24]);
         if (tmp_assattr_name_10 == NULL) {
             assert(ERROR_OCCURRED());
@@ -605,7 +608,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 43;
+            exception_lineno = 42;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -616,7 +619,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 43;
+            exception_lineno = 42;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -630,7 +633,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 43;
+            exception_lineno = 42;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -651,11 +654,11 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 44;
+            exception_lineno = 43;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
-        frame_8080d914771aedcf909c0f057d559a8d->m_frame.f_lineno = 44;
+        frame_d68812a74263b1ed9e95e7b7c35657cf->m_frame.f_lineno = 43;
         tmp_assattr_name_11 = CALL_METHOD_NO_ARGS(tmp_called_instance_5, mod_consts[27]);
         if (tmp_assattr_name_11 == NULL) {
             assert(ERROR_OCCURRED());
@@ -663,7 +666,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 44;
+            exception_lineno = 43;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -674,7 +677,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 44;
+            exception_lineno = 43;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -688,7 +691,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 44;
+            exception_lineno = 43;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -709,11 +712,11 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 45;
+            exception_lineno = 44;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
-        frame_8080d914771aedcf909c0f057d559a8d->m_frame.f_lineno = 45;
+        frame_d68812a74263b1ed9e95e7b7c35657cf->m_frame.f_lineno = 44;
         tmp_assattr_name_12 = CALL_METHOD_NO_ARGS(tmp_called_instance_6, mod_consts[30]);
         if (tmp_assattr_name_12 == NULL) {
             assert(ERROR_OCCURRED());
@@ -721,7 +724,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 45;
+            exception_lineno = 44;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -732,7 +735,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 45;
+            exception_lineno = 44;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -746,7 +749,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 45;
+            exception_lineno = 44;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -767,11 +770,11 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 46;
+            exception_lineno = 45;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
-        frame_8080d914771aedcf909c0f057d559a8d->m_frame.f_lineno = 46;
+        frame_d68812a74263b1ed9e95e7b7c35657cf->m_frame.f_lineno = 45;
         tmp_assattr_name_13 = CALL_METHOD_NO_ARGS(tmp_called_instance_7, mod_consts[33]);
         if (tmp_assattr_name_13 == NULL) {
             assert(ERROR_OCCURRED());
@@ -779,7 +782,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 46;
+            exception_lineno = 45;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -790,7 +793,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 46;
+            exception_lineno = 45;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -804,7 +807,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 46;
+            exception_lineno = 45;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -825,11 +828,11 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 48;
+            exception_lineno = 47;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
-        frame_8080d914771aedcf909c0f057d559a8d->m_frame.f_lineno = 48;
+        frame_d68812a74263b1ed9e95e7b7c35657cf->m_frame.f_lineno = 47;
         tmp_assattr_name_14 = CALL_METHOD_NO_ARGS(tmp_called_instance_8, mod_consts[36]);
         if (tmp_assattr_name_14 == NULL) {
             assert(ERROR_OCCURRED());
@@ -837,7 +840,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 48;
+            exception_lineno = 47;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -848,7 +851,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 48;
+            exception_lineno = 47;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -862,7 +865,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 48;
+            exception_lineno = 47;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -882,11 +885,11 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 50;
+            exception_lineno = 49;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
-        frame_8080d914771aedcf909c0f057d559a8d->m_frame.f_lineno = 50;
+        frame_d68812a74263b1ed9e95e7b7c35657cf->m_frame.f_lineno = 49;
         tmp_call_result_1 = CALL_METHOD_NO_ARGS(tmp_called_instance_9, mod_consts[39]);
         if (tmp_call_result_1 == NULL) {
             assert(ERROR_OCCURRED());
@@ -894,7 +897,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 50;
+            exception_lineno = 49;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -917,7 +920,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 52;
+            exception_lineno = 51;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -928,7 +931,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 52;
+            exception_lineno = 51;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -940,11 +943,11 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 52;
+            exception_lineno = 51;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
-        frame_8080d914771aedcf909c0f057d559a8d->m_frame.f_lineno = 52;
+        frame_d68812a74263b1ed9e95e7b7c35657cf->m_frame.f_lineno = 51;
         tmp_call_result_2 = CALL_METHOD_NO_ARGS(tmp_called_instance_10, mod_consts[41]);
         Py_DECREF(tmp_called_instance_10);
         if (tmp_call_result_2 == NULL) {
@@ -953,7 +956,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 52;
+            exception_lineno = 51;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -976,7 +979,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 53;
+            exception_lineno = 52;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -987,7 +990,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 53;
+            exception_lineno = 52;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -999,11 +1002,11 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 53;
+            exception_lineno = 52;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
-        frame_8080d914771aedcf909c0f057d559a8d->m_frame.f_lineno = 53;
+        frame_d68812a74263b1ed9e95e7b7c35657cf->m_frame.f_lineno = 52;
         tmp_call_result_3 = CALL_METHOD_WITH_ARGS1(
             tmp_called_instance_11,
             mod_consts[42],
@@ -1017,7 +1020,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 53;
+            exception_lineno = 52;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -1034,7 +1037,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 55;
+            exception_lineno = 54;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -1047,7 +1050,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 55;
+            exception_lineno = 54;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -1068,7 +1071,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 56;
+            exception_lineno = 55;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -1079,7 +1082,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 56;
+            exception_lineno = 55;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -1090,7 +1093,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 56;
+            exception_lineno = 55;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -1104,7 +1107,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 56;
+            exception_lineno = 55;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -1126,7 +1129,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 57;
+            exception_lineno = 56;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -1142,7 +1145,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 57;
+            exception_lineno = 56;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -1153,11 +1156,11 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 57;
+            exception_lineno = 56;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
-        frame_8080d914771aedcf909c0f057d559a8d->m_frame.f_lineno = 57;
+        frame_d68812a74263b1ed9e95e7b7c35657cf->m_frame.f_lineno = 56;
         tmp_call_result_4 = CALL_FUNCTION_WITH_SINGLE_ARG(tmp_called_name_3, tmp_args_element_name_1);
         Py_DECREF(tmp_args_element_name_1);
         if (tmp_call_result_4 == NULL) {
@@ -1166,7 +1169,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 57;
+            exception_lineno = 56;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -1183,7 +1186,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 59;
+            exception_lineno = 58;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -1196,7 +1199,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 59;
+            exception_lineno = 58;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -1212,7 +1215,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 60;
+            exception_lineno = 59;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -1225,7 +1228,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 60;
+            exception_lineno = 59;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -1246,7 +1249,7 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 61;
+            exception_lineno = 60;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
@@ -1257,14 +1260,14 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 61;
+            exception_lineno = 60;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
     }
 
 #if 0
-    RESTORE_FRAME_EXCEPTION(frame_8080d914771aedcf909c0f057d559a8d);
+    RESTORE_FRAME_EXCEPTION(frame_d68812a74263b1ed9e95e7b7c35657cf);
 #endif
 
     // Put the previous frame back on top.
@@ -1275,35 +1278,35 @@ static PyObject *impl_scene$game$$$function__1___init__(struct Nuitka_FunctionOb
     frame_exception_exit_1:;
 
 #if 0
-    RESTORE_FRAME_EXCEPTION(frame_8080d914771aedcf909c0f057d559a8d);
+    RESTORE_FRAME_EXCEPTION(frame_d68812a74263b1ed9e95e7b7c35657cf);
 #endif
 
     if (exception_tb == NULL) {
-        exception_tb = MAKE_TRACEBACK(frame_8080d914771aedcf909c0f057d559a8d, exception_lineno);
-    } else if (exception_tb->tb_frame != &frame_8080d914771aedcf909c0f057d559a8d->m_frame) {
-        exception_tb = ADD_TRACEBACK(exception_tb, frame_8080d914771aedcf909c0f057d559a8d, exception_lineno);
+        exception_tb = MAKE_TRACEBACK(frame_d68812a74263b1ed9e95e7b7c35657cf, exception_lineno);
+    } else if (exception_tb->tb_frame != &frame_d68812a74263b1ed9e95e7b7c35657cf->m_frame) {
+        exception_tb = ADD_TRACEBACK(exception_tb, frame_d68812a74263b1ed9e95e7b7c35657cf, exception_lineno);
     }
 
     // Attaches locals to frame if any.
     Nuitka_Frame_AttachLocals(
-        frame_8080d914771aedcf909c0f057d559a8d,
+        frame_d68812a74263b1ed9e95e7b7c35657cf,
         type_description_1,
         par_self
     );
 
 
     // Release cached frame if used for exception.
-    if (frame_8080d914771aedcf909c0f057d559a8d == cache_frame_8080d914771aedcf909c0f057d559a8d) {
+    if (frame_d68812a74263b1ed9e95e7b7c35657cf == cache_frame_d68812a74263b1ed9e95e7b7c35657cf) {
 #if _DEBUG_REFCOUNTS
         count_active_frame_cache_instances -= 1;
         count_released_frame_cache_instances += 1;
 #endif
 
-        Py_DECREF(cache_frame_8080d914771aedcf909c0f057d559a8d);
-        cache_frame_8080d914771aedcf909c0f057d559a8d = NULL;
+        Py_DECREF(cache_frame_d68812a74263b1ed9e95e7b7c35657cf);
+        cache_frame_d68812a74263b1ed9e95e7b7c35657cf = NULL;
     }
 
-    assertFrameObject(frame_8080d914771aedcf909c0f057d559a8d);
+    assertFrameObject(frame_d68812a74263b1ed9e95e7b7c35657cf);
 
     // Put the previous frame back on top.
     popFrameStack();
@@ -1373,14 +1376,14 @@ static PyObject *impl_scene$game$$$function__2_stop(struct Nuitka_FunctionObject
 
     // Local variable declarations.
     PyObject *par_self = python_pars[0];
-    struct Nuitka_FrameObject *frame_00547e73df5f8bcba8490e1a3b50c19b;
+    struct Nuitka_FrameObject *frame_21b6fe04cf0b0dab8ec1a68a8ce2bf53;
     NUITKA_MAY_BE_UNUSED char const *type_description_1 = NULL;
     bool tmp_result;
     PyObject *exception_type = NULL;
     PyObject *exception_value = NULL;
     PyTracebackObject *exception_tb = NULL;
     NUITKA_MAY_BE_UNUSED int exception_lineno = 0;
-    static struct Nuitka_FrameObject *cache_frame_00547e73df5f8bcba8490e1a3b50c19b = NULL;
+    static struct Nuitka_FrameObject *cache_frame_21b6fe04cf0b0dab8ec1a68a8ce2bf53 = NULL;
     PyObject *tmp_return_value = NULL;
     PyObject *exception_keeper_type_1;
     PyObject *exception_keeper_value_1;
@@ -1389,31 +1392,31 @@ static PyObject *impl_scene$game$$$function__2_stop(struct Nuitka_FunctionObject
 
     // Actual function body.
     // Tried code:
-    if (isFrameUnusable(cache_frame_00547e73df5f8bcba8490e1a3b50c19b)) {
-        Py_XDECREF(cache_frame_00547e73df5f8bcba8490e1a3b50c19b);
+    if (isFrameUnusable(cache_frame_21b6fe04cf0b0dab8ec1a68a8ce2bf53)) {
+        Py_XDECREF(cache_frame_21b6fe04cf0b0dab8ec1a68a8ce2bf53);
 
 #if _DEBUG_REFCOUNTS
-        if (cache_frame_00547e73df5f8bcba8490e1a3b50c19b == NULL) {
+        if (cache_frame_21b6fe04cf0b0dab8ec1a68a8ce2bf53 == NULL) {
             count_active_frame_cache_instances += 1;
         } else {
             count_released_frame_cache_instances += 1;
         }
         count_allocated_frame_cache_instances += 1;
 #endif
-        cache_frame_00547e73df5f8bcba8490e1a3b50c19b = MAKE_FUNCTION_FRAME(codeobj_00547e73df5f8bcba8490e1a3b50c19b, module_scene$game, sizeof(void *));
+        cache_frame_21b6fe04cf0b0dab8ec1a68a8ce2bf53 = MAKE_FUNCTION_FRAME(codeobj_21b6fe04cf0b0dab8ec1a68a8ce2bf53, module_scene$game, sizeof(void *));
 #if _DEBUG_REFCOUNTS
     } else {
         count_hit_frame_cache_instances += 1;
 #endif
     }
-    assert(cache_frame_00547e73df5f8bcba8490e1a3b50c19b->m_type_description == NULL);
-    frame_00547e73df5f8bcba8490e1a3b50c19b = cache_frame_00547e73df5f8bcba8490e1a3b50c19b;
+    assert(cache_frame_21b6fe04cf0b0dab8ec1a68a8ce2bf53->m_type_description == NULL);
+    frame_21b6fe04cf0b0dab8ec1a68a8ce2bf53 = cache_frame_21b6fe04cf0b0dab8ec1a68a8ce2bf53;
 
     // Push the new frame as the currently active one.
-    pushFrameStack(frame_00547e73df5f8bcba8490e1a3b50c19b);
+    pushFrameStack(frame_21b6fe04cf0b0dab8ec1a68a8ce2bf53);
 
     // Mark the frame object as in use, ref count 1 will be up for reuse.
-    assert(Py_REFCNT(frame_00547e73df5f8bcba8490e1a3b50c19b) == 2); // Frame stack
+    assert(Py_REFCNT(frame_21b6fe04cf0b0dab8ec1a68a8ce2bf53) == 2); // Frame stack
 
     // Framed code:
     {
@@ -1429,14 +1432,14 @@ static PyObject *impl_scene$game$$$function__2_stop(struct Nuitka_FunctionObject
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 64;
+            exception_lineno = 63;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
     }
 
 #if 0
-    RESTORE_FRAME_EXCEPTION(frame_00547e73df5f8bcba8490e1a3b50c19b);
+    RESTORE_FRAME_EXCEPTION(frame_21b6fe04cf0b0dab8ec1a68a8ce2bf53);
 #endif
 
     // Put the previous frame back on top.
@@ -1447,35 +1450,35 @@ static PyObject *impl_scene$game$$$function__2_stop(struct Nuitka_FunctionObject
     frame_exception_exit_1:;
 
 #if 0
-    RESTORE_FRAME_EXCEPTION(frame_00547e73df5f8bcba8490e1a3b50c19b);
+    RESTORE_FRAME_EXCEPTION(frame_21b6fe04cf0b0dab8ec1a68a8ce2bf53);
 #endif
 
     if (exception_tb == NULL) {
-        exception_tb = MAKE_TRACEBACK(frame_00547e73df5f8bcba8490e1a3b50c19b, exception_lineno);
-    } else if (exception_tb->tb_frame != &frame_00547e73df5f8bcba8490e1a3b50c19b->m_frame) {
-        exception_tb = ADD_TRACEBACK(exception_tb, frame_00547e73df5f8bcba8490e1a3b50c19b, exception_lineno);
+        exception_tb = MAKE_TRACEBACK(frame_21b6fe04cf0b0dab8ec1a68a8ce2bf53, exception_lineno);
+    } else if (exception_tb->tb_frame != &frame_21b6fe04cf0b0dab8ec1a68a8ce2bf53->m_frame) {
+        exception_tb = ADD_TRACEBACK(exception_tb, frame_21b6fe04cf0b0dab8ec1a68a8ce2bf53, exception_lineno);
     }
 
     // Attaches locals to frame if any.
     Nuitka_Frame_AttachLocals(
-        frame_00547e73df5f8bcba8490e1a3b50c19b,
+        frame_21b6fe04cf0b0dab8ec1a68a8ce2bf53,
         type_description_1,
         par_self
     );
 
 
     // Release cached frame if used for exception.
-    if (frame_00547e73df5f8bcba8490e1a3b50c19b == cache_frame_00547e73df5f8bcba8490e1a3b50c19b) {
+    if (frame_21b6fe04cf0b0dab8ec1a68a8ce2bf53 == cache_frame_21b6fe04cf0b0dab8ec1a68a8ce2bf53) {
 #if _DEBUG_REFCOUNTS
         count_active_frame_cache_instances -= 1;
         count_released_frame_cache_instances += 1;
 #endif
 
-        Py_DECREF(cache_frame_00547e73df5f8bcba8490e1a3b50c19b);
-        cache_frame_00547e73df5f8bcba8490e1a3b50c19b = NULL;
+        Py_DECREF(cache_frame_21b6fe04cf0b0dab8ec1a68a8ce2bf53);
+        cache_frame_21b6fe04cf0b0dab8ec1a68a8ce2bf53 = NULL;
     }
 
-    assertFrameObject(frame_00547e73df5f8bcba8490e1a3b50c19b);
+    assertFrameObject(frame_21b6fe04cf0b0dab8ec1a68a8ce2bf53);
 
     // Put the previous frame back on top.
     popFrameStack();
@@ -1547,14 +1550,14 @@ static PyObject *impl_scene$game$$$function__3_start(struct Nuitka_FunctionObjec
 
     // Local variable declarations.
     PyObject *par_self = python_pars[0];
-    struct Nuitka_FrameObject *frame_c85717a93bb3bb231f1a8452cd08e418;
+    struct Nuitka_FrameObject *frame_06e4a95b698221a84147910e5af703c8;
     NUITKA_MAY_BE_UNUSED char const *type_description_1 = NULL;
     bool tmp_result;
     PyObject *exception_type = NULL;
     PyObject *exception_value = NULL;
     PyTracebackObject *exception_tb = NULL;
     NUITKA_MAY_BE_UNUSED int exception_lineno = 0;
-    static struct Nuitka_FrameObject *cache_frame_c85717a93bb3bb231f1a8452cd08e418 = NULL;
+    static struct Nuitka_FrameObject *cache_frame_06e4a95b698221a84147910e5af703c8 = NULL;
     PyObject *tmp_return_value = NULL;
     PyObject *exception_keeper_type_1;
     PyObject *exception_keeper_value_1;
@@ -1563,31 +1566,31 @@ static PyObject *impl_scene$game$$$function__3_start(struct Nuitka_FunctionObjec
 
     // Actual function body.
     // Tried code:
-    if (isFrameUnusable(cache_frame_c85717a93bb3bb231f1a8452cd08e418)) {
-        Py_XDECREF(cache_frame_c85717a93bb3bb231f1a8452cd08e418);
+    if (isFrameUnusable(cache_frame_06e4a95b698221a84147910e5af703c8)) {
+        Py_XDECREF(cache_frame_06e4a95b698221a84147910e5af703c8);
 
 #if _DEBUG_REFCOUNTS
-        if (cache_frame_c85717a93bb3bb231f1a8452cd08e418 == NULL) {
+        if (cache_frame_06e4a95b698221a84147910e5af703c8 == NULL) {
             count_active_frame_cache_instances += 1;
         } else {
             count_released_frame_cache_instances += 1;
         }
         count_allocated_frame_cache_instances += 1;
 #endif
-        cache_frame_c85717a93bb3bb231f1a8452cd08e418 = MAKE_FUNCTION_FRAME(codeobj_c85717a93bb3bb231f1a8452cd08e418, module_scene$game, sizeof(void *));
+        cache_frame_06e4a95b698221a84147910e5af703c8 = MAKE_FUNCTION_FRAME(codeobj_06e4a95b698221a84147910e5af703c8, module_scene$game, sizeof(void *));
 #if _DEBUG_REFCOUNTS
     } else {
         count_hit_frame_cache_instances += 1;
 #endif
     }
-    assert(cache_frame_c85717a93bb3bb231f1a8452cd08e418->m_type_description == NULL);
-    frame_c85717a93bb3bb231f1a8452cd08e418 = cache_frame_c85717a93bb3bb231f1a8452cd08e418;
+    assert(cache_frame_06e4a95b698221a84147910e5af703c8->m_type_description == NULL);
+    frame_06e4a95b698221a84147910e5af703c8 = cache_frame_06e4a95b698221a84147910e5af703c8;
 
     // Push the new frame as the currently active one.
-    pushFrameStack(frame_c85717a93bb3bb231f1a8452cd08e418);
+    pushFrameStack(frame_06e4a95b698221a84147910e5af703c8);
 
     // Mark the frame object as in use, ref count 1 will be up for reuse.
-    assert(Py_REFCNT(frame_c85717a93bb3bb231f1a8452cd08e418) == 2); // Frame stack
+    assert(Py_REFCNT(frame_06e4a95b698221a84147910e5af703c8) == 2); // Frame stack
 
     // Framed code:
     {
@@ -1603,14 +1606,14 @@ static PyObject *impl_scene$game$$$function__3_start(struct Nuitka_FunctionObjec
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 67;
+            exception_lineno = 66;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
     }
 
 #if 0
-    RESTORE_FRAME_EXCEPTION(frame_c85717a93bb3bb231f1a8452cd08e418);
+    RESTORE_FRAME_EXCEPTION(frame_06e4a95b698221a84147910e5af703c8);
 #endif
 
     // Put the previous frame back on top.
@@ -1621,35 +1624,35 @@ static PyObject *impl_scene$game$$$function__3_start(struct Nuitka_FunctionObjec
     frame_exception_exit_1:;
 
 #if 0
-    RESTORE_FRAME_EXCEPTION(frame_c85717a93bb3bb231f1a8452cd08e418);
+    RESTORE_FRAME_EXCEPTION(frame_06e4a95b698221a84147910e5af703c8);
 #endif
 
     if (exception_tb == NULL) {
-        exception_tb = MAKE_TRACEBACK(frame_c85717a93bb3bb231f1a8452cd08e418, exception_lineno);
-    } else if (exception_tb->tb_frame != &frame_c85717a93bb3bb231f1a8452cd08e418->m_frame) {
-        exception_tb = ADD_TRACEBACK(exception_tb, frame_c85717a93bb3bb231f1a8452cd08e418, exception_lineno);
+        exception_tb = MAKE_TRACEBACK(frame_06e4a95b698221a84147910e5af703c8, exception_lineno);
+    } else if (exception_tb->tb_frame != &frame_06e4a95b698221a84147910e5af703c8->m_frame) {
+        exception_tb = ADD_TRACEBACK(exception_tb, frame_06e4a95b698221a84147910e5af703c8, exception_lineno);
     }
 
     // Attaches locals to frame if any.
     Nuitka_Frame_AttachLocals(
-        frame_c85717a93bb3bb231f1a8452cd08e418,
+        frame_06e4a95b698221a84147910e5af703c8,
         type_description_1,
         par_self
     );
 
 
     // Release cached frame if used for exception.
-    if (frame_c85717a93bb3bb231f1a8452cd08e418 == cache_frame_c85717a93bb3bb231f1a8452cd08e418) {
+    if (frame_06e4a95b698221a84147910e5af703c8 == cache_frame_06e4a95b698221a84147910e5af703c8) {
 #if _DEBUG_REFCOUNTS
         count_active_frame_cache_instances -= 1;
         count_released_frame_cache_instances += 1;
 #endif
 
-        Py_DECREF(cache_frame_c85717a93bb3bb231f1a8452cd08e418);
-        cache_frame_c85717a93bb3bb231f1a8452cd08e418 = NULL;
+        Py_DECREF(cache_frame_06e4a95b698221a84147910e5af703c8);
+        cache_frame_06e4a95b698221a84147910e5af703c8 = NULL;
     }
 
-    assertFrameObject(frame_c85717a93bb3bb231f1a8452cd08e418);
+    assertFrameObject(frame_06e4a95b698221a84147910e5af703c8);
 
     // Put the previous frame back on top.
     popFrameStack();
@@ -1721,14 +1724,14 @@ static PyObject *impl_scene$game$$$function__4_tstop(struct Nuitka_FunctionObjec
 
     // Local variable declarations.
     PyObject *par_self = python_pars[0];
-    struct Nuitka_FrameObject *frame_af41925b6dd60bcc1082d41aaa906324;
+    struct Nuitka_FrameObject *frame_a7b752124475b7fbbda2fb165dd43e4d;
     NUITKA_MAY_BE_UNUSED char const *type_description_1 = NULL;
     bool tmp_result;
     PyObject *exception_type = NULL;
     PyObject *exception_value = NULL;
     PyTracebackObject *exception_tb = NULL;
     NUITKA_MAY_BE_UNUSED int exception_lineno = 0;
-    static struct Nuitka_FrameObject *cache_frame_af41925b6dd60bcc1082d41aaa906324 = NULL;
+    static struct Nuitka_FrameObject *cache_frame_a7b752124475b7fbbda2fb165dd43e4d = NULL;
     PyObject *tmp_return_value = NULL;
     PyObject *exception_keeper_type_1;
     PyObject *exception_keeper_value_1;
@@ -1737,31 +1740,31 @@ static PyObject *impl_scene$game$$$function__4_tstop(struct Nuitka_FunctionObjec
 
     // Actual function body.
     // Tried code:
-    if (isFrameUnusable(cache_frame_af41925b6dd60bcc1082d41aaa906324)) {
-        Py_XDECREF(cache_frame_af41925b6dd60bcc1082d41aaa906324);
+    if (isFrameUnusable(cache_frame_a7b752124475b7fbbda2fb165dd43e4d)) {
+        Py_XDECREF(cache_frame_a7b752124475b7fbbda2fb165dd43e4d);
 
 #if _DEBUG_REFCOUNTS
-        if (cache_frame_af41925b6dd60bcc1082d41aaa906324 == NULL) {
+        if (cache_frame_a7b752124475b7fbbda2fb165dd43e4d == NULL) {
             count_active_frame_cache_instances += 1;
         } else {
             count_released_frame_cache_instances += 1;
         }
         count_allocated_frame_cache_instances += 1;
 #endif
-        cache_frame_af41925b6dd60bcc1082d41aaa906324 = MAKE_FUNCTION_FRAME(codeobj_af41925b6dd60bcc1082d41aaa906324, module_scene$game, sizeof(void *));
+        cache_frame_a7b752124475b7fbbda2fb165dd43e4d = MAKE_FUNCTION_FRAME(codeobj_a7b752124475b7fbbda2fb165dd43e4d, module_scene$game, sizeof(void *));
 #if _DEBUG_REFCOUNTS
     } else {
         count_hit_frame_cache_instances += 1;
 #endif
     }
-    assert(cache_frame_af41925b6dd60bcc1082d41aaa906324->m_type_description == NULL);
-    frame_af41925b6dd60bcc1082d41aaa906324 = cache_frame_af41925b6dd60bcc1082d41aaa906324;
+    assert(cache_frame_a7b752124475b7fbbda2fb165dd43e4d->m_type_description == NULL);
+    frame_a7b752124475b7fbbda2fb165dd43e4d = cache_frame_a7b752124475b7fbbda2fb165dd43e4d;
 
     // Push the new frame as the currently active one.
-    pushFrameStack(frame_af41925b6dd60bcc1082d41aaa906324);
+    pushFrameStack(frame_a7b752124475b7fbbda2fb165dd43e4d);
 
     // Mark the frame object as in use, ref count 1 will be up for reuse.
-    assert(Py_REFCNT(frame_af41925b6dd60bcc1082d41aaa906324) == 2); // Frame stack
+    assert(Py_REFCNT(frame_a7b752124475b7fbbda2fb165dd43e4d) == 2); // Frame stack
 
     // Framed code:
     {
@@ -1777,14 +1780,14 @@ static PyObject *impl_scene$game$$$function__4_tstop(struct Nuitka_FunctionObjec
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 70;
+            exception_lineno = 69;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
     }
 
 #if 0
-    RESTORE_FRAME_EXCEPTION(frame_af41925b6dd60bcc1082d41aaa906324);
+    RESTORE_FRAME_EXCEPTION(frame_a7b752124475b7fbbda2fb165dd43e4d);
 #endif
 
     // Put the previous frame back on top.
@@ -1795,35 +1798,35 @@ static PyObject *impl_scene$game$$$function__4_tstop(struct Nuitka_FunctionObjec
     frame_exception_exit_1:;
 
 #if 0
-    RESTORE_FRAME_EXCEPTION(frame_af41925b6dd60bcc1082d41aaa906324);
+    RESTORE_FRAME_EXCEPTION(frame_a7b752124475b7fbbda2fb165dd43e4d);
 #endif
 
     if (exception_tb == NULL) {
-        exception_tb = MAKE_TRACEBACK(frame_af41925b6dd60bcc1082d41aaa906324, exception_lineno);
-    } else if (exception_tb->tb_frame != &frame_af41925b6dd60bcc1082d41aaa906324->m_frame) {
-        exception_tb = ADD_TRACEBACK(exception_tb, frame_af41925b6dd60bcc1082d41aaa906324, exception_lineno);
+        exception_tb = MAKE_TRACEBACK(frame_a7b752124475b7fbbda2fb165dd43e4d, exception_lineno);
+    } else if (exception_tb->tb_frame != &frame_a7b752124475b7fbbda2fb165dd43e4d->m_frame) {
+        exception_tb = ADD_TRACEBACK(exception_tb, frame_a7b752124475b7fbbda2fb165dd43e4d, exception_lineno);
     }
 
     // Attaches locals to frame if any.
     Nuitka_Frame_AttachLocals(
-        frame_af41925b6dd60bcc1082d41aaa906324,
+        frame_a7b752124475b7fbbda2fb165dd43e4d,
         type_description_1,
         par_self
     );
 
 
     // Release cached frame if used for exception.
-    if (frame_af41925b6dd60bcc1082d41aaa906324 == cache_frame_af41925b6dd60bcc1082d41aaa906324) {
+    if (frame_a7b752124475b7fbbda2fb165dd43e4d == cache_frame_a7b752124475b7fbbda2fb165dd43e4d) {
 #if _DEBUG_REFCOUNTS
         count_active_frame_cache_instances -= 1;
         count_released_frame_cache_instances += 1;
 #endif
 
-        Py_DECREF(cache_frame_af41925b6dd60bcc1082d41aaa906324);
-        cache_frame_af41925b6dd60bcc1082d41aaa906324 = NULL;
+        Py_DECREF(cache_frame_a7b752124475b7fbbda2fb165dd43e4d);
+        cache_frame_a7b752124475b7fbbda2fb165dd43e4d = NULL;
     }
 
-    assertFrameObject(frame_af41925b6dd60bcc1082d41aaa906324);
+    assertFrameObject(frame_a7b752124475b7fbbda2fb165dd43e4d);
 
     // Put the previous frame back on top.
     popFrameStack();
@@ -1895,14 +1898,14 @@ static PyObject *impl_scene$game$$$function__5_tstart(struct Nuitka_FunctionObje
 
     // Local variable declarations.
     PyObject *par_self = python_pars[0];
-    struct Nuitka_FrameObject *frame_ba7564b74e60087b16d3afc9c8d6209b;
+    struct Nuitka_FrameObject *frame_25b2bfd79c236cfde4be053030ea8850;
     NUITKA_MAY_BE_UNUSED char const *type_description_1 = NULL;
     bool tmp_result;
     PyObject *exception_type = NULL;
     PyObject *exception_value = NULL;
     PyTracebackObject *exception_tb = NULL;
     NUITKA_MAY_BE_UNUSED int exception_lineno = 0;
-    static struct Nuitka_FrameObject *cache_frame_ba7564b74e60087b16d3afc9c8d6209b = NULL;
+    static struct Nuitka_FrameObject *cache_frame_25b2bfd79c236cfde4be053030ea8850 = NULL;
     PyObject *tmp_return_value = NULL;
     PyObject *exception_keeper_type_1;
     PyObject *exception_keeper_value_1;
@@ -1911,31 +1914,31 @@ static PyObject *impl_scene$game$$$function__5_tstart(struct Nuitka_FunctionObje
 
     // Actual function body.
     // Tried code:
-    if (isFrameUnusable(cache_frame_ba7564b74e60087b16d3afc9c8d6209b)) {
-        Py_XDECREF(cache_frame_ba7564b74e60087b16d3afc9c8d6209b);
+    if (isFrameUnusable(cache_frame_25b2bfd79c236cfde4be053030ea8850)) {
+        Py_XDECREF(cache_frame_25b2bfd79c236cfde4be053030ea8850);
 
 #if _DEBUG_REFCOUNTS
-        if (cache_frame_ba7564b74e60087b16d3afc9c8d6209b == NULL) {
+        if (cache_frame_25b2bfd79c236cfde4be053030ea8850 == NULL) {
             count_active_frame_cache_instances += 1;
         } else {
             count_released_frame_cache_instances += 1;
         }
         count_allocated_frame_cache_instances += 1;
 #endif
-        cache_frame_ba7564b74e60087b16d3afc9c8d6209b = MAKE_FUNCTION_FRAME(codeobj_ba7564b74e60087b16d3afc9c8d6209b, module_scene$game, sizeof(void *));
+        cache_frame_25b2bfd79c236cfde4be053030ea8850 = MAKE_FUNCTION_FRAME(codeobj_25b2bfd79c236cfde4be053030ea8850, module_scene$game, sizeof(void *));
 #if _DEBUG_REFCOUNTS
     } else {
         count_hit_frame_cache_instances += 1;
 #endif
     }
-    assert(cache_frame_ba7564b74e60087b16d3afc9c8d6209b->m_type_description == NULL);
-    frame_ba7564b74e60087b16d3afc9c8d6209b = cache_frame_ba7564b74e60087b16d3afc9c8d6209b;
+    assert(cache_frame_25b2bfd79c236cfde4be053030ea8850->m_type_description == NULL);
+    frame_25b2bfd79c236cfde4be053030ea8850 = cache_frame_25b2bfd79c236cfde4be053030ea8850;
 
     // Push the new frame as the currently active one.
-    pushFrameStack(frame_ba7564b74e60087b16d3afc9c8d6209b);
+    pushFrameStack(frame_25b2bfd79c236cfde4be053030ea8850);
 
     // Mark the frame object as in use, ref count 1 will be up for reuse.
-    assert(Py_REFCNT(frame_ba7564b74e60087b16d3afc9c8d6209b) == 2); // Frame stack
+    assert(Py_REFCNT(frame_25b2bfd79c236cfde4be053030ea8850) == 2); // Frame stack
 
     // Framed code:
     {
@@ -1951,14 +1954,14 @@ static PyObject *impl_scene$game$$$function__5_tstart(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 73;
+            exception_lineno = 72;
             type_description_1 = "o";
             goto frame_exception_exit_1;
         }
     }
 
 #if 0
-    RESTORE_FRAME_EXCEPTION(frame_ba7564b74e60087b16d3afc9c8d6209b);
+    RESTORE_FRAME_EXCEPTION(frame_25b2bfd79c236cfde4be053030ea8850);
 #endif
 
     // Put the previous frame back on top.
@@ -1969,35 +1972,35 @@ static PyObject *impl_scene$game$$$function__5_tstart(struct Nuitka_FunctionObje
     frame_exception_exit_1:;
 
 #if 0
-    RESTORE_FRAME_EXCEPTION(frame_ba7564b74e60087b16d3afc9c8d6209b);
+    RESTORE_FRAME_EXCEPTION(frame_25b2bfd79c236cfde4be053030ea8850);
 #endif
 
     if (exception_tb == NULL) {
-        exception_tb = MAKE_TRACEBACK(frame_ba7564b74e60087b16d3afc9c8d6209b, exception_lineno);
-    } else if (exception_tb->tb_frame != &frame_ba7564b74e60087b16d3afc9c8d6209b->m_frame) {
-        exception_tb = ADD_TRACEBACK(exception_tb, frame_ba7564b74e60087b16d3afc9c8d6209b, exception_lineno);
+        exception_tb = MAKE_TRACEBACK(frame_25b2bfd79c236cfde4be053030ea8850, exception_lineno);
+    } else if (exception_tb->tb_frame != &frame_25b2bfd79c236cfde4be053030ea8850->m_frame) {
+        exception_tb = ADD_TRACEBACK(exception_tb, frame_25b2bfd79c236cfde4be053030ea8850, exception_lineno);
     }
 
     // Attaches locals to frame if any.
     Nuitka_Frame_AttachLocals(
-        frame_ba7564b74e60087b16d3afc9c8d6209b,
+        frame_25b2bfd79c236cfde4be053030ea8850,
         type_description_1,
         par_self
     );
 
 
     // Release cached frame if used for exception.
-    if (frame_ba7564b74e60087b16d3afc9c8d6209b == cache_frame_ba7564b74e60087b16d3afc9c8d6209b) {
+    if (frame_25b2bfd79c236cfde4be053030ea8850 == cache_frame_25b2bfd79c236cfde4be053030ea8850) {
 #if _DEBUG_REFCOUNTS
         count_active_frame_cache_instances -= 1;
         count_released_frame_cache_instances += 1;
 #endif
 
-        Py_DECREF(cache_frame_ba7564b74e60087b16d3afc9c8d6209b);
-        cache_frame_ba7564b74e60087b16d3afc9c8d6209b = NULL;
+        Py_DECREF(cache_frame_25b2bfd79c236cfde4be053030ea8850);
+        cache_frame_25b2bfd79c236cfde4be053030ea8850 = NULL;
     }
 
-    assertFrameObject(frame_ba7564b74e60087b16d3afc9c8d6209b);
+    assertFrameObject(frame_25b2bfd79c236cfde4be053030ea8850);
 
     // Put the previous frame back on top.
     popFrameStack();
@@ -2073,7 +2076,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
     PyObject *tmp_for_loop_1__for_iterator = NULL;
     PyObject *tmp_for_loop_1__iter_value = NULL;
     PyObject *tmp_inplace_assign_1__value = NULL;
-    struct Nuitka_FrameObject *frame_18f07c267f47eda7ee61b1ab5c56bf51;
+    struct Nuitka_FrameObject *frame_445461ace2fbd92a744aecb86d2aedef;
     NUITKA_MAY_BE_UNUSED char const *type_description_1 = NULL;
     PyObject *exception_type = NULL;
     PyObject *exception_value = NULL;
@@ -2090,7 +2093,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
     PyObject *exception_keeper_value_2;
     PyTracebackObject *exception_keeper_tb_2;
     NUITKA_MAY_BE_UNUSED int exception_keeper_lineno_2;
-    static struct Nuitka_FrameObject *cache_frame_18f07c267f47eda7ee61b1ab5c56bf51 = NULL;
+    static struct Nuitka_FrameObject *cache_frame_445461ace2fbd92a744aecb86d2aedef = NULL;
     PyObject *tmp_return_value = NULL;
     PyObject *exception_keeper_type_3;
     PyObject *exception_keeper_value_3;
@@ -2099,31 +2102,31 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
 
     // Actual function body.
     // Tried code:
-    if (isFrameUnusable(cache_frame_18f07c267f47eda7ee61b1ab5c56bf51)) {
-        Py_XDECREF(cache_frame_18f07c267f47eda7ee61b1ab5c56bf51);
+    if (isFrameUnusable(cache_frame_445461ace2fbd92a744aecb86d2aedef)) {
+        Py_XDECREF(cache_frame_445461ace2fbd92a744aecb86d2aedef);
 
 #if _DEBUG_REFCOUNTS
-        if (cache_frame_18f07c267f47eda7ee61b1ab5c56bf51 == NULL) {
+        if (cache_frame_445461ace2fbd92a744aecb86d2aedef == NULL) {
             count_active_frame_cache_instances += 1;
         } else {
             count_released_frame_cache_instances += 1;
         }
         count_allocated_frame_cache_instances += 1;
 #endif
-        cache_frame_18f07c267f47eda7ee61b1ab5c56bf51 = MAKE_FUNCTION_FRAME(codeobj_18f07c267f47eda7ee61b1ab5c56bf51, module_scene$game, sizeof(void *)+sizeof(void *));
+        cache_frame_445461ace2fbd92a744aecb86d2aedef = MAKE_FUNCTION_FRAME(codeobj_445461ace2fbd92a744aecb86d2aedef, module_scene$game, sizeof(void *)+sizeof(void *));
 #if _DEBUG_REFCOUNTS
     } else {
         count_hit_frame_cache_instances += 1;
 #endif
     }
-    assert(cache_frame_18f07c267f47eda7ee61b1ab5c56bf51->m_type_description == NULL);
-    frame_18f07c267f47eda7ee61b1ab5c56bf51 = cache_frame_18f07c267f47eda7ee61b1ab5c56bf51;
+    assert(cache_frame_445461ace2fbd92a744aecb86d2aedef->m_type_description == NULL);
+    frame_445461ace2fbd92a744aecb86d2aedef = cache_frame_445461ace2fbd92a744aecb86d2aedef;
 
     // Push the new frame as the currently active one.
-    pushFrameStack(frame_18f07c267f47eda7ee61b1ab5c56bf51);
+    pushFrameStack(frame_445461ace2fbd92a744aecb86d2aedef);
 
     // Mark the frame object as in use, ref count 1 will be up for reuse.
-    assert(Py_REFCNT(frame_18f07c267f47eda7ee61b1ab5c56bf51) == 2); // Frame stack
+    assert(Py_REFCNT(frame_445461ace2fbd92a744aecb86d2aedef) == 2); // Frame stack
 
     // Framed code:
     {
@@ -2143,7 +2146,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 76;
+            exception_lineno = 75;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -2154,11 +2157,11 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 76;
+            exception_lineno = 75;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
-        frame_18f07c267f47eda7ee61b1ab5c56bf51->m_frame.f_lineno = 76;
+        frame_445461ace2fbd92a744aecb86d2aedef->m_frame.f_lineno = 75;
         tmp_iter_arg_1 = CALL_METHOD_NO_ARGS(tmp_called_instance_1, mod_consts[53]);
         Py_DECREF(tmp_called_instance_1);
         if (tmp_iter_arg_1 == NULL) {
@@ -2167,7 +2170,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 76;
+            exception_lineno = 75;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -2179,7 +2182,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 76;
+            exception_lineno = 75;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -2202,7 +2205,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
 
                 FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
                 type_description_1 = "oo";
-                exception_lineno = 76;
+                exception_lineno = 75;
                 goto try_except_handler_2;
             }
         }
@@ -2241,7 +2244,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 77;
+            exception_lineno = 76;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -2257,7 +2260,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
             Py_DECREF(tmp_compexpr_left_1);
 
-            exception_lineno = 77;
+            exception_lineno = 76;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -2268,7 +2271,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
             Py_DECREF(tmp_compexpr_left_1);
 
-            exception_lineno = 77;
+            exception_lineno = 76;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -2281,7 +2284,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 77;
+            exception_lineno = 76;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -2308,11 +2311,11 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 78;
+            exception_lineno = 77;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
-        frame_18f07c267f47eda7ee61b1ab5c56bf51->m_frame.f_lineno = 78;
+        frame_445461ace2fbd92a744aecb86d2aedef->m_frame.f_lineno = 77;
         tmp_call_result_1 = CALL_METHOD_NO_ARGS(tmp_called_instance_2, mod_consts[56]);
         if (tmp_call_result_1 == NULL) {
             assert(ERROR_OCCURRED());
@@ -2320,7 +2323,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 78;
+            exception_lineno = 77;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -2341,11 +2344,11 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 79;
+            exception_lineno = 78;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
-        frame_18f07c267f47eda7ee61b1ab5c56bf51->m_frame.f_lineno = 79;
+        frame_445461ace2fbd92a744aecb86d2aedef->m_frame.f_lineno = 78;
         tmp_call_result_2 = CALL_METHOD_NO_ARGS(tmp_called_instance_3, mod_consts[58]);
         if (tmp_call_result_2 == NULL) {
             assert(ERROR_OCCURRED());
@@ -2353,7 +2356,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 79;
+            exception_lineno = 78;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -2373,7 +2376,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 81;
+            exception_lineno = 80;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -2386,7 +2389,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 81;
+            exception_lineno = 80;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -2402,7 +2405,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
             Py_DECREF(tmp_compexpr_left_2);
 
-            exception_lineno = 81;
+            exception_lineno = 80;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -2413,7 +2416,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
             Py_DECREF(tmp_compexpr_left_2);
 
-            exception_lineno = 81;
+            exception_lineno = 80;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -2426,7 +2429,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 81;
+            exception_lineno = 80;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -2458,7 +2461,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 82;
+            exception_lineno = 81;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -2471,7 +2474,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 82;
+            exception_lineno = 81;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -2487,7 +2490,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
             Py_DECREF(tmp_compexpr_left_3);
 
-            exception_lineno = 82;
+            exception_lineno = 81;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -2498,7 +2501,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
             Py_DECREF(tmp_compexpr_left_3);
 
-            exception_lineno = 82;
+            exception_lineno = 81;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -2511,7 +2514,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 82;
+            exception_lineno = 81;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -2522,7 +2525,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
             Py_DECREF(tmp_and_left_value_1);
 
-            exception_lineno = 82;
+            exception_lineno = 81;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -2540,7 +2543,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 82;
+            exception_lineno = 81;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -2553,7 +2556,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 82;
+            exception_lineno = 81;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -2569,7 +2572,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
             Py_DECREF(tmp_compexpr_left_4);
 
-            exception_lineno = 82;
+            exception_lineno = 81;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -2580,7 +2583,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
             Py_DECREF(tmp_compexpr_left_4);
 
-            exception_lineno = 82;
+            exception_lineno = 81;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -2593,7 +2596,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 82;
+            exception_lineno = 81;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -2625,11 +2628,11 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 83;
+            exception_lineno = 82;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
-        frame_18f07c267f47eda7ee61b1ab5c56bf51->m_frame.f_lineno = 83;
+        frame_445461ace2fbd92a744aecb86d2aedef->m_frame.f_lineno = 82;
         tmp_call_result_3 = CALL_METHOD_NO_ARGS(tmp_called_instance_4, mod_consts[56]);
         if (tmp_call_result_3 == NULL) {
             assert(ERROR_OCCURRED());
@@ -2637,7 +2640,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 83;
+            exception_lineno = 82;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -2658,11 +2661,11 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 84;
+            exception_lineno = 83;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
-        frame_18f07c267f47eda7ee61b1ab5c56bf51->m_frame.f_lineno = 84;
+        frame_445461ace2fbd92a744aecb86d2aedef->m_frame.f_lineno = 83;
         tmp_call_result_4 = CALL_METHOD_NO_ARGS(tmp_called_instance_5, mod_consts[58]);
         if (tmp_call_result_4 == NULL) {
             assert(ERROR_OCCURRED());
@@ -2670,7 +2673,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 84;
+            exception_lineno = 83;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -2691,7 +2694,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 85;
+            exception_lineno = 84;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -2704,7 +2707,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 85;
+            exception_lineno = 84;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -2720,7 +2723,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
             Py_DECREF(tmp_compexpr_left_5);
 
-            exception_lineno = 85;
+            exception_lineno = 84;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -2731,7 +2734,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
             Py_DECREF(tmp_compexpr_left_5);
 
-            exception_lineno = 85;
+            exception_lineno = 84;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -2744,7 +2747,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 85;
+            exception_lineno = 84;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -2773,7 +2776,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 87;
+            exception_lineno = 86;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -2784,7 +2787,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 87;
+            exception_lineno = 86;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -2796,11 +2799,11 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 87;
+            exception_lineno = 86;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
-        frame_18f07c267f47eda7ee61b1ab5c56bf51->m_frame.f_lineno = 87;
+        frame_445461ace2fbd92a744aecb86d2aedef->m_frame.f_lineno = 86;
         tmp_call_result_5 = CALL_METHOD_WITH_ARGS1(
             tmp_called_instance_6,
             mod_consts[65],
@@ -2814,7 +2817,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 87;
+            exception_lineno = 86;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -2837,7 +2840,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 88;
+            exception_lineno = 87;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -2848,7 +2851,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 88;
+            exception_lineno = 87;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -2860,11 +2863,11 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 88;
+            exception_lineno = 87;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
-        frame_18f07c267f47eda7ee61b1ab5c56bf51->m_frame.f_lineno = 88;
+        frame_445461ace2fbd92a744aecb86d2aedef->m_frame.f_lineno = 87;
         tmp_call_result_6 = CALL_METHOD_NO_ARGS(tmp_called_instance_7, mod_consts[48]);
         Py_DECREF(tmp_called_instance_7);
         if (tmp_call_result_6 == NULL) {
@@ -2873,7 +2876,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 88;
+            exception_lineno = 87;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -2898,7 +2901,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 89;
+            exception_lineno = 88;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -2909,7 +2912,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 89;
+            exception_lineno = 88;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -2921,7 +2924,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 89;
+            exception_lineno = 88;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -2937,7 +2940,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
             Py_DECREF(tmp_called_name_1);
 
-            exception_lineno = 89;
+            exception_lineno = 88;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -2948,11 +2951,11 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
             Py_DECREF(tmp_called_name_1);
 
-            exception_lineno = 89;
+            exception_lineno = 88;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
-        frame_18f07c267f47eda7ee61b1ab5c56bf51->m_frame.f_lineno = 89;
+        frame_445461ace2fbd92a744aecb86d2aedef->m_frame.f_lineno = 88;
         tmp_call_result_7 = CALL_FUNCTION_WITH_SINGLE_ARG(tmp_called_name_1, tmp_args_element_name_1);
         Py_DECREF(tmp_called_name_1);
         Py_DECREF(tmp_args_element_name_1);
@@ -2962,7 +2965,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 89;
+            exception_lineno = 88;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -2988,7 +2991,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 91;
+            exception_lineno = 90;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -3001,7 +3004,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 91;
+            exception_lineno = 90;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -3017,7 +3020,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
             Py_DECREF(tmp_compexpr_left_6);
 
-            exception_lineno = 91;
+            exception_lineno = 90;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -3029,7 +3032,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 91;
+            exception_lineno = 90;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -3040,7 +3043,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
             Py_DECREF(tmp_and_left_value_2);
 
-            exception_lineno = 91;
+            exception_lineno = 90;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -3058,7 +3061,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 91;
+            exception_lineno = 90;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -3071,7 +3074,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 91;
+            exception_lineno = 90;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -3082,7 +3085,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
             Py_DECREF(tmp_attribute_value_1);
 
-            exception_lineno = 91;
+            exception_lineno = 90;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -3112,7 +3115,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 93;
+            exception_lineno = 92;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -3125,11 +3128,11 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 93;
+            exception_lineno = 92;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
-        frame_18f07c267f47eda7ee61b1ab5c56bf51->m_frame.f_lineno = 93;
+        frame_445461ace2fbd92a744aecb86d2aedef->m_frame.f_lineno = 92;
         tmp_call_result_8 = CALL_METHOD_WITH_ARGS1(
             tmp_called_instance_8,
             mod_consts[71],
@@ -3143,7 +3146,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 93;
+            exception_lineno = 92;
             type_description_1 = "oo";
             goto try_except_handler_2;
         }
@@ -3159,7 +3162,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
         FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-        exception_lineno = 76;
+        exception_lineno = 75;
         type_description_1 = "oo";
         goto try_except_handler_2;
     }
@@ -3205,7 +3208,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 95;
+            exception_lineno = 94;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -3218,7 +3221,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 95;
+            exception_lineno = 94;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -3230,7 +3233,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 95;
+            exception_lineno = 94;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -3253,7 +3256,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 97;
+            exception_lineno = 96;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -3266,11 +3269,11 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 97;
+            exception_lineno = 96;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
-        frame_18f07c267f47eda7ee61b1ab5c56bf51->m_frame.f_lineno = 97;
+        frame_445461ace2fbd92a744aecb86d2aedef->m_frame.f_lineno = 96;
         tmp_call_result_9 = CALL_METHOD_NO_ARGS(tmp_called_instance_9, mod_consts[73]);
         Py_DECREF(tmp_called_instance_9);
         if (tmp_call_result_9 == NULL) {
@@ -3279,7 +3282,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 97;
+            exception_lineno = 96;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -3296,7 +3299,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 98;
+            exception_lineno = 97;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -3309,11 +3312,11 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 98;
+            exception_lineno = 97;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
-        frame_18f07c267f47eda7ee61b1ab5c56bf51->m_frame.f_lineno = 98;
+        frame_445461ace2fbd92a744aecb86d2aedef->m_frame.f_lineno = 97;
         tmp_call_result_10 = CALL_METHOD_NO_ARGS(tmp_called_instance_10, mod_consts[73]);
         Py_DECREF(tmp_called_instance_10);
         if (tmp_call_result_10 == NULL) {
@@ -3322,7 +3325,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 98;
+            exception_lineno = 97;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -3339,7 +3342,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 99;
+            exception_lineno = 98;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -3352,11 +3355,11 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 99;
+            exception_lineno = 98;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
-        frame_18f07c267f47eda7ee61b1ab5c56bf51->m_frame.f_lineno = 99;
+        frame_445461ace2fbd92a744aecb86d2aedef->m_frame.f_lineno = 98;
         tmp_call_result_11 = CALL_METHOD_NO_ARGS(tmp_called_instance_11, mod_consts[73]);
         Py_DECREF(tmp_called_instance_11);
         if (tmp_call_result_11 == NULL) {
@@ -3365,7 +3368,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 99;
+            exception_lineno = 98;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -3382,7 +3385,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 100;
+            exception_lineno = 99;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -3395,11 +3398,11 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 100;
+            exception_lineno = 99;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
-        frame_18f07c267f47eda7ee61b1ab5c56bf51->m_frame.f_lineno = 100;
+        frame_445461ace2fbd92a744aecb86d2aedef->m_frame.f_lineno = 99;
         tmp_call_result_12 = CALL_METHOD_NO_ARGS(tmp_called_instance_12, mod_consts[73]);
         Py_DECREF(tmp_called_instance_12);
         if (tmp_call_result_12 == NULL) {
@@ -3408,7 +3411,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 100;
+            exception_lineno = 99;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -3425,7 +3428,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 101;
+            exception_lineno = 100;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -3438,11 +3441,11 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 101;
+            exception_lineno = 100;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
-        frame_18f07c267f47eda7ee61b1ab5c56bf51->m_frame.f_lineno = 101;
+        frame_445461ace2fbd92a744aecb86d2aedef->m_frame.f_lineno = 100;
         tmp_call_result_13 = CALL_METHOD_NO_ARGS(tmp_called_instance_13, mod_consts[73]);
         Py_DECREF(tmp_called_instance_13);
         if (tmp_call_result_13 == NULL) {
@@ -3451,7 +3454,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 101;
+            exception_lineno = 100;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -3468,7 +3471,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 102;
+            exception_lineno = 101;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -3481,11 +3484,11 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 102;
+            exception_lineno = 101;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
-        frame_18f07c267f47eda7ee61b1ab5c56bf51->m_frame.f_lineno = 102;
+        frame_445461ace2fbd92a744aecb86d2aedef->m_frame.f_lineno = 101;
         tmp_call_result_14 = CALL_METHOD_NO_ARGS(tmp_called_instance_14, mod_consts[73]);
         Py_DECREF(tmp_called_instance_14);
         if (tmp_call_result_14 == NULL) {
@@ -3494,7 +3497,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 102;
+            exception_lineno = 101;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -3511,7 +3514,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 103;
+            exception_lineno = 102;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -3524,11 +3527,11 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 103;
+            exception_lineno = 102;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
-        frame_18f07c267f47eda7ee61b1ab5c56bf51->m_frame.f_lineno = 103;
+        frame_445461ace2fbd92a744aecb86d2aedef->m_frame.f_lineno = 102;
         tmp_call_result_15 = CALL_METHOD_NO_ARGS(tmp_called_instance_15, mod_consts[73]);
         Py_DECREF(tmp_called_instance_15);
         if (tmp_call_result_15 == NULL) {
@@ -3537,7 +3540,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 103;
+            exception_lineno = 102;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -3561,7 +3564,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 104;
+            exception_lineno = 103;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -3572,7 +3575,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 104;
+            exception_lineno = 103;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -3583,7 +3586,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 104;
+            exception_lineno = 103;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -3596,11 +3599,11 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
             Py_DECREF(tmp_called_name_2);
 
-            exception_lineno = 104;
+            exception_lineno = 103;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
-        frame_18f07c267f47eda7ee61b1ab5c56bf51->m_frame.f_lineno = 104;
+        frame_445461ace2fbd92a744aecb86d2aedef->m_frame.f_lineno = 103;
         tmp_call_result_16 = CALL_FUNCTION_WITH_SINGLE_ARG(tmp_called_name_2, tmp_args_element_name_2);
         Py_DECREF(tmp_called_name_2);
         Py_DECREF(tmp_args_element_name_2);
@@ -3610,7 +3613,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 104;
+            exception_lineno = 103;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -3627,7 +3630,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 105;
+            exception_lineno = 104;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -3640,7 +3643,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 105;
+            exception_lineno = 104;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -3652,7 +3655,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 105;
+            exception_lineno = 104;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -3674,7 +3677,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 106;
+            exception_lineno = 105;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -3687,7 +3690,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 106;
+            exception_lineno = 105;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -3709,7 +3712,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 106;
+            exception_lineno = 105;
             type_description_1 = "oo";
             goto try_except_handler_3;
         }
@@ -3729,7 +3732,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 106;
+            exception_lineno = 105;
             type_description_1 = "oo";
             goto try_except_handler_3;
         }
@@ -3742,7 +3745,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 106;
+            exception_lineno = 105;
             type_description_1 = "oo";
             goto try_except_handler_3;
         }
@@ -3787,7 +3790,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 108;
+            exception_lineno = 107;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -3800,11 +3803,11 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 108;
+            exception_lineno = 107;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
-        frame_18f07c267f47eda7ee61b1ab5c56bf51->m_frame.f_lineno = 108;
+        frame_445461ace2fbd92a744aecb86d2aedef->m_frame.f_lineno = 107;
         tmp_call_result_17 = CALL_METHOD_NO_ARGS(tmp_called_instance_16, mod_consts[73]);
         Py_DECREF(tmp_called_instance_16);
         if (tmp_call_result_17 == NULL) {
@@ -3813,7 +3816,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 108;
+            exception_lineno = 107;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -3823,7 +3826,7 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
     branch_no_6:;
 
 #if 0
-    RESTORE_FRAME_EXCEPTION(frame_18f07c267f47eda7ee61b1ab5c56bf51);
+    RESTORE_FRAME_EXCEPTION(frame_445461ace2fbd92a744aecb86d2aedef);
 #endif
 
     // Put the previous frame back on top.
@@ -3834,18 +3837,18 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
     frame_exception_exit_1:;
 
 #if 0
-    RESTORE_FRAME_EXCEPTION(frame_18f07c267f47eda7ee61b1ab5c56bf51);
+    RESTORE_FRAME_EXCEPTION(frame_445461ace2fbd92a744aecb86d2aedef);
 #endif
 
     if (exception_tb == NULL) {
-        exception_tb = MAKE_TRACEBACK(frame_18f07c267f47eda7ee61b1ab5c56bf51, exception_lineno);
-    } else if (exception_tb->tb_frame != &frame_18f07c267f47eda7ee61b1ab5c56bf51->m_frame) {
-        exception_tb = ADD_TRACEBACK(exception_tb, frame_18f07c267f47eda7ee61b1ab5c56bf51, exception_lineno);
+        exception_tb = MAKE_TRACEBACK(frame_445461ace2fbd92a744aecb86d2aedef, exception_lineno);
+    } else if (exception_tb->tb_frame != &frame_445461ace2fbd92a744aecb86d2aedef->m_frame) {
+        exception_tb = ADD_TRACEBACK(exception_tb, frame_445461ace2fbd92a744aecb86d2aedef, exception_lineno);
     }
 
     // Attaches locals to frame if any.
     Nuitka_Frame_AttachLocals(
-        frame_18f07c267f47eda7ee61b1ab5c56bf51,
+        frame_445461ace2fbd92a744aecb86d2aedef,
         type_description_1,
         par_self,
         var_event
@@ -3853,17 +3856,17 @@ static PyObject *impl_scene$game$$$function__6_update(struct Nuitka_FunctionObje
 
 
     // Release cached frame if used for exception.
-    if (frame_18f07c267f47eda7ee61b1ab5c56bf51 == cache_frame_18f07c267f47eda7ee61b1ab5c56bf51) {
+    if (frame_445461ace2fbd92a744aecb86d2aedef == cache_frame_445461ace2fbd92a744aecb86d2aedef) {
 #if _DEBUG_REFCOUNTS
         count_active_frame_cache_instances -= 1;
         count_released_frame_cache_instances += 1;
 #endif
 
-        Py_DECREF(cache_frame_18f07c267f47eda7ee61b1ab5c56bf51);
-        cache_frame_18f07c267f47eda7ee61b1ab5c56bf51 = NULL;
+        Py_DECREF(cache_frame_445461ace2fbd92a744aecb86d2aedef);
+        cache_frame_445461ace2fbd92a744aecb86d2aedef = NULL;
     }
 
-    assertFrameObject(frame_18f07c267f47eda7ee61b1ab5c56bf51);
+    assertFrameObject(frame_445461ace2fbd92a744aecb86d2aedef);
 
     // Put the previous frame back on top.
     popFrameStack();
@@ -3938,14 +3941,14 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
     // Local variable declarations.
     PyObject *par_self = python_pars[0];
     PyObject *par_screen = python_pars[1];
-    struct Nuitka_FrameObject *frame_47175bc254e55b9989bfc521c8ee862b;
+    struct Nuitka_FrameObject *frame_0177281a3151edc2e7c92a464ee0f944;
     NUITKA_MAY_BE_UNUSED char const *type_description_1 = NULL;
     NUITKA_MAY_BE_UNUSED nuitka_void tmp_unused;
     PyObject *exception_type = NULL;
     PyObject *exception_value = NULL;
     PyTracebackObject *exception_tb = NULL;
     NUITKA_MAY_BE_UNUSED int exception_lineno = 0;
-    static struct Nuitka_FrameObject *cache_frame_47175bc254e55b9989bfc521c8ee862b = NULL;
+    static struct Nuitka_FrameObject *cache_frame_0177281a3151edc2e7c92a464ee0f944 = NULL;
     PyObject *tmp_return_value = NULL;
     PyObject *exception_keeper_type_1;
     PyObject *exception_keeper_value_1;
@@ -3954,31 +3957,31 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
 
     // Actual function body.
     // Tried code:
-    if (isFrameUnusable(cache_frame_47175bc254e55b9989bfc521c8ee862b)) {
-        Py_XDECREF(cache_frame_47175bc254e55b9989bfc521c8ee862b);
+    if (isFrameUnusable(cache_frame_0177281a3151edc2e7c92a464ee0f944)) {
+        Py_XDECREF(cache_frame_0177281a3151edc2e7c92a464ee0f944);
 
 #if _DEBUG_REFCOUNTS
-        if (cache_frame_47175bc254e55b9989bfc521c8ee862b == NULL) {
+        if (cache_frame_0177281a3151edc2e7c92a464ee0f944 == NULL) {
             count_active_frame_cache_instances += 1;
         } else {
             count_released_frame_cache_instances += 1;
         }
         count_allocated_frame_cache_instances += 1;
 #endif
-        cache_frame_47175bc254e55b9989bfc521c8ee862b = MAKE_FUNCTION_FRAME(codeobj_47175bc254e55b9989bfc521c8ee862b, module_scene$game, sizeof(void *)+sizeof(void *));
+        cache_frame_0177281a3151edc2e7c92a464ee0f944 = MAKE_FUNCTION_FRAME(codeobj_0177281a3151edc2e7c92a464ee0f944, module_scene$game, sizeof(void *)+sizeof(void *));
 #if _DEBUG_REFCOUNTS
     } else {
         count_hit_frame_cache_instances += 1;
 #endif
     }
-    assert(cache_frame_47175bc254e55b9989bfc521c8ee862b->m_type_description == NULL);
-    frame_47175bc254e55b9989bfc521c8ee862b = cache_frame_47175bc254e55b9989bfc521c8ee862b;
+    assert(cache_frame_0177281a3151edc2e7c92a464ee0f944->m_type_description == NULL);
+    frame_0177281a3151edc2e7c92a464ee0f944 = cache_frame_0177281a3151edc2e7c92a464ee0f944;
 
     // Push the new frame as the currently active one.
-    pushFrameStack(frame_47175bc254e55b9989bfc521c8ee862b);
+    pushFrameStack(frame_0177281a3151edc2e7c92a464ee0f944);
 
     // Mark the frame object as in use, ref count 1 will be up for reuse.
-    assert(Py_REFCNT(frame_47175bc254e55b9989bfc521c8ee862b) == 2); // Frame stack
+    assert(Py_REFCNT(frame_0177281a3151edc2e7c92a464ee0f944) == 2); // Frame stack
 
     // Framed code:
     {
@@ -3986,7 +3989,7 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
         PyObject *tmp_call_result_1;
         CHECK_OBJECT(par_screen);
         tmp_called_instance_1 = par_screen;
-        frame_47175bc254e55b9989bfc521c8ee862b->m_frame.f_lineno = 111;
+        frame_0177281a3151edc2e7c92a464ee0f944->m_frame.f_lineno = 110;
         tmp_call_result_1 = CALL_METHOD_WITH_ARGS1(
             tmp_called_instance_1,
             mod_consts[75],
@@ -3999,7 +4002,7 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 111;
+            exception_lineno = 110;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -4020,7 +4023,7 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 112;
+            exception_lineno = 111;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -4032,7 +4035,7 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 112;
+            exception_lineno = 111;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -4043,13 +4046,13 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 112;
+            exception_lineno = 111;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
 
         tmp_args_element_name_1 = par_screen;
-        frame_47175bc254e55b9989bfc521c8ee862b->m_frame.f_lineno = 112;
+        frame_0177281a3151edc2e7c92a464ee0f944->m_frame.f_lineno = 111;
         tmp_call_result_2 = CALL_FUNCTION_WITH_SINGLE_ARG(tmp_called_name_1, tmp_args_element_name_1);
         Py_DECREF(tmp_called_name_1);
         if (tmp_call_result_2 == NULL) {
@@ -4058,7 +4061,7 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 112;
+            exception_lineno = 111;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -4077,7 +4080,7 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 113;
+            exception_lineno = 112;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -4090,7 +4093,7 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 113;
+            exception_lineno = 112;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -4102,7 +4105,7 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 113;
+            exception_lineno = 112;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -4113,13 +4116,13 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 113;
+            exception_lineno = 112;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
 
         tmp_args_element_name_2 = par_screen;
-        frame_47175bc254e55b9989bfc521c8ee862b->m_frame.f_lineno = 113;
+        frame_0177281a3151edc2e7c92a464ee0f944->m_frame.f_lineno = 112;
         tmp_call_result_3 = CALL_FUNCTION_WITH_SINGLE_ARG(tmp_called_name_2, tmp_args_element_name_2);
         Py_DECREF(tmp_called_name_2);
         if (tmp_call_result_3 == NULL) {
@@ -4128,7 +4131,7 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 113;
+            exception_lineno = 112;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -4147,7 +4150,7 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 114;
+            exception_lineno = 113;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -4160,7 +4163,7 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 114;
+            exception_lineno = 113;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -4172,7 +4175,7 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 114;
+            exception_lineno = 113;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -4183,13 +4186,13 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 114;
+            exception_lineno = 113;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
 
         tmp_args_element_name_3 = par_screen;
-        frame_47175bc254e55b9989bfc521c8ee862b->m_frame.f_lineno = 114;
+        frame_0177281a3151edc2e7c92a464ee0f944->m_frame.f_lineno = 113;
         tmp_call_result_4 = CALL_FUNCTION_WITH_SINGLE_ARG(tmp_called_name_3, tmp_args_element_name_3);
         Py_DECREF(tmp_called_name_3);
         if (tmp_call_result_4 == NULL) {
@@ -4198,7 +4201,7 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 114;
+            exception_lineno = 113;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -4217,7 +4220,7 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 115;
+            exception_lineno = 114;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -4230,7 +4233,7 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 115;
+            exception_lineno = 114;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -4242,7 +4245,7 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 115;
+            exception_lineno = 114;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -4253,13 +4256,13 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 115;
+            exception_lineno = 114;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
 
         tmp_args_element_name_4 = par_screen;
-        frame_47175bc254e55b9989bfc521c8ee862b->m_frame.f_lineno = 115;
+        frame_0177281a3151edc2e7c92a464ee0f944->m_frame.f_lineno = 114;
         tmp_call_result_5 = CALL_FUNCTION_WITH_SINGLE_ARG(tmp_called_name_4, tmp_args_element_name_4);
         Py_DECREF(tmp_called_name_4);
         if (tmp_call_result_5 == NULL) {
@@ -4268,7 +4271,7 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 115;
+            exception_lineno = 114;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -4287,7 +4290,7 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 116;
+            exception_lineno = 115;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -4300,7 +4303,7 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 116;
+            exception_lineno = 115;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -4312,7 +4315,7 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 116;
+            exception_lineno = 115;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -4323,13 +4326,13 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 116;
+            exception_lineno = 115;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
 
         tmp_args_element_name_5 = par_screen;
-        frame_47175bc254e55b9989bfc521c8ee862b->m_frame.f_lineno = 116;
+        frame_0177281a3151edc2e7c92a464ee0f944->m_frame.f_lineno = 115;
         tmp_call_result_6 = CALL_FUNCTION_WITH_SINGLE_ARG(tmp_called_name_5, tmp_args_element_name_5);
         Py_DECREF(tmp_called_name_5);
         if (tmp_call_result_6 == NULL) {
@@ -4338,7 +4341,7 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 116;
+            exception_lineno = 115;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -4357,7 +4360,7 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 117;
+            exception_lineno = 116;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -4370,7 +4373,7 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 117;
+            exception_lineno = 116;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -4382,7 +4385,7 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 117;
+            exception_lineno = 116;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -4393,13 +4396,13 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 117;
+            exception_lineno = 116;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
 
         tmp_args_element_name_6 = par_screen;
-        frame_47175bc254e55b9989bfc521c8ee862b->m_frame.f_lineno = 117;
+        frame_0177281a3151edc2e7c92a464ee0f944->m_frame.f_lineno = 116;
         tmp_call_result_7 = CALL_FUNCTION_WITH_SINGLE_ARG(tmp_called_name_6, tmp_args_element_name_6);
         Py_DECREF(tmp_called_name_6);
         if (tmp_call_result_7 == NULL) {
@@ -4408,7 +4411,7 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 117;
+            exception_lineno = 116;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -4427,7 +4430,7 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 118;
+            exception_lineno = 117;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -4440,7 +4443,7 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 118;
+            exception_lineno = 117;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -4452,7 +4455,7 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 118;
+            exception_lineno = 117;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -4463,13 +4466,13 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 118;
+            exception_lineno = 117;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
 
         tmp_args_element_name_7 = par_screen;
-        frame_47175bc254e55b9989bfc521c8ee862b->m_frame.f_lineno = 118;
+        frame_0177281a3151edc2e7c92a464ee0f944->m_frame.f_lineno = 117;
         tmp_call_result_8 = CALL_FUNCTION_WITH_SINGLE_ARG(tmp_called_name_7, tmp_args_element_name_7);
         Py_DECREF(tmp_called_name_7);
         if (tmp_call_result_8 == NULL) {
@@ -4478,7 +4481,7 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 118;
+            exception_lineno = 117;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -4497,7 +4500,7 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 119;
+            exception_lineno = 118;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -4510,7 +4513,7 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 119;
+            exception_lineno = 118;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -4522,7 +4525,7 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 119;
+            exception_lineno = 118;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -4533,13 +4536,13 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 119;
+            exception_lineno = 118;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
 
         tmp_args_element_name_8 = par_screen;
-        frame_47175bc254e55b9989bfc521c8ee862b->m_frame.f_lineno = 119;
+        frame_0177281a3151edc2e7c92a464ee0f944->m_frame.f_lineno = 118;
         tmp_call_result_9 = CALL_FUNCTION_WITH_SINGLE_ARG(tmp_called_name_8, tmp_args_element_name_8);
         Py_DECREF(tmp_called_name_8);
         if (tmp_call_result_9 == NULL) {
@@ -4548,7 +4551,7 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 119;
+            exception_lineno = 118;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -4566,7 +4569,7 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 121;
+            exception_lineno = 120;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -4579,7 +4582,7 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 121;
+            exception_lineno = 120;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -4590,7 +4593,7 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
             Py_DECREF(tmp_attribute_value_1);
 
-            exception_lineno = 121;
+            exception_lineno = 120;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -4616,7 +4619,7 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 122;
+            exception_lineno = 121;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -4629,7 +4632,7 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 122;
+            exception_lineno = 121;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -4641,7 +4644,7 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 122;
+            exception_lineno = 121;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -4652,13 +4655,13 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             NORMALIZE_EXCEPTION(&exception_type, &exception_value, &exception_tb);
             CHAIN_EXCEPTION(exception_value);
 
-            exception_lineno = 122;
+            exception_lineno = 121;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
 
         tmp_args_element_name_9 = par_screen;
-        frame_47175bc254e55b9989bfc521c8ee862b->m_frame.f_lineno = 122;
+        frame_0177281a3151edc2e7c92a464ee0f944->m_frame.f_lineno = 121;
         tmp_call_result_10 = CALL_FUNCTION_WITH_SINGLE_ARG(tmp_called_name_9, tmp_args_element_name_9);
         Py_DECREF(tmp_called_name_9);
         if (tmp_call_result_10 == NULL) {
@@ -4667,7 +4670,7 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 122;
+            exception_lineno = 121;
             type_description_1 = "oo";
             goto frame_exception_exit_1;
         }
@@ -4676,7 +4679,7 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
     branch_no_1:;
 
 #if 0
-    RESTORE_FRAME_EXCEPTION(frame_47175bc254e55b9989bfc521c8ee862b);
+    RESTORE_FRAME_EXCEPTION(frame_0177281a3151edc2e7c92a464ee0f944);
 #endif
 
     // Put the previous frame back on top.
@@ -4687,18 +4690,18 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
     frame_exception_exit_1:;
 
 #if 0
-    RESTORE_FRAME_EXCEPTION(frame_47175bc254e55b9989bfc521c8ee862b);
+    RESTORE_FRAME_EXCEPTION(frame_0177281a3151edc2e7c92a464ee0f944);
 #endif
 
     if (exception_tb == NULL) {
-        exception_tb = MAKE_TRACEBACK(frame_47175bc254e55b9989bfc521c8ee862b, exception_lineno);
-    } else if (exception_tb->tb_frame != &frame_47175bc254e55b9989bfc521c8ee862b->m_frame) {
-        exception_tb = ADD_TRACEBACK(exception_tb, frame_47175bc254e55b9989bfc521c8ee862b, exception_lineno);
+        exception_tb = MAKE_TRACEBACK(frame_0177281a3151edc2e7c92a464ee0f944, exception_lineno);
+    } else if (exception_tb->tb_frame != &frame_0177281a3151edc2e7c92a464ee0f944->m_frame) {
+        exception_tb = ADD_TRACEBACK(exception_tb, frame_0177281a3151edc2e7c92a464ee0f944, exception_lineno);
     }
 
     // Attaches locals to frame if any.
     Nuitka_Frame_AttachLocals(
-        frame_47175bc254e55b9989bfc521c8ee862b,
+        frame_0177281a3151edc2e7c92a464ee0f944,
         type_description_1,
         par_self,
         par_screen
@@ -4706,17 +4709,17 @@ static PyObject *impl_scene$game$$$function__7_draw(struct Nuitka_FunctionObject
 
 
     // Release cached frame if used for exception.
-    if (frame_47175bc254e55b9989bfc521c8ee862b == cache_frame_47175bc254e55b9989bfc521c8ee862b) {
+    if (frame_0177281a3151edc2e7c92a464ee0f944 == cache_frame_0177281a3151edc2e7c92a464ee0f944) {
 #if _DEBUG_REFCOUNTS
         count_active_frame_cache_instances -= 1;
         count_released_frame_cache_instances += 1;
 #endif
 
-        Py_DECREF(cache_frame_47175bc254e55b9989bfc521c8ee862b);
-        cache_frame_47175bc254e55b9989bfc521c8ee862b = NULL;
+        Py_DECREF(cache_frame_0177281a3151edc2e7c92a464ee0f944);
+        cache_frame_0177281a3151edc2e7c92a464ee0f944 = NULL;
     }
 
-    assertFrameObject(frame_47175bc254e55b9989bfc521c8ee862b);
+    assertFrameObject(frame_0177281a3151edc2e7c92a464ee0f944);
 
     // Put the previous frame back on top.
     popFrameStack();
@@ -4786,11 +4789,11 @@ function_return_exit:
 static PyObject *MAKE_FUNCTION_scene$game$$$function__1___init__() {
     struct Nuitka_FunctionObject *result = Nuitka_Function_New(
         impl_scene$game$$$function__1___init__,
-        mod_consts[104],
+        mod_consts[101],
 #if PYTHON_VERSION >= 0x300
-        mod_consts[105],
+        mod_consts[102],
 #endif
-        codeobj_8080d914771aedcf909c0f057d559a8d,
+        codeobj_d68812a74263b1ed9e95e7b7c35657cf,
         NULL,
 #if PYTHON_VERSION >= 0x300
         NULL,
@@ -4813,9 +4816,9 @@ static PyObject *MAKE_FUNCTION_scene$game$$$function__2_stop() {
         impl_scene$game$$$function__2_stop,
         mod_consts[41],
 #if PYTHON_VERSION >= 0x300
-        mod_consts[106],
+        mod_consts[103],
 #endif
-        codeobj_00547e73df5f8bcba8490e1a3b50c19b,
+        codeobj_21b6fe04cf0b0dab8ec1a68a8ce2bf53,
         NULL,
 #if PYTHON_VERSION >= 0x300
         NULL,
@@ -4836,11 +4839,11 @@ static PyObject *MAKE_FUNCTION_scene$game$$$function__2_stop() {
 static PyObject *MAKE_FUNCTION_scene$game$$$function__3_start() {
     struct Nuitka_FunctionObject *result = Nuitka_Function_New(
         impl_scene$game$$$function__3_start,
-        mod_consts[107],
+        mod_consts[104],
 #if PYTHON_VERSION >= 0x300
-        mod_consts[108],
+        mod_consts[105],
 #endif
-        codeobj_c85717a93bb3bb231f1a8452cd08e418,
+        codeobj_06e4a95b698221a84147910e5af703c8,
         NULL,
 #if PYTHON_VERSION >= 0x300
         NULL,
@@ -4861,11 +4864,11 @@ static PyObject *MAKE_FUNCTION_scene$game$$$function__3_start() {
 static PyObject *MAKE_FUNCTION_scene$game$$$function__4_tstop() {
     struct Nuitka_FunctionObject *result = Nuitka_Function_New(
         impl_scene$game$$$function__4_tstop,
-        mod_consts[109],
+        mod_consts[106],
 #if PYTHON_VERSION >= 0x300
-        mod_consts[110],
+        mod_consts[107],
 #endif
-        codeobj_af41925b6dd60bcc1082d41aaa906324,
+        codeobj_a7b752124475b7fbbda2fb165dd43e4d,
         NULL,
 #if PYTHON_VERSION >= 0x300
         NULL,
@@ -4886,11 +4889,11 @@ static PyObject *MAKE_FUNCTION_scene$game$$$function__4_tstop() {
 static PyObject *MAKE_FUNCTION_scene$game$$$function__5_tstart() {
     struct Nuitka_FunctionObject *result = Nuitka_Function_New(
         impl_scene$game$$$function__5_tstart,
-        mod_consts[111],
+        mod_consts[108],
 #if PYTHON_VERSION >= 0x300
-        mod_consts[112],
+        mod_consts[109],
 #endif
-        codeobj_ba7564b74e60087b16d3afc9c8d6209b,
+        codeobj_25b2bfd79c236cfde4be053030ea8850,
         NULL,
 #if PYTHON_VERSION >= 0x300
         NULL,
@@ -4913,9 +4916,9 @@ static PyObject *MAKE_FUNCTION_scene$game$$$function__6_update() {
         impl_scene$game$$$function__6_update,
         mod_consts[73],
 #if PYTHON_VERSION >= 0x300
-        mod_consts[113],
+        mod_consts[110],
 #endif
-        codeobj_18f07c267f47eda7ee61b1ab5c56bf51,
+        codeobj_445461ace2fbd92a744aecb86d2aedef,
         NULL,
 #if PYTHON_VERSION >= 0x300
         NULL,
@@ -4938,9 +4941,9 @@ static PyObject *MAKE_FUNCTION_scene$game$$$function__7_draw() {
         impl_scene$game$$$function__7_draw,
         mod_consts[77],
 #if PYTHON_VERSION >= 0x300
-        mod_consts[114],
+        mod_consts[111],
 #endif
-        codeobj_47175bc254e55b9989bfc521c8ee862b,
+        codeobj_0177281a3151edc2e7c92a464ee0f944,
         NULL,
 #if PYTHON_VERSION >= 0x300
         NULL,
@@ -5308,6 +5311,7 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
     // Temp variables if any
     PyObject *outline_0_var___class__ = NULL;
     PyObject *tmp_class_creation_1__bases = NULL;
+    PyObject *tmp_class_creation_1__bases_orig = NULL;
     PyObject *tmp_class_creation_1__class_decl_dict = NULL;
     PyObject *tmp_class_creation_1__metaclass = NULL;
     PyObject *tmp_class_creation_1__prepared = NULL;
@@ -5321,11 +5325,11 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
     int tmp_res;
     PyObject *tmp_dictdel_dict;
     PyObject *tmp_dictdel_key;
-    PyObject *locals_scene$game$$$class__1_Scene_Game_27 = NULL;
+    PyObject *locals_scene$game$$$class__1_Scene_Game_26 = NULL;
     PyObject *tmp_dictset_value;
-    struct Nuitka_FrameObject *frame_7c19a39bcf9a22f53eea6c21d05d338e_2;
+    struct Nuitka_FrameObject *frame_ece836381aceee32ef1984763e88da0a_2;
     NUITKA_MAY_BE_UNUSED char const *type_description_2 = NULL;
-    static struct Nuitka_FrameObject *cache_frame_7c19a39bcf9a22f53eea6c21d05d338e_2 = NULL;
+    static struct Nuitka_FrameObject *cache_frame_ece836381aceee32ef1984763e88da0a_2 = NULL;
     PyObject *exception_keeper_type_1;
     PyObject *exception_keeper_value_1;
     PyTracebackObject *exception_keeper_tb_1;
@@ -5437,8 +5441,7 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
         UPDATE_STRING_DICT1(moduledict_scene$game, (Nuitka_StringObject *)mod_consts[51], tmp_assign_source_4);
     }
     {
-        PyObject *tmp_assign_source_5;
-        PyObject *tmp_import_name_from_1;
+        PyObject *tmp_star_imported_1;
         PyObject *tmp_name_name_2;
         PyObject *tmp_globals_arg_name_2;
         PyObject *tmp_locals_arg_name_2;
@@ -5446,66 +5449,18 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
         PyObject *tmp_level_name_2;
         tmp_name_name_2 = mod_consts[85];
         tmp_globals_arg_name_2 = (PyObject *)moduledict_scene$game;
-        tmp_locals_arg_name_2 = Py_None;
+        tmp_locals_arg_name_2 = (PyObject *)moduledict_scene$game;
         tmp_fromlist_name_2 = mod_consts[86];
         tmp_level_name_2 = mod_consts[44];
         frame_e4af1f224038721004e7dab74a41b9b8->m_frame.f_lineno = 5;
-        tmp_import_name_from_1 = IMPORT_MODULE5(tmp_name_name_2, tmp_globals_arg_name_2, tmp_locals_arg_name_2, tmp_fromlist_name_2, tmp_level_name_2);
-        if (tmp_import_name_from_1 == NULL) {
-            assert(ERROR_OCCURRED());
-
-            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-            exception_lineno = 5;
-
-            goto frame_exception_exit_1;
-        }
-        if (PyModule_Check(tmp_import_name_from_1)) {
-            tmp_assign_source_5 = IMPORT_NAME_OR_MODULE(
-                tmp_import_name_from_1,
-                (PyObject *)moduledict_scene$game,
-                mod_consts[87],
-                mod_consts[44]
-            );
-        } else {
-            tmp_assign_source_5 = IMPORT_NAME(tmp_import_name_from_1, mod_consts[87]);
-        }
-
-        Py_DECREF(tmp_import_name_from_1);
-        if (tmp_assign_source_5 == NULL) {
-            assert(ERROR_OCCURRED());
-
-            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-            exception_lineno = 5;
-
-            goto frame_exception_exit_1;
-        }
-        UPDATE_STRING_DICT1(moduledict_scene$game, (Nuitka_StringObject *)mod_consts[87], tmp_assign_source_5);
-    }
-    {
-        PyObject *tmp_star_imported_1;
-        PyObject *tmp_name_name_3;
-        PyObject *tmp_globals_arg_name_3;
-        PyObject *tmp_locals_arg_name_3;
-        PyObject *tmp_fromlist_name_3;
-        PyObject *tmp_level_name_3;
-        tmp_name_name_3 = mod_consts[88];
-        tmp_globals_arg_name_3 = (PyObject *)moduledict_scene$game;
-        tmp_locals_arg_name_3 = (PyObject *)moduledict_scene$game;
-        tmp_fromlist_name_3 = mod_consts[89];
-        tmp_level_name_3 = mod_consts[44];
-        frame_e4af1f224038721004e7dab74a41b9b8->m_frame.f_lineno = 6;
-        tmp_star_imported_1 = IMPORT_MODULE5(tmp_name_name_3, tmp_globals_arg_name_3, tmp_locals_arg_name_3, tmp_fromlist_name_3, tmp_level_name_3);
+        tmp_star_imported_1 = IMPORT_MODULE5(tmp_name_name_2, tmp_globals_arg_name_2, tmp_locals_arg_name_2, tmp_fromlist_name_2, tmp_level_name_2);
         if (tmp_star_imported_1 == NULL) {
             assert(ERROR_OCCURRED());
 
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 6;
+            exception_lineno = 5;
 
             goto frame_exception_exit_1;
         }
@@ -5517,17 +5472,43 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 6;
+            exception_lineno = 5;
 
             goto frame_exception_exit_1;
         }
     }
     {
+        PyObject *tmp_assign_source_5;
+        frame_e4af1f224038721004e7dab74a41b9b8->m_frame.f_lineno = 6;
+        tmp_assign_source_5 = IMPORT_HARD_SYS();
+        assert(!(tmp_assign_source_5 == NULL));
+        UPDATE_STRING_DICT0(moduledict_scene$game, (Nuitka_StringObject *)mod_consts[57], tmp_assign_source_5);
+    }
+    {
         PyObject *tmp_assign_source_6;
-        frame_e4af1f224038721004e7dab74a41b9b8->m_frame.f_lineno = 7;
-        tmp_assign_source_6 = IMPORT_HARD_SYS();
-        assert(!(tmp_assign_source_6 == NULL));
-        UPDATE_STRING_DICT0(moduledict_scene$game, (Nuitka_StringObject *)mod_consts[57], tmp_assign_source_6);
+        PyObject *tmp_name_name_3;
+        PyObject *tmp_globals_arg_name_3;
+        PyObject *tmp_locals_arg_name_3;
+        PyObject *tmp_fromlist_name_3;
+        PyObject *tmp_level_name_3;
+        tmp_name_name_3 = mod_consts[12];
+        tmp_globals_arg_name_3 = (PyObject *)moduledict_scene$game;
+        tmp_locals_arg_name_3 = Py_None;
+        tmp_fromlist_name_3 = Py_None;
+        tmp_level_name_3 = mod_consts[44];
+        frame_e4af1f224038721004e7dab74a41b9b8->m_frame.f_lineno = 8;
+        tmp_assign_source_6 = IMPORT_MODULE5(tmp_name_name_3, tmp_globals_arg_name_3, tmp_locals_arg_name_3, tmp_fromlist_name_3, tmp_level_name_3);
+        if (tmp_assign_source_6 == NULL) {
+            assert(ERROR_OCCURRED());
+
+            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+
+
+            exception_lineno = 8;
+
+            goto frame_exception_exit_1;
+        }
+        UPDATE_STRING_DICT1(moduledict_scene$game, (Nuitka_StringObject *)mod_consts[12], tmp_assign_source_6);
     }
     {
         PyObject *tmp_assign_source_7;
@@ -5536,7 +5517,7 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
         PyObject *tmp_locals_arg_name_4;
         PyObject *tmp_fromlist_name_4;
         PyObject *tmp_level_name_4;
-        tmp_name_name_4 = mod_consts[12];
+        tmp_name_name_4 = mod_consts[23];
         tmp_globals_arg_name_4 = (PyObject *)moduledict_scene$game;
         tmp_locals_arg_name_4 = Py_None;
         tmp_fromlist_name_4 = Py_None;
@@ -5553,7 +5534,7 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
 
             goto frame_exception_exit_1;
         }
-        UPDATE_STRING_DICT1(moduledict_scene$game, (Nuitka_StringObject *)mod_consts[12], tmp_assign_source_7);
+        UPDATE_STRING_DICT1(moduledict_scene$game, (Nuitka_StringObject *)mod_consts[23], tmp_assign_source_7);
     }
     {
         PyObject *tmp_assign_source_8;
@@ -5562,7 +5543,7 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
         PyObject *tmp_locals_arg_name_5;
         PyObject *tmp_fromlist_name_5;
         PyObject *tmp_level_name_5;
-        tmp_name_name_5 = mod_consts[23];
+        tmp_name_name_5 = mod_consts[16];
         tmp_globals_arg_name_5 = (PyObject *)moduledict_scene$game;
         tmp_locals_arg_name_5 = Py_None;
         tmp_fromlist_name_5 = Py_None;
@@ -5579,7 +5560,7 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
 
             goto frame_exception_exit_1;
         }
-        UPDATE_STRING_DICT1(moduledict_scene$game, (Nuitka_StringObject *)mod_consts[23], tmp_assign_source_8);
+        UPDATE_STRING_DICT1(moduledict_scene$game, (Nuitka_StringObject *)mod_consts[16], tmp_assign_source_8);
     }
     {
         PyObject *tmp_assign_source_9;
@@ -5588,7 +5569,7 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
         PyObject *tmp_locals_arg_name_6;
         PyObject *tmp_fromlist_name_6;
         PyObject *tmp_level_name_6;
-        tmp_name_name_6 = mod_consts[16];
+        tmp_name_name_6 = mod_consts[0];
         tmp_globals_arg_name_6 = (PyObject *)moduledict_scene$game;
         tmp_locals_arg_name_6 = Py_None;
         tmp_fromlist_name_6 = Py_None;
@@ -5605,7 +5586,7 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
 
             goto frame_exception_exit_1;
         }
-        UPDATE_STRING_DICT1(moduledict_scene$game, (Nuitka_StringObject *)mod_consts[16], tmp_assign_source_9);
+        UPDATE_STRING_DICT1(moduledict_scene$game, (Nuitka_StringObject *)mod_consts[0], tmp_assign_source_9);
     }
     {
         PyObject *tmp_assign_source_10;
@@ -5614,7 +5595,7 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
         PyObject *tmp_locals_arg_name_7;
         PyObject *tmp_fromlist_name_7;
         PyObject *tmp_level_name_7;
-        tmp_name_name_7 = mod_consts[0];
+        tmp_name_name_7 = mod_consts[20];
         tmp_globals_arg_name_7 = (PyObject *)moduledict_scene$game;
         tmp_locals_arg_name_7 = Py_None;
         tmp_fromlist_name_7 = Py_None;
@@ -5631,7 +5612,7 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
 
             goto frame_exception_exit_1;
         }
-        UPDATE_STRING_DICT1(moduledict_scene$game, (Nuitka_StringObject *)mod_consts[0], tmp_assign_source_10);
+        UPDATE_STRING_DICT1(moduledict_scene$game, (Nuitka_StringObject *)mod_consts[20], tmp_assign_source_10);
     }
     {
         PyObject *tmp_assign_source_11;
@@ -5640,7 +5621,7 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
         PyObject *tmp_locals_arg_name_8;
         PyObject *tmp_fromlist_name_8;
         PyObject *tmp_level_name_8;
-        tmp_name_name_8 = mod_consts[20];
+        tmp_name_name_8 = mod_consts[29];
         tmp_globals_arg_name_8 = (PyObject *)moduledict_scene$game;
         tmp_locals_arg_name_8 = Py_None;
         tmp_fromlist_name_8 = Py_None;
@@ -5657,7 +5638,7 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
 
             goto frame_exception_exit_1;
         }
-        UPDATE_STRING_DICT1(moduledict_scene$game, (Nuitka_StringObject *)mod_consts[20], tmp_assign_source_11);
+        UPDATE_STRING_DICT1(moduledict_scene$game, (Nuitka_StringObject *)mod_consts[29], tmp_assign_source_11);
     }
     {
         PyObject *tmp_assign_source_12;
@@ -5666,7 +5647,7 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
         PyObject *tmp_locals_arg_name_9;
         PyObject *tmp_fromlist_name_9;
         PyObject *tmp_level_name_9;
-        tmp_name_name_9 = mod_consts[29];
+        tmp_name_name_9 = mod_consts[26];
         tmp_globals_arg_name_9 = (PyObject *)moduledict_scene$game;
         tmp_locals_arg_name_9 = Py_None;
         tmp_fromlist_name_9 = Py_None;
@@ -5683,7 +5664,7 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
 
             goto frame_exception_exit_1;
         }
-        UPDATE_STRING_DICT1(moduledict_scene$game, (Nuitka_StringObject *)mod_consts[29], tmp_assign_source_12);
+        UPDATE_STRING_DICT1(moduledict_scene$game, (Nuitka_StringObject *)mod_consts[26], tmp_assign_source_12);
     }
     {
         PyObject *tmp_assign_source_13;
@@ -5692,7 +5673,7 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
         PyObject *tmp_locals_arg_name_10;
         PyObject *tmp_fromlist_name_10;
         PyObject *tmp_level_name_10;
-        tmp_name_name_10 = mod_consts[26];
+        tmp_name_name_10 = mod_consts[87];
         tmp_globals_arg_name_10 = (PyObject *)moduledict_scene$game;
         tmp_locals_arg_name_10 = Py_None;
         tmp_fromlist_name_10 = Py_None;
@@ -5709,7 +5690,7 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
 
             goto frame_exception_exit_1;
         }
-        UPDATE_STRING_DICT1(moduledict_scene$game, (Nuitka_StringObject *)mod_consts[26], tmp_assign_source_13);
+        UPDATE_STRING_DICT1(moduledict_scene$game, (Nuitka_StringObject *)mod_consts[87], tmp_assign_source_13);
     }
     {
         PyObject *tmp_assign_source_14;
@@ -5718,7 +5699,7 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
         PyObject *tmp_locals_arg_name_11;
         PyObject *tmp_fromlist_name_11;
         PyObject *tmp_level_name_11;
-        tmp_name_name_11 = mod_consts[90];
+        tmp_name_name_11 = mod_consts[32];
         tmp_globals_arg_name_11 = (PyObject *)moduledict_scene$game;
         tmp_locals_arg_name_11 = Py_None;
         tmp_fromlist_name_11 = Py_None;
@@ -5735,7 +5716,7 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
 
             goto frame_exception_exit_1;
         }
-        UPDATE_STRING_DICT1(moduledict_scene$game, (Nuitka_StringObject *)mod_consts[90], tmp_assign_source_14);
+        UPDATE_STRING_DICT1(moduledict_scene$game, (Nuitka_StringObject *)mod_consts[32], tmp_assign_source_14);
     }
     {
         PyObject *tmp_assign_source_15;
@@ -5744,7 +5725,7 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
         PyObject *tmp_locals_arg_name_12;
         PyObject *tmp_fromlist_name_12;
         PyObject *tmp_level_name_12;
-        tmp_name_name_12 = mod_consts[32];
+        tmp_name_name_12 = mod_consts[35];
         tmp_globals_arg_name_12 = (PyObject *)moduledict_scene$game;
         tmp_locals_arg_name_12 = Py_None;
         tmp_fromlist_name_12 = Py_None;
@@ -5761,55 +5742,29 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
 
             goto frame_exception_exit_1;
         }
-        UPDATE_STRING_DICT1(moduledict_scene$game, (Nuitka_StringObject *)mod_consts[32], tmp_assign_source_15);
+        UPDATE_STRING_DICT1(moduledict_scene$game, (Nuitka_StringObject *)mod_consts[35], tmp_assign_source_15);
     }
     {
-        PyObject *tmp_assign_source_16;
+        PyObject *tmp_star_imported_2;
         PyObject *tmp_name_name_13;
         PyObject *tmp_globals_arg_name_13;
         PyObject *tmp_locals_arg_name_13;
         PyObject *tmp_fromlist_name_13;
         PyObject *tmp_level_name_13;
-        tmp_name_name_13 = mod_consts[35];
+        tmp_name_name_13 = mod_consts[9];
         tmp_globals_arg_name_13 = (PyObject *)moduledict_scene$game;
-        tmp_locals_arg_name_13 = Py_None;
-        tmp_fromlist_name_13 = Py_None;
+        tmp_locals_arg_name_13 = (PyObject *)moduledict_scene$game;
+        tmp_fromlist_name_13 = mod_consts[86];
         tmp_level_name_13 = mod_consts[44];
-        frame_e4af1f224038721004e7dab74a41b9b8->m_frame.f_lineno = 18;
-        tmp_assign_source_16 = IMPORT_MODULE5(tmp_name_name_13, tmp_globals_arg_name_13, tmp_locals_arg_name_13, tmp_fromlist_name_13, tmp_level_name_13);
-        if (tmp_assign_source_16 == NULL) {
-            assert(ERROR_OCCURRED());
-
-            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-            exception_lineno = 18;
-
-            goto frame_exception_exit_1;
-        }
-        UPDATE_STRING_DICT1(moduledict_scene$game, (Nuitka_StringObject *)mod_consts[35], tmp_assign_source_16);
-    }
-    {
-        PyObject *tmp_star_imported_2;
-        PyObject *tmp_name_name_14;
-        PyObject *tmp_globals_arg_name_14;
-        PyObject *tmp_locals_arg_name_14;
-        PyObject *tmp_fromlist_name_14;
-        PyObject *tmp_level_name_14;
-        tmp_name_name_14 = mod_consts[9];
-        tmp_globals_arg_name_14 = (PyObject *)moduledict_scene$game;
-        tmp_locals_arg_name_14 = (PyObject *)moduledict_scene$game;
-        tmp_fromlist_name_14 = mod_consts[89];
-        tmp_level_name_14 = mod_consts[44];
-        frame_e4af1f224038721004e7dab74a41b9b8->m_frame.f_lineno = 20;
-        tmp_star_imported_2 = IMPORT_MODULE5(tmp_name_name_14, tmp_globals_arg_name_14, tmp_locals_arg_name_14, tmp_fromlist_name_14, tmp_level_name_14);
+        frame_e4af1f224038721004e7dab74a41b9b8->m_frame.f_lineno = 19;
+        tmp_star_imported_2 = IMPORT_MODULE5(tmp_name_name_13, tmp_globals_arg_name_13, tmp_locals_arg_name_13, tmp_fromlist_name_13, tmp_level_name_13);
         if (tmp_star_imported_2 == NULL) {
             assert(ERROR_OCCURRED());
 
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 20;
+            exception_lineno = 19;
 
             goto frame_exception_exit_1;
         }
@@ -5821,94 +5776,94 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 20;
+            exception_lineno = 19;
 
             goto frame_exception_exit_1;
         }
     }
     {
-        PyObject *tmp_assign_source_17;
-        PyObject *tmp_import_name_from_2;
-        PyObject *tmp_name_name_15;
-        PyObject *tmp_globals_arg_name_15;
-        PyObject *tmp_locals_arg_name_15;
-        PyObject *tmp_fromlist_name_15;
-        PyObject *tmp_level_name_15;
-        tmp_name_name_15 = mod_consts[91];
-        tmp_globals_arg_name_15 = (PyObject *)moduledict_scene$game;
-        tmp_locals_arg_name_15 = Py_None;
-        tmp_fromlist_name_15 = mod_consts[92];
-        tmp_level_name_15 = mod_consts[44];
-        frame_e4af1f224038721004e7dab74a41b9b8->m_frame.f_lineno = 22;
-        tmp_import_name_from_2 = IMPORT_MODULE5(tmp_name_name_15, tmp_globals_arg_name_15, tmp_locals_arg_name_15, tmp_fromlist_name_15, tmp_level_name_15);
-        if (tmp_import_name_from_2 == NULL) {
+        PyObject *tmp_assign_source_16;
+        PyObject *tmp_import_name_from_1;
+        PyObject *tmp_name_name_14;
+        PyObject *tmp_globals_arg_name_14;
+        PyObject *tmp_locals_arg_name_14;
+        PyObject *tmp_fromlist_name_14;
+        PyObject *tmp_level_name_14;
+        tmp_name_name_14 = mod_consts[88];
+        tmp_globals_arg_name_14 = (PyObject *)moduledict_scene$game;
+        tmp_locals_arg_name_14 = Py_None;
+        tmp_fromlist_name_14 = mod_consts[89];
+        tmp_level_name_14 = mod_consts[44];
+        frame_e4af1f224038721004e7dab74a41b9b8->m_frame.f_lineno = 21;
+        tmp_import_name_from_1 = IMPORT_MODULE5(tmp_name_name_14, tmp_globals_arg_name_14, tmp_locals_arg_name_14, tmp_fromlist_name_14, tmp_level_name_14);
+        if (tmp_import_name_from_1 == NULL) {
             assert(ERROR_OCCURRED());
 
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 22;
+            exception_lineno = 21;
 
             goto frame_exception_exit_1;
         }
-        if (PyModule_Check(tmp_import_name_from_2)) {
-            tmp_assign_source_17 = IMPORT_NAME_OR_MODULE(
-                tmp_import_name_from_2,
+        if (PyModule_Check(tmp_import_name_from_1)) {
+            tmp_assign_source_16 = IMPORT_NAME_OR_MODULE(
+                tmp_import_name_from_1,
                 (PyObject *)moduledict_scene$game,
                 mod_consts[68],
                 mod_consts[44]
             );
         } else {
-            tmp_assign_source_17 = IMPORT_NAME(tmp_import_name_from_2, mod_consts[68]);
+            tmp_assign_source_16 = IMPORT_NAME(tmp_import_name_from_1, mod_consts[68]);
         }
 
-        Py_DECREF(tmp_import_name_from_2);
+        Py_DECREF(tmp_import_name_from_1);
+        if (tmp_assign_source_16 == NULL) {
+            assert(ERROR_OCCURRED());
+
+            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+
+
+            exception_lineno = 21;
+
+            goto frame_exception_exit_1;
+        }
+        UPDATE_STRING_DICT1(moduledict_scene$game, (Nuitka_StringObject *)mod_consts[68], tmp_assign_source_16);
+    }
+    {
+        PyObject *tmp_assign_source_17;
+        PyObject *tmp_name_name_15;
+        PyObject *tmp_globals_arg_name_15;
+        PyObject *tmp_locals_arg_name_15;
+        PyObject *tmp_fromlist_name_15;
+        PyObject *tmp_level_name_15;
+        tmp_name_name_15 = mod_consts[38];
+        tmp_globals_arg_name_15 = (PyObject *)moduledict_scene$game;
+        tmp_locals_arg_name_15 = Py_None;
+        tmp_fromlist_name_15 = Py_None;
+        tmp_level_name_15 = mod_consts[44];
+        frame_e4af1f224038721004e7dab74a41b9b8->m_frame.f_lineno = 23;
+        tmp_assign_source_17 = IMPORT_MODULE5(tmp_name_name_15, tmp_globals_arg_name_15, tmp_locals_arg_name_15, tmp_fromlist_name_15, tmp_level_name_15);
         if (tmp_assign_source_17 == NULL) {
             assert(ERROR_OCCURRED());
 
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 22;
+            exception_lineno = 23;
 
             goto frame_exception_exit_1;
         }
-        UPDATE_STRING_DICT1(moduledict_scene$game, (Nuitka_StringObject *)mod_consts[68], tmp_assign_source_17);
-    }
-    {
-        PyObject *tmp_assign_source_18;
-        PyObject *tmp_name_name_16;
-        PyObject *tmp_globals_arg_name_16;
-        PyObject *tmp_locals_arg_name_16;
-        PyObject *tmp_fromlist_name_16;
-        PyObject *tmp_level_name_16;
-        tmp_name_name_16 = mod_consts[38];
-        tmp_globals_arg_name_16 = (PyObject *)moduledict_scene$game;
-        tmp_locals_arg_name_16 = Py_None;
-        tmp_fromlist_name_16 = Py_None;
-        tmp_level_name_16 = mod_consts[44];
-        frame_e4af1f224038721004e7dab74a41b9b8->m_frame.f_lineno = 24;
-        tmp_assign_source_18 = IMPORT_MODULE5(tmp_name_name_16, tmp_globals_arg_name_16, tmp_locals_arg_name_16, tmp_fromlist_name_16, tmp_level_name_16);
-        if (tmp_assign_source_18 == NULL) {
-            assert(ERROR_OCCURRED());
-
-            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
-
-
-            exception_lineno = 24;
-
-            goto frame_exception_exit_1;
-        }
-        UPDATE_STRING_DICT1(moduledict_scene$game, (Nuitka_StringObject *)mod_consts[38], tmp_assign_source_18);
+        UPDATE_STRING_DICT1(moduledict_scene$game, (Nuitka_StringObject *)mod_consts[38], tmp_assign_source_17);
     }
     // Tried code:
     {
-        PyObject *tmp_assign_source_19;
+        PyObject *tmp_assign_source_18;
         PyObject *tmp_tuple_element_1;
-        tmp_tuple_element_1 = GET_STRING_DICT_VALUE(moduledict_scene$game, (Nuitka_StringObject *)mod_consts[93]);
+        tmp_tuple_element_1 = GET_STRING_DICT_VALUE(moduledict_scene$game, (Nuitka_StringObject *)mod_consts[90]);
 
         if (unlikely(tmp_tuple_element_1 == NULL)) {
-            tmp_tuple_element_1 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[93]);
+            tmp_tuple_element_1 = GET_MODULE_VARIABLE_VALUE_FALLBACK(mod_consts[90]);
         }
 
         if (tmp_tuple_element_1 == NULL) {
@@ -5917,12 +5872,36 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 27;
+            exception_lineno = 26;
 
             goto try_except_handler_1;
         }
-        tmp_assign_source_19 = PyTuple_New(1);
-        PyTuple_SET_ITEM0(tmp_assign_source_19, 0, tmp_tuple_element_1);
+        tmp_assign_source_18 = PyTuple_New(1);
+        PyTuple_SET_ITEM0(tmp_assign_source_18, 0, tmp_tuple_element_1);
+        assert(tmp_class_creation_1__bases_orig == NULL);
+        tmp_class_creation_1__bases_orig = tmp_assign_source_18;
+    }
+    {
+        PyObject *tmp_assign_source_19;
+        PyObject *tmp_dircall_arg1_1;
+        CHECK_OBJECT(tmp_class_creation_1__bases_orig);
+        tmp_dircall_arg1_1 = tmp_class_creation_1__bases_orig;
+        Py_INCREF(tmp_dircall_arg1_1);
+
+        {
+            PyObject *dir_call_args[] = {tmp_dircall_arg1_1};
+            tmp_assign_source_19 = impl___main__$$$function__1__mro_entries_conversion(dir_call_args);
+        }
+        if (tmp_assign_source_19 == NULL) {
+            assert(ERROR_OCCURRED());
+
+            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+
+
+            exception_lineno = 26;
+
+            goto try_except_handler_1;
+        }
         assert(tmp_class_creation_1__bases == NULL);
         tmp_class_creation_1__bases = tmp_assign_source_19;
     }
@@ -5940,11 +5919,13 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
         PyObject *tmp_dict_arg_name_1;
         PyObject *tmp_dict_arg_name_2;
         PyObject *tmp_key_name_2;
+        nuitka_bool tmp_condition_result_2;
+        int tmp_truth_name_1;
         PyObject *tmp_type_arg_1;
         PyObject *tmp_expression_name_1;
         PyObject *tmp_subscript_name_1;
         PyObject *tmp_bases_name_1;
-        tmp_key_name_1 = mod_consts[94];
+        tmp_key_name_1 = mod_consts[91];
         CHECK_OBJECT(tmp_class_creation_1__class_decl_dict);
         tmp_dict_arg_name_1 = tmp_class_creation_1__class_decl_dict;
         tmp_res = DICT_HAS_ITEM(tmp_dict_arg_name_1, tmp_key_name_1);
@@ -5958,7 +5939,7 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
         condexpr_true_1:;
         CHECK_OBJECT(tmp_class_creation_1__class_decl_dict);
         tmp_dict_arg_name_2 = tmp_class_creation_1__class_decl_dict;
-        tmp_key_name_2 = mod_consts[94];
+        tmp_key_name_2 = mod_consts[91];
         tmp_metaclass_name_1 = DICT_GET_ITEM_WITH_ERROR(tmp_dict_arg_name_2, tmp_key_name_2);
         if (tmp_metaclass_name_1 == NULL) {
             assert(ERROR_OCCURRED());
@@ -5966,12 +5947,31 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 27;
+            exception_lineno = 26;
 
             goto try_except_handler_1;
         }
         goto condexpr_end_1;
         condexpr_false_1:;
+        CHECK_OBJECT(tmp_class_creation_1__bases);
+        tmp_truth_name_1 = CHECK_IF_TRUE(tmp_class_creation_1__bases);
+        if (tmp_truth_name_1 == -1) {
+            assert(ERROR_OCCURRED());
+
+            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+
+
+            exception_lineno = 26;
+
+            goto try_except_handler_1;
+        }
+        tmp_condition_result_2 = tmp_truth_name_1 == 0 ? NUITKA_BOOL_FALSE : NUITKA_BOOL_TRUE;
+        if (tmp_condition_result_2 == NUITKA_BOOL_TRUE) {
+            goto condexpr_true_2;
+        } else {
+            goto condexpr_false_2;
+        }
+        condexpr_true_2:;
         CHECK_OBJECT(tmp_class_creation_1__bases);
         tmp_expression_name_1 = tmp_class_creation_1__bases;
         tmp_subscript_name_1 = mod_consts[44];
@@ -5982,7 +5982,7 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 27;
+            exception_lineno = 26;
 
             goto try_except_handler_1;
         }
@@ -5994,10 +5994,15 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 27;
+            exception_lineno = 26;
 
             goto try_except_handler_1;
         }
+        goto condexpr_end_2;
+        condexpr_false_2:;
+        tmp_metaclass_name_1 = (PyObject *)&PyType_Type;
+        Py_INCREF(tmp_metaclass_name_1);
+        condexpr_end_2:;
         condexpr_end_1:;
         CHECK_OBJECT(tmp_class_creation_1__bases);
         tmp_bases_name_1 = tmp_class_creation_1__bases;
@@ -6009,7 +6014,7 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 27;
+            exception_lineno = 26;
 
             goto try_except_handler_1;
         }
@@ -6017,16 +6022,16 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
         tmp_class_creation_1__metaclass = tmp_assign_source_21;
     }
     {
-        nuitka_bool tmp_condition_result_2;
+        nuitka_bool tmp_condition_result_3;
         PyObject *tmp_key_name_3;
         PyObject *tmp_dict_arg_name_3;
-        tmp_key_name_3 = mod_consts[94];
+        tmp_key_name_3 = mod_consts[91];
         CHECK_OBJECT(tmp_class_creation_1__class_decl_dict);
         tmp_dict_arg_name_3 = tmp_class_creation_1__class_decl_dict;
         tmp_res = DICT_HAS_ITEM(tmp_dict_arg_name_3, tmp_key_name_3);
         assert(!(tmp_res == -1));
-        tmp_condition_result_2 = (tmp_res != 0) ? NUITKA_BOOL_TRUE : NUITKA_BOOL_FALSE;
-        if (tmp_condition_result_2 == NUITKA_BOOL_TRUE) {
+        tmp_condition_result_3 = (tmp_res != 0) ? NUITKA_BOOL_TRUE : NUITKA_BOOL_FALSE;
+        if (tmp_condition_result_3 == NUITKA_BOOL_TRUE) {
             goto branch_yes_1;
         } else {
             goto branch_no_1;
@@ -6035,7 +6040,7 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
     branch_yes_1:;
     CHECK_OBJECT(tmp_class_creation_1__class_decl_dict);
     tmp_dictdel_dict = tmp_class_creation_1__class_decl_dict;
-    tmp_dictdel_key = mod_consts[94];
+    tmp_dictdel_key = mod_consts[91];
     tmp_result = DICT_REMOVE_ITEM(tmp_dictdel_dict, tmp_dictdel_key);
     if (tmp_result == false) {
         assert(ERROR_OCCURRED());
@@ -6043,19 +6048,19 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
         FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-        exception_lineno = 27;
+        exception_lineno = 26;
 
         goto try_except_handler_1;
     }
     branch_no_1:;
     {
-        nuitka_bool tmp_condition_result_3;
+        nuitka_bool tmp_condition_result_4;
         PyObject *tmp_expression_name_2;
         CHECK_OBJECT(tmp_class_creation_1__metaclass);
         tmp_expression_name_2 = tmp_class_creation_1__metaclass;
-        tmp_result = HAS_ATTR_BOOL(tmp_expression_name_2, mod_consts[95]);
-        tmp_condition_result_3 = (tmp_result) ? NUITKA_BOOL_TRUE : NUITKA_BOOL_FALSE;
-        if (tmp_condition_result_3 == NUITKA_BOOL_TRUE) {
+        tmp_result = HAS_ATTR_BOOL(tmp_expression_name_2, mod_consts[92]);
+        tmp_condition_result_4 = (tmp_result) ? NUITKA_BOOL_TRUE : NUITKA_BOOL_FALSE;
+        if (tmp_condition_result_4 == NUITKA_BOOL_TRUE) {
             goto branch_yes_2;
         } else {
             goto branch_no_2;
@@ -6071,18 +6076,18 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
         PyObject *tmp_kwargs_name_1;
         CHECK_OBJECT(tmp_class_creation_1__metaclass);
         tmp_expression_name_3 = tmp_class_creation_1__metaclass;
-        tmp_called_name_1 = LOOKUP_ATTRIBUTE(tmp_expression_name_3, mod_consts[95]);
+        tmp_called_name_1 = LOOKUP_ATTRIBUTE(tmp_expression_name_3, mod_consts[92]);
         if (tmp_called_name_1 == NULL) {
             assert(ERROR_OCCURRED());
 
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 27;
+            exception_lineno = 26;
 
             goto try_except_handler_1;
         }
-        tmp_tuple_element_2 = mod_consts[96];
+        tmp_tuple_element_2 = mod_consts[93];
         tmp_args_name_1 = PyTuple_New(2);
         PyTuple_SET_ITEM0(tmp_args_name_1, 0, tmp_tuple_element_2);
         CHECK_OBJECT(tmp_class_creation_1__bases);
@@ -6090,7 +6095,7 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
         PyTuple_SET_ITEM0(tmp_args_name_1, 1, tmp_tuple_element_2);
         CHECK_OBJECT(tmp_class_creation_1__class_decl_dict);
         tmp_kwargs_name_1 = tmp_class_creation_1__class_decl_dict;
-        frame_e4af1f224038721004e7dab74a41b9b8->m_frame.f_lineno = 27;
+        frame_e4af1f224038721004e7dab74a41b9b8->m_frame.f_lineno = 26;
         tmp_assign_source_22 = CALL_FUNCTION(tmp_called_name_1, tmp_args_name_1, tmp_kwargs_name_1);
         Py_DECREF(tmp_called_name_1);
         Py_DECREF(tmp_args_name_1);
@@ -6100,7 +6105,7 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 27;
+            exception_lineno = 26;
 
             goto try_except_handler_1;
         }
@@ -6108,12 +6113,12 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
         tmp_class_creation_1__prepared = tmp_assign_source_22;
     }
     {
-        nuitka_bool tmp_condition_result_4;
+        nuitka_bool tmp_condition_result_5;
         PyObject *tmp_operand_name_1;
         PyObject *tmp_expression_name_4;
         CHECK_OBJECT(tmp_class_creation_1__prepared);
         tmp_expression_name_4 = tmp_class_creation_1__prepared;
-        tmp_result = HAS_ATTR_BOOL(tmp_expression_name_4, mod_consts[97]);
+        tmp_result = HAS_ATTR_BOOL(tmp_expression_name_4, mod_consts[94]);
         tmp_operand_name_1 = (tmp_result) ? Py_True : Py_False;
         tmp_res = CHECK_IF_TRUE(tmp_operand_name_1);
         if (tmp_res == -1) {
@@ -6122,12 +6127,12 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 27;
+            exception_lineno = 26;
 
             goto try_except_handler_1;
         }
-        tmp_condition_result_4 = (tmp_res == 0) ? NUITKA_BOOL_TRUE : NUITKA_BOOL_FALSE;
-        if (tmp_condition_result_4 == NUITKA_BOOL_TRUE) {
+        tmp_condition_result_5 = (tmp_res == 0) ? NUITKA_BOOL_TRUE : NUITKA_BOOL_FALSE;
+        if (tmp_condition_result_5 == NUITKA_BOOL_TRUE) {
             goto branch_yes_3;
         } else {
             goto branch_no_3;
@@ -6144,11 +6149,11 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
         PyObject *tmp_getattr_attr_1;
         PyObject *tmp_getattr_default_1;
         tmp_raise_type_1 = PyExc_TypeError;
-        tmp_left_name_1 = mod_consts[98];
+        tmp_left_name_1 = mod_consts[95];
         CHECK_OBJECT(tmp_class_creation_1__metaclass);
         tmp_getattr_target_1 = tmp_class_creation_1__metaclass;
-        tmp_getattr_attr_1 = mod_consts[99];
-        tmp_getattr_default_1 = mod_consts[100];
+        tmp_getattr_attr_1 = mod_consts[96];
+        tmp_getattr_default_1 = mod_consts[97];
         tmp_tuple_element_3 = BUILTIN_GETATTR(tmp_getattr_target_1, tmp_getattr_attr_1, tmp_getattr_default_1);
         if (tmp_tuple_element_3 == NULL) {
             assert(ERROR_OCCURRED());
@@ -6156,7 +6161,7 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 27;
+            exception_lineno = 26;
 
             goto try_except_handler_1;
         }
@@ -6169,7 +6174,7 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
             tmp_type_arg_2 = tmp_class_creation_1__prepared;
             tmp_expression_name_5 = BUILTIN_TYPE1(tmp_type_arg_2);
             assert(!(tmp_expression_name_5 == NULL));
-            tmp_tuple_element_3 = LOOKUP_ATTRIBUTE(tmp_expression_name_5, mod_consts[99]);
+            tmp_tuple_element_3 = LOOKUP_ATTRIBUTE(tmp_expression_name_5, mod_consts[96]);
             Py_DECREF(tmp_expression_name_5);
             if (tmp_tuple_element_3 == NULL) {
                 assert(ERROR_OCCURRED());
@@ -6177,7 +6182,7 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
                 FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-                exception_lineno = 27;
+                exception_lineno = 26;
 
                 goto tuple_build_exception_1;
             }
@@ -6198,14 +6203,14 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 27;
+            exception_lineno = 26;
 
             goto try_except_handler_1;
         }
         exception_type = tmp_raise_type_1;
         Py_INCREF(tmp_raise_type_1);
         exception_value = tmp_raise_value_1;
-        exception_lineno = 27;
+        exception_lineno = 26;
         RAISE_EXCEPTION_IMPLICIT(&exception_type, &exception_value, &exception_tb);
 
         goto try_except_handler_1;
@@ -6226,67 +6231,67 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
             PyObject *tmp_set_locals_1;
             CHECK_OBJECT(tmp_class_creation_1__prepared);
             tmp_set_locals_1 = tmp_class_creation_1__prepared;
-            locals_scene$game$$$class__1_Scene_Game_27 = tmp_set_locals_1;
+            locals_scene$game$$$class__1_Scene_Game_26 = tmp_set_locals_1;
             Py_INCREF(tmp_set_locals_1);
         }
         // Tried code:
         // Tried code:
-        tmp_dictset_value = mod_consts[101];
-        tmp_res = PyObject_SetItem(locals_scene$game$$$class__1_Scene_Game_27, mod_consts[102], tmp_dictset_value);
+        tmp_dictset_value = mod_consts[98];
+        tmp_res = PyObject_SetItem(locals_scene$game$$$class__1_Scene_Game_26, mod_consts[99], tmp_dictset_value);
         if (tmp_res != 0) {
             assert(ERROR_OCCURRED());
 
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 27;
+            exception_lineno = 26;
 
             goto try_except_handler_3;
         }
-        tmp_dictset_value = mod_consts[96];
-        tmp_res = PyObject_SetItem(locals_scene$game$$$class__1_Scene_Game_27, mod_consts[103], tmp_dictset_value);
+        tmp_dictset_value = mod_consts[93];
+        tmp_res = PyObject_SetItem(locals_scene$game$$$class__1_Scene_Game_26, mod_consts[100], tmp_dictset_value);
         if (tmp_res != 0) {
             assert(ERROR_OCCURRED());
 
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 27;
+            exception_lineno = 26;
 
             goto try_except_handler_3;
         }
-        if (isFrameUnusable(cache_frame_7c19a39bcf9a22f53eea6c21d05d338e_2)) {
-            Py_XDECREF(cache_frame_7c19a39bcf9a22f53eea6c21d05d338e_2);
+        if (isFrameUnusable(cache_frame_ece836381aceee32ef1984763e88da0a_2)) {
+            Py_XDECREF(cache_frame_ece836381aceee32ef1984763e88da0a_2);
 
 #if _DEBUG_REFCOUNTS
-            if (cache_frame_7c19a39bcf9a22f53eea6c21d05d338e_2 == NULL) {
+            if (cache_frame_ece836381aceee32ef1984763e88da0a_2 == NULL) {
                 count_active_frame_cache_instances += 1;
             } else {
                 count_released_frame_cache_instances += 1;
             }
             count_allocated_frame_cache_instances += 1;
 #endif
-            cache_frame_7c19a39bcf9a22f53eea6c21d05d338e_2 = MAKE_FUNCTION_FRAME(codeobj_7c19a39bcf9a22f53eea6c21d05d338e, module_scene$game, sizeof(void *));
+            cache_frame_ece836381aceee32ef1984763e88da0a_2 = MAKE_FUNCTION_FRAME(codeobj_ece836381aceee32ef1984763e88da0a, module_scene$game, sizeof(void *));
 #if _DEBUG_REFCOUNTS
         } else {
             count_hit_frame_cache_instances += 1;
 #endif
         }
-        assert(cache_frame_7c19a39bcf9a22f53eea6c21d05d338e_2->m_type_description == NULL);
-        frame_7c19a39bcf9a22f53eea6c21d05d338e_2 = cache_frame_7c19a39bcf9a22f53eea6c21d05d338e_2;
+        assert(cache_frame_ece836381aceee32ef1984763e88da0a_2->m_type_description == NULL);
+        frame_ece836381aceee32ef1984763e88da0a_2 = cache_frame_ece836381aceee32ef1984763e88da0a_2;
 
         // Push the new frame as the currently active one.
-        pushFrameStack(frame_7c19a39bcf9a22f53eea6c21d05d338e_2);
+        pushFrameStack(frame_ece836381aceee32ef1984763e88da0a_2);
 
         // Mark the frame object as in use, ref count 1 will be up for reuse.
-        assert(Py_REFCNT(frame_7c19a39bcf9a22f53eea6c21d05d338e_2) == 2); // Frame stack
+        assert(Py_REFCNT(frame_ece836381aceee32ef1984763e88da0a_2) == 2); // Frame stack
 
         // Framed code:
 
 
         tmp_dictset_value = MAKE_FUNCTION_scene$game$$$function__1___init__();
 
-        tmp_res = PyObject_SetItem(locals_scene$game$$$class__1_Scene_Game_27, mod_consts[104], tmp_dictset_value);
+        tmp_res = PyObject_SetItem(locals_scene$game$$$class__1_Scene_Game_26, mod_consts[101], tmp_dictset_value);
         Py_DECREF(tmp_dictset_value);
         if (tmp_res != 0) {
             assert(ERROR_OCCURRED());
@@ -6294,7 +6299,7 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 29;
+            exception_lineno = 28;
             type_description_2 = "o";
             goto frame_exception_exit_2;
         }
@@ -6302,7 +6307,7 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
 
         tmp_dictset_value = MAKE_FUNCTION_scene$game$$$function__2_stop();
 
-        tmp_res = PyObject_SetItem(locals_scene$game$$$class__1_Scene_Game_27, mod_consts[41], tmp_dictset_value);
+        tmp_res = PyObject_SetItem(locals_scene$game$$$class__1_Scene_Game_26, mod_consts[41], tmp_dictset_value);
         Py_DECREF(tmp_dictset_value);
         if (tmp_res != 0) {
             assert(ERROR_OCCURRED());
@@ -6310,7 +6315,7 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 63;
+            exception_lineno = 62;
             type_description_2 = "o";
             goto frame_exception_exit_2;
         }
@@ -6318,7 +6323,7 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
 
         tmp_dictset_value = MAKE_FUNCTION_scene$game$$$function__3_start();
 
-        tmp_res = PyObject_SetItem(locals_scene$game$$$class__1_Scene_Game_27, mod_consts[107], tmp_dictset_value);
+        tmp_res = PyObject_SetItem(locals_scene$game$$$class__1_Scene_Game_26, mod_consts[104], tmp_dictset_value);
         Py_DECREF(tmp_dictset_value);
         if (tmp_res != 0) {
             assert(ERROR_OCCURRED());
@@ -6326,7 +6331,7 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 66;
+            exception_lineno = 65;
             type_description_2 = "o";
             goto frame_exception_exit_2;
         }
@@ -6334,7 +6339,7 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
 
         tmp_dictset_value = MAKE_FUNCTION_scene$game$$$function__4_tstop();
 
-        tmp_res = PyObject_SetItem(locals_scene$game$$$class__1_Scene_Game_27, mod_consts[109], tmp_dictset_value);
+        tmp_res = PyObject_SetItem(locals_scene$game$$$class__1_Scene_Game_26, mod_consts[106], tmp_dictset_value);
         Py_DECREF(tmp_dictset_value);
         if (tmp_res != 0) {
             assert(ERROR_OCCURRED());
@@ -6342,7 +6347,7 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 69;
+            exception_lineno = 68;
             type_description_2 = "o";
             goto frame_exception_exit_2;
         }
@@ -6350,7 +6355,7 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
 
         tmp_dictset_value = MAKE_FUNCTION_scene$game$$$function__5_tstart();
 
-        tmp_res = PyObject_SetItem(locals_scene$game$$$class__1_Scene_Game_27, mod_consts[111], tmp_dictset_value);
+        tmp_res = PyObject_SetItem(locals_scene$game$$$class__1_Scene_Game_26, mod_consts[108], tmp_dictset_value);
         Py_DECREF(tmp_dictset_value);
         if (tmp_res != 0) {
             assert(ERROR_OCCURRED());
@@ -6358,7 +6363,7 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 72;
+            exception_lineno = 71;
             type_description_2 = "o";
             goto frame_exception_exit_2;
         }
@@ -6366,7 +6371,7 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
 
         tmp_dictset_value = MAKE_FUNCTION_scene$game$$$function__6_update();
 
-        tmp_res = PyObject_SetItem(locals_scene$game$$$class__1_Scene_Game_27, mod_consts[73], tmp_dictset_value);
+        tmp_res = PyObject_SetItem(locals_scene$game$$$class__1_Scene_Game_26, mod_consts[73], tmp_dictset_value);
         Py_DECREF(tmp_dictset_value);
         if (tmp_res != 0) {
             assert(ERROR_OCCURRED());
@@ -6374,7 +6379,7 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 75;
+            exception_lineno = 74;
             type_description_2 = "o";
             goto frame_exception_exit_2;
         }
@@ -6382,7 +6387,7 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
 
         tmp_dictset_value = MAKE_FUNCTION_scene$game$$$function__7_draw();
 
-        tmp_res = PyObject_SetItem(locals_scene$game$$$class__1_Scene_Game_27, mod_consts[77], tmp_dictset_value);
+        tmp_res = PyObject_SetItem(locals_scene$game$$$class__1_Scene_Game_26, mod_consts[77], tmp_dictset_value);
         Py_DECREF(tmp_dictset_value);
         if (tmp_res != 0) {
             assert(ERROR_OCCURRED());
@@ -6390,13 +6395,13 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
             FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-            exception_lineno = 110;
+            exception_lineno = 109;
             type_description_2 = "o";
             goto frame_exception_exit_2;
         }
 
 #if 0
-        RESTORE_FRAME_EXCEPTION(frame_7c19a39bcf9a22f53eea6c21d05d338e_2);
+        RESTORE_FRAME_EXCEPTION(frame_ece836381aceee32ef1984763e88da0a_2);
 #endif
 
         // Put the previous frame back on top.
@@ -6407,35 +6412,35 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
         frame_exception_exit_2:;
 
 #if 0
-        RESTORE_FRAME_EXCEPTION(frame_7c19a39bcf9a22f53eea6c21d05d338e_2);
+        RESTORE_FRAME_EXCEPTION(frame_ece836381aceee32ef1984763e88da0a_2);
 #endif
 
         if (exception_tb == NULL) {
-            exception_tb = MAKE_TRACEBACK(frame_7c19a39bcf9a22f53eea6c21d05d338e_2, exception_lineno);
-        } else if (exception_tb->tb_frame != &frame_7c19a39bcf9a22f53eea6c21d05d338e_2->m_frame) {
-            exception_tb = ADD_TRACEBACK(exception_tb, frame_7c19a39bcf9a22f53eea6c21d05d338e_2, exception_lineno);
+            exception_tb = MAKE_TRACEBACK(frame_ece836381aceee32ef1984763e88da0a_2, exception_lineno);
+        } else if (exception_tb->tb_frame != &frame_ece836381aceee32ef1984763e88da0a_2->m_frame) {
+            exception_tb = ADD_TRACEBACK(exception_tb, frame_ece836381aceee32ef1984763e88da0a_2, exception_lineno);
         }
 
         // Attaches locals to frame if any.
         Nuitka_Frame_AttachLocals(
-            frame_7c19a39bcf9a22f53eea6c21d05d338e_2,
+            frame_ece836381aceee32ef1984763e88da0a_2,
             type_description_2,
             outline_0_var___class__
         );
 
 
         // Release cached frame if used for exception.
-        if (frame_7c19a39bcf9a22f53eea6c21d05d338e_2 == cache_frame_7c19a39bcf9a22f53eea6c21d05d338e_2) {
+        if (frame_ece836381aceee32ef1984763e88da0a_2 == cache_frame_ece836381aceee32ef1984763e88da0a_2) {
 #if _DEBUG_REFCOUNTS
             count_active_frame_cache_instances -= 1;
             count_released_frame_cache_instances += 1;
 #endif
 
-            Py_DECREF(cache_frame_7c19a39bcf9a22f53eea6c21d05d338e_2);
-            cache_frame_7c19a39bcf9a22f53eea6c21d05d338e_2 = NULL;
+            Py_DECREF(cache_frame_ece836381aceee32ef1984763e88da0a_2);
+            cache_frame_ece836381aceee32ef1984763e88da0a_2 = NULL;
         }
 
-        assertFrameObject(frame_7c19a39bcf9a22f53eea6c21d05d338e_2);
+        assertFrameObject(frame_ece836381aceee32ef1984763e88da0a_2);
 
         // Put the previous frame back on top.
         popFrameStack();
@@ -6450,6 +6455,47 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
         goto try_except_handler_3;
         skip_nested_handling_1:;
         {
+            nuitka_bool tmp_condition_result_6;
+            PyObject *tmp_compexpr_left_1;
+            PyObject *tmp_compexpr_right_1;
+            CHECK_OBJECT(tmp_class_creation_1__bases);
+            tmp_compexpr_left_1 = tmp_class_creation_1__bases;
+            CHECK_OBJECT(tmp_class_creation_1__bases_orig);
+            tmp_compexpr_right_1 = tmp_class_creation_1__bases_orig;
+            tmp_condition_result_6 = RICH_COMPARE_NE_NBOOL_OBJECT_TUPLE(tmp_compexpr_left_1, tmp_compexpr_right_1);
+            if (tmp_condition_result_6 == NUITKA_BOOL_EXCEPTION) {
+                assert(ERROR_OCCURRED());
+
+                FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+
+
+                exception_lineno = 26;
+
+                goto try_except_handler_3;
+            }
+            if (tmp_condition_result_6 == NUITKA_BOOL_TRUE) {
+                goto branch_yes_4;
+            } else {
+                goto branch_no_4;
+            }
+            assert(tmp_condition_result_6 != NUITKA_BOOL_UNASSIGNED);
+        }
+        branch_yes_4:;
+        CHECK_OBJECT(tmp_class_creation_1__bases_orig);
+        tmp_dictset_value = tmp_class_creation_1__bases_orig;
+        tmp_res = PyObject_SetItem(locals_scene$game$$$class__1_Scene_Game_26, mod_consts[112], tmp_dictset_value);
+        if (tmp_res != 0) {
+            assert(ERROR_OCCURRED());
+
+            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+
+
+            exception_lineno = 26;
+
+            goto try_except_handler_3;
+        }
+        branch_no_4:;
+        {
             PyObject *tmp_assign_source_25;
             PyObject *tmp_called_name_2;
             PyObject *tmp_args_name_2;
@@ -6457,17 +6503,17 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
             PyObject *tmp_kwargs_name_2;
             CHECK_OBJECT(tmp_class_creation_1__metaclass);
             tmp_called_name_2 = tmp_class_creation_1__metaclass;
-            tmp_tuple_element_4 = mod_consts[96];
+            tmp_tuple_element_4 = mod_consts[93];
             tmp_args_name_2 = PyTuple_New(3);
             PyTuple_SET_ITEM0(tmp_args_name_2, 0, tmp_tuple_element_4);
             CHECK_OBJECT(tmp_class_creation_1__bases);
             tmp_tuple_element_4 = tmp_class_creation_1__bases;
             PyTuple_SET_ITEM0(tmp_args_name_2, 1, tmp_tuple_element_4);
-            tmp_tuple_element_4 = locals_scene$game$$$class__1_Scene_Game_27;
+            tmp_tuple_element_4 = locals_scene$game$$$class__1_Scene_Game_26;
             PyTuple_SET_ITEM0(tmp_args_name_2, 2, tmp_tuple_element_4);
             CHECK_OBJECT(tmp_class_creation_1__class_decl_dict);
             tmp_kwargs_name_2 = tmp_class_creation_1__class_decl_dict;
-            frame_e4af1f224038721004e7dab74a41b9b8->m_frame.f_lineno = 27;
+            frame_e4af1f224038721004e7dab74a41b9b8->m_frame.f_lineno = 26;
             tmp_assign_source_25 = CALL_FUNCTION(tmp_called_name_2, tmp_args_name_2, tmp_kwargs_name_2);
             Py_DECREF(tmp_args_name_2);
             if (tmp_assign_source_25 == NULL) {
@@ -6476,7 +6522,7 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
                 FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
 
 
-                exception_lineno = 27;
+                exception_lineno = 26;
 
                 goto try_except_handler_3;
             }
@@ -6491,8 +6537,8 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
         return NULL;
         // Return handler code:
         try_return_handler_3:;
-        Py_DECREF(locals_scene$game$$$class__1_Scene_Game_27);
-        locals_scene$game$$$class__1_Scene_Game_27 = NULL;
+        Py_DECREF(locals_scene$game$$$class__1_Scene_Game_26);
+        locals_scene$game$$$class__1_Scene_Game_26 = NULL;
         goto try_return_handler_2;
         // Exception handler code:
         try_except_handler_3:;
@@ -6505,8 +6551,8 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
         exception_tb = NULL;
         exception_lineno = 0;
 
-        Py_DECREF(locals_scene$game$$$class__1_Scene_Game_27);
-        locals_scene$game$$$class__1_Scene_Game_27 = NULL;
+        Py_DECREF(locals_scene$game$$$class__1_Scene_Game_26);
+        locals_scene$game$$$class__1_Scene_Game_26 = NULL;
         // Re-raise.
         exception_type = exception_keeper_type_1;
         exception_value = exception_keeper_value_1;
@@ -6545,10 +6591,10 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
         NUITKA_CANNOT_GET_HERE("Return statement must have exited already.");
         return NULL;
         outline_exception_1:;
-        exception_lineno = 27;
+        exception_lineno = 26;
         goto try_except_handler_1;
         outline_result_1:;
-        UPDATE_STRING_DICT1(moduledict_scene$game, (Nuitka_StringObject *)mod_consts[96], tmp_assign_source_24);
+        UPDATE_STRING_DICT1(moduledict_scene$game, (Nuitka_StringObject *)mod_consts[93], tmp_assign_source_24);
     }
     goto try_end_1;
     // Exception handler code:
@@ -6562,6 +6608,8 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
     exception_tb = NULL;
     exception_lineno = 0;
 
+    Py_XDECREF(tmp_class_creation_1__bases_orig);
+    tmp_class_creation_1__bases_orig = NULL;
     Py_XDECREF(tmp_class_creation_1__bases);
     tmp_class_creation_1__bases = NULL;
     Py_XDECREF(tmp_class_creation_1__class_decl_dict);
@@ -6608,6 +6656,9 @@ PyObject *modulecode_scene$game(PyObject *module, struct Nuitka_MetaPathBasedLoa
     goto module_exception_exit;
 
     frame_no_exception_2:;
+    CHECK_OBJECT(tmp_class_creation_1__bases_orig);
+    Py_DECREF(tmp_class_creation_1__bases_orig);
+    tmp_class_creation_1__bases_orig = NULL;
     Py_XDECREF(tmp_class_creation_1__bases);
     tmp_class_creation_1__bases = NULL;
     Py_XDECREF(tmp_class_creation_1__class_decl_dict);

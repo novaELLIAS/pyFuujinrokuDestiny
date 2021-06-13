@@ -33,7 +33,7 @@ PyObject *module_animation;
 PyDictObject *moduledict_animation;
 
 /* The declarations of module constants used, if any. */
-static PyObject *mod_consts[56];
+static PyObject *mod_consts[57];
 
 static PyObject *module_filename_obj = NULL;
 
@@ -77,19 +77,22 @@ static PyCodeObject *codeobj_506e2e75ba1d5722527282a8298be99d;
 static PyCodeObject *codeobj_249ad87b87cdb11a0ae8f32f67a55104;
 
 static void createModuleCodeObjects(void) {
-    module_filename_obj = MAKE_RELATIVE_PATH(mod_consts[48]); CHECK_OBJECT(module_filename_obj);
-    codeobj_d6345f644e8eae3fdbd3ce5c0af75666 = MAKE_CODEOBJECT(module_filename_obj, 1, CO_NOFREE, mod_consts[49], NULL, NULL, 0, 0, 0);
-    codeobj_501cf9730e6c2453cb58960a11e45919 = MAKE_CODEOBJECT(module_filename_obj, 4, CO_NOFREE, mod_consts[10], mod_consts[50], NULL, 0, 0, 0);
-    codeobj_fb257e90ce5067b158260ee1c222f872 = MAKE_CODEOBJECT(module_filename_obj, 20, CO_NOFREE, mod_consts[38], mod_consts[50], NULL, 0, 0, 0);
-    codeobj_6f0813d146118edc2746ea992e2abf09 = MAKE_CODEOBJECT(module_filename_obj, 22, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[36], mod_consts[51], NULL, 1, 0, 0);
-    codeobj_866ea1128115dcc39dde41f02e9b6ffd = MAKE_CODEOBJECT(module_filename_obj, 6, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[36], mod_consts[52], NULL, 4, 0, 0);
-    codeobj_08f7cefa66af0febf9d15fb2b6ce3170 = MAKE_CODEOBJECT(module_filename_obj, 30, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[40], mod_consts[52], NULL, 4, 0, 0);
-    codeobj_9da52f39d0150dffa625fa87cb1f1fd3 = MAKE_CODEOBJECT(module_filename_obj, 36, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[42], mod_consts[53], NULL, 4, 0, 0);
-    codeobj_506e2e75ba1d5722527282a8298be99d = MAKE_CODEOBJECT(module_filename_obj, 54, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[46], mod_consts[54], NULL, 2, 0, 0);
-    codeobj_249ad87b87cdb11a0ae8f32f67a55104 = MAKE_CODEOBJECT(module_filename_obj, 40, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[44], mod_consts[55], NULL, 1, 0, 0);
+    module_filename_obj = MAKE_RELATIVE_PATH(mod_consts[49]); CHECK_OBJECT(module_filename_obj);
+    codeobj_d6345f644e8eae3fdbd3ce5c0af75666 = MAKE_CODEOBJECT(module_filename_obj, 1, CO_NOFREE, mod_consts[50], NULL, NULL, 0, 0, 0);
+    codeobj_501cf9730e6c2453cb58960a11e45919 = MAKE_CODEOBJECT(module_filename_obj, 4, CO_NOFREE, mod_consts[10], mod_consts[51], NULL, 0, 0, 0);
+    codeobj_fb257e90ce5067b158260ee1c222f872 = MAKE_CODEOBJECT(module_filename_obj, 20, CO_NOFREE, mod_consts[39], mod_consts[51], NULL, 0, 0, 0);
+    codeobj_6f0813d146118edc2746ea992e2abf09 = MAKE_CODEOBJECT(module_filename_obj, 22, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[36], mod_consts[52], NULL, 1, 0, 0);
+    codeobj_866ea1128115dcc39dde41f02e9b6ffd = MAKE_CODEOBJECT(module_filename_obj, 6, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[36], mod_consts[53], NULL, 4, 0, 0);
+    codeobj_08f7cefa66af0febf9d15fb2b6ce3170 = MAKE_CODEOBJECT(module_filename_obj, 30, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[41], mod_consts[53], NULL, 4, 0, 0);
+    codeobj_9da52f39d0150dffa625fa87cb1f1fd3 = MAKE_CODEOBJECT(module_filename_obj, 36, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[43], mod_consts[54], NULL, 4, 0, 0);
+    codeobj_506e2e75ba1d5722527282a8298be99d = MAKE_CODEOBJECT(module_filename_obj, 54, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[47], mod_consts[55], NULL, 2, 0, 0);
+    codeobj_249ad87b87cdb11a0ae8f32f67a55104 = MAKE_CODEOBJECT(module_filename_obj, 40, CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE, mod_consts[45], mod_consts[56], NULL, 1, 0, 0);
 }
 
 // The module function declarations.
+NUITKA_CROSS_MODULE PyObject *impl___main__$$$function__1__mro_entries_conversion(PyObject **python_pars);
+
+
 static PyObject *MAKE_FUNCTION_animation$$$function__1___init__(PyObject *defaults);
 
 
@@ -2889,7 +2892,7 @@ static PyObject *MAKE_FUNCTION_animation$$$function__2___init__() {
         impl_animation$$$function__2___init__,
         mod_consts[36],
 #if PYTHON_VERSION >= 0x300
-        mod_consts[39],
+        mod_consts[40],
 #endif
         codeobj_6f0813d146118edc2746ea992e2abf09,
         NULL,
@@ -2912,9 +2915,9 @@ static PyObject *MAKE_FUNCTION_animation$$$function__2___init__() {
 static PyObject *MAKE_FUNCTION_animation$$$function__3_create_anime(PyObject *defaults) {
     struct Nuitka_FunctionObject *result = Nuitka_Function_New(
         impl_animation$$$function__3_create_anime,
-        mod_consts[40],
-#if PYTHON_VERSION >= 0x300
         mod_consts[41],
+#if PYTHON_VERSION >= 0x300
+        mod_consts[42],
 #endif
         codeobj_08f7cefa66af0febf9d15fb2b6ce3170,
         defaults,
@@ -2937,9 +2940,9 @@ static PyObject *MAKE_FUNCTION_animation$$$function__3_create_anime(PyObject *de
 static PyObject *MAKE_FUNCTION_animation$$$function__4_create_pic() {
     struct Nuitka_FunctionObject *result = Nuitka_Function_New(
         impl_animation$$$function__4_create_pic,
-        mod_consts[42],
-#if PYTHON_VERSION >= 0x300
         mod_consts[43],
+#if PYTHON_VERSION >= 0x300
+        mod_consts[44],
 #endif
         codeobj_9da52f39d0150dffa625fa87cb1f1fd3,
         NULL,
@@ -2962,9 +2965,9 @@ static PyObject *MAKE_FUNCTION_animation$$$function__4_create_pic() {
 static PyObject *MAKE_FUNCTION_animation$$$function__5_update() {
     struct Nuitka_FunctionObject *result = Nuitka_Function_New(
         impl_animation$$$function__5_update,
-        mod_consts[44],
-#if PYTHON_VERSION >= 0x300
         mod_consts[45],
+#if PYTHON_VERSION >= 0x300
+        mod_consts[46],
 #endif
         codeobj_249ad87b87cdb11a0ae8f32f67a55104,
         NULL,
@@ -2987,9 +2990,9 @@ static PyObject *MAKE_FUNCTION_animation$$$function__5_update() {
 static PyObject *MAKE_FUNCTION_animation$$$function__6_draw() {
     struct Nuitka_FunctionObject *result = Nuitka_Function_New(
         impl_animation$$$function__6_draw,
-        mod_consts[46],
-#if PYTHON_VERSION >= 0x300
         mod_consts[47],
+#if PYTHON_VERSION >= 0x300
+        mod_consts[48],
 #endif
         codeobj_506e2e75ba1d5722527282a8298be99d,
         NULL,
@@ -3481,11 +3484,28 @@ PyObject *modulecode_animation(PyObject *module, struct Nuitka_MetaPathBasedLoad
         tmp_assign_source_3 = Py_None;
         UPDATE_STRING_DICT0(moduledict_animation, (Nuitka_StringObject *)mod_consts[24], tmp_assign_source_3);
     }
+    // Tried code:
     {
         PyObject *tmp_assign_source_4;
-        tmp_assign_source_4 = mod_consts[25];
+        PyObject *tmp_dircall_arg1_1;
+        tmp_dircall_arg1_1 = mod_consts[25];
+        Py_INCREF(tmp_dircall_arg1_1);
+
+        {
+            PyObject *dir_call_args[] = {tmp_dircall_arg1_1};
+            tmp_assign_source_4 = impl___main__$$$function__1__mro_entries_conversion(dir_call_args);
+        }
+        if (tmp_assign_source_4 == NULL) {
+            assert(ERROR_OCCURRED());
+
+            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+
+
+            exception_lineno = 4;
+
+            goto try_except_handler_1;
+        }
         assert(tmp_class_creation_1__bases == NULL);
-        Py_INCREF(tmp_assign_source_4);
         tmp_class_creation_1__bases = tmp_assign_source_4;
     }
     {
@@ -3494,7 +3514,6 @@ PyObject *modulecode_animation(PyObject *module, struct Nuitka_MetaPathBasedLoad
         assert(tmp_class_creation_1__class_decl_dict == NULL);
         tmp_class_creation_1__class_decl_dict = tmp_assign_source_5;
     }
-    // Tried code:
     {
         PyObject *tmp_assign_source_6;
         PyObject *tmp_metaclass_name_1;
@@ -3503,6 +3522,8 @@ PyObject *modulecode_animation(PyObject *module, struct Nuitka_MetaPathBasedLoad
         PyObject *tmp_dict_arg_name_1;
         PyObject *tmp_dict_arg_name_2;
         PyObject *tmp_key_name_2;
+        nuitka_bool tmp_condition_result_2;
+        int tmp_truth_name_1;
         PyObject *tmp_type_arg_1;
         PyObject *tmp_expression_name_1;
         PyObject *tmp_subscript_name_1;
@@ -3536,6 +3557,25 @@ PyObject *modulecode_animation(PyObject *module, struct Nuitka_MetaPathBasedLoad
         goto condexpr_end_1;
         condexpr_false_1:;
         CHECK_OBJECT(tmp_class_creation_1__bases);
+        tmp_truth_name_1 = CHECK_IF_TRUE(tmp_class_creation_1__bases);
+        if (tmp_truth_name_1 == -1) {
+            assert(ERROR_OCCURRED());
+
+            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+
+
+            exception_lineno = 4;
+
+            goto try_except_handler_1;
+        }
+        tmp_condition_result_2 = tmp_truth_name_1 == 0 ? NUITKA_BOOL_FALSE : NUITKA_BOOL_TRUE;
+        if (tmp_condition_result_2 == NUITKA_BOOL_TRUE) {
+            goto condexpr_true_2;
+        } else {
+            goto condexpr_false_2;
+        }
+        condexpr_true_2:;
+        CHECK_OBJECT(tmp_class_creation_1__bases);
         tmp_expression_name_1 = tmp_class_creation_1__bases;
         tmp_subscript_name_1 = mod_consts[3];
         tmp_type_arg_1 = LOOKUP_SUBSCRIPT_CONST(tmp_expression_name_1, tmp_subscript_name_1, 0);
@@ -3561,6 +3601,11 @@ PyObject *modulecode_animation(PyObject *module, struct Nuitka_MetaPathBasedLoad
 
             goto try_except_handler_1;
         }
+        goto condexpr_end_2;
+        condexpr_false_2:;
+        tmp_metaclass_name_1 = (PyObject *)&PyType_Type;
+        Py_INCREF(tmp_metaclass_name_1);
+        condexpr_end_2:;
         condexpr_end_1:;
         CHECK_OBJECT(tmp_class_creation_1__bases);
         tmp_bases_name_1 = tmp_class_creation_1__bases;
@@ -3580,7 +3625,7 @@ PyObject *modulecode_animation(PyObject *module, struct Nuitka_MetaPathBasedLoad
         tmp_class_creation_1__metaclass = tmp_assign_source_6;
     }
     {
-        nuitka_bool tmp_condition_result_2;
+        nuitka_bool tmp_condition_result_3;
         PyObject *tmp_key_name_3;
         PyObject *tmp_dict_arg_name_3;
         tmp_key_name_3 = mod_consts[26];
@@ -3588,8 +3633,8 @@ PyObject *modulecode_animation(PyObject *module, struct Nuitka_MetaPathBasedLoad
         tmp_dict_arg_name_3 = tmp_class_creation_1__class_decl_dict;
         tmp_res = DICT_HAS_ITEM(tmp_dict_arg_name_3, tmp_key_name_3);
         assert(!(tmp_res == -1));
-        tmp_condition_result_2 = (tmp_res != 0) ? NUITKA_BOOL_TRUE : NUITKA_BOOL_FALSE;
-        if (tmp_condition_result_2 == NUITKA_BOOL_TRUE) {
+        tmp_condition_result_3 = (tmp_res != 0) ? NUITKA_BOOL_TRUE : NUITKA_BOOL_FALSE;
+        if (tmp_condition_result_3 == NUITKA_BOOL_TRUE) {
             goto branch_yes_1;
         } else {
             goto branch_no_1;
@@ -3612,13 +3657,13 @@ PyObject *modulecode_animation(PyObject *module, struct Nuitka_MetaPathBasedLoad
     }
     branch_no_1:;
     {
-        nuitka_bool tmp_condition_result_3;
+        nuitka_bool tmp_condition_result_4;
         PyObject *tmp_expression_name_2;
         CHECK_OBJECT(tmp_class_creation_1__metaclass);
         tmp_expression_name_2 = tmp_class_creation_1__metaclass;
         tmp_result = HAS_ATTR_BOOL(tmp_expression_name_2, mod_consts[27]);
-        tmp_condition_result_3 = (tmp_result) ? NUITKA_BOOL_TRUE : NUITKA_BOOL_FALSE;
-        if (tmp_condition_result_3 == NUITKA_BOOL_TRUE) {
+        tmp_condition_result_4 = (tmp_result) ? NUITKA_BOOL_TRUE : NUITKA_BOOL_FALSE;
+        if (tmp_condition_result_4 == NUITKA_BOOL_TRUE) {
             goto branch_yes_2;
         } else {
             goto branch_no_2;
@@ -3671,7 +3716,7 @@ PyObject *modulecode_animation(PyObject *module, struct Nuitka_MetaPathBasedLoad
         tmp_class_creation_1__prepared = tmp_assign_source_7;
     }
     {
-        nuitka_bool tmp_condition_result_4;
+        nuitka_bool tmp_condition_result_5;
         PyObject *tmp_operand_name_1;
         PyObject *tmp_expression_name_4;
         CHECK_OBJECT(tmp_class_creation_1__prepared);
@@ -3689,8 +3734,8 @@ PyObject *modulecode_animation(PyObject *module, struct Nuitka_MetaPathBasedLoad
 
             goto try_except_handler_1;
         }
-        tmp_condition_result_4 = (tmp_res == 0) ? NUITKA_BOOL_TRUE : NUITKA_BOOL_FALSE;
-        if (tmp_condition_result_4 == NUITKA_BOOL_TRUE) {
+        tmp_condition_result_5 = (tmp_res == 0) ? NUITKA_BOOL_TRUE : NUITKA_BOOL_FALSE;
+        if (tmp_condition_result_5 == NUITKA_BOOL_TRUE) {
             goto branch_yes_3;
         } else {
             goto branch_no_3;
@@ -3922,6 +3967,45 @@ PyObject *modulecode_animation(PyObject *module, struct Nuitka_MetaPathBasedLoad
         goto try_except_handler_3;
         skip_nested_handling_1:;
         {
+            nuitka_bool tmp_condition_result_6;
+            PyObject *tmp_compexpr_left_1;
+            PyObject *tmp_compexpr_right_1;
+            CHECK_OBJECT(tmp_class_creation_1__bases);
+            tmp_compexpr_left_1 = tmp_class_creation_1__bases;
+            tmp_compexpr_right_1 = mod_consts[25];
+            tmp_condition_result_6 = RICH_COMPARE_NE_NBOOL_OBJECT_TUPLE(tmp_compexpr_left_1, tmp_compexpr_right_1);
+            if (tmp_condition_result_6 == NUITKA_BOOL_EXCEPTION) {
+                assert(ERROR_OCCURRED());
+
+                FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+
+
+                exception_lineno = 4;
+
+                goto try_except_handler_3;
+            }
+            if (tmp_condition_result_6 == NUITKA_BOOL_TRUE) {
+                goto branch_yes_4;
+            } else {
+                goto branch_no_4;
+            }
+            assert(tmp_condition_result_6 != NUITKA_BOOL_UNASSIGNED);
+        }
+        branch_yes_4:;
+        tmp_dictset_value = mod_consts[25];
+        tmp_res = PyObject_SetItem(locals_animation$$$class__1_Anime_4, mod_consts[38], tmp_dictset_value);
+        if (tmp_res != 0) {
+            assert(ERROR_OCCURRED());
+
+            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+
+
+            exception_lineno = 4;
+
+            goto try_except_handler_3;
+        }
+        branch_no_4:;
+        {
             PyObject *tmp_assign_source_10;
             PyObject *tmp_called_name_2;
             PyObject *tmp_args_name_2;
@@ -4060,11 +4144,28 @@ PyObject *modulecode_animation(PyObject *module, struct Nuitka_MetaPathBasedLoad
     CHECK_OBJECT(tmp_class_creation_1__prepared);
     Py_DECREF(tmp_class_creation_1__prepared);
     tmp_class_creation_1__prepared = NULL;
+    // Tried code:
     {
         PyObject *tmp_assign_source_11;
-        tmp_assign_source_11 = mod_consts[25];
+        PyObject *tmp_dircall_arg1_2;
+        tmp_dircall_arg1_2 = mod_consts[25];
+        Py_INCREF(tmp_dircall_arg1_2);
+
+        {
+            PyObject *dir_call_args[] = {tmp_dircall_arg1_2};
+            tmp_assign_source_11 = impl___main__$$$function__1__mro_entries_conversion(dir_call_args);
+        }
+        if (tmp_assign_source_11 == NULL) {
+            assert(ERROR_OCCURRED());
+
+            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+
+
+            exception_lineno = 20;
+
+            goto try_except_handler_4;
+        }
         assert(tmp_class_creation_2__bases == NULL);
-        Py_INCREF(tmp_assign_source_11);
         tmp_class_creation_2__bases = tmp_assign_source_11;
     }
     {
@@ -4073,15 +4174,16 @@ PyObject *modulecode_animation(PyObject *module, struct Nuitka_MetaPathBasedLoad
         assert(tmp_class_creation_2__class_decl_dict == NULL);
         tmp_class_creation_2__class_decl_dict = tmp_assign_source_12;
     }
-    // Tried code:
     {
         PyObject *tmp_assign_source_13;
         PyObject *tmp_metaclass_name_2;
-        nuitka_bool tmp_condition_result_5;
+        nuitka_bool tmp_condition_result_7;
         PyObject *tmp_key_name_4;
         PyObject *tmp_dict_arg_name_4;
         PyObject *tmp_dict_arg_name_5;
         PyObject *tmp_key_name_5;
+        nuitka_bool tmp_condition_result_8;
+        int tmp_truth_name_2;
         PyObject *tmp_type_arg_3;
         PyObject *tmp_expression_name_6;
         PyObject *tmp_subscript_name_2;
@@ -4091,13 +4193,13 @@ PyObject *modulecode_animation(PyObject *module, struct Nuitka_MetaPathBasedLoad
         tmp_dict_arg_name_4 = tmp_class_creation_2__class_decl_dict;
         tmp_res = DICT_HAS_ITEM(tmp_dict_arg_name_4, tmp_key_name_4);
         assert(!(tmp_res == -1));
-        tmp_condition_result_5 = (tmp_res != 0) ? NUITKA_BOOL_TRUE : NUITKA_BOOL_FALSE;
-        if (tmp_condition_result_5 == NUITKA_BOOL_TRUE) {
-            goto condexpr_true_2;
+        tmp_condition_result_7 = (tmp_res != 0) ? NUITKA_BOOL_TRUE : NUITKA_BOOL_FALSE;
+        if (tmp_condition_result_7 == NUITKA_BOOL_TRUE) {
+            goto condexpr_true_3;
         } else {
-            goto condexpr_false_2;
+            goto condexpr_false_3;
         }
-        condexpr_true_2:;
+        condexpr_true_3:;
         CHECK_OBJECT(tmp_class_creation_2__class_decl_dict);
         tmp_dict_arg_name_5 = tmp_class_creation_2__class_decl_dict;
         tmp_key_name_5 = mod_consts[26];
@@ -4112,8 +4214,27 @@ PyObject *modulecode_animation(PyObject *module, struct Nuitka_MetaPathBasedLoad
 
             goto try_except_handler_4;
         }
-        goto condexpr_end_2;
-        condexpr_false_2:;
+        goto condexpr_end_3;
+        condexpr_false_3:;
+        CHECK_OBJECT(tmp_class_creation_2__bases);
+        tmp_truth_name_2 = CHECK_IF_TRUE(tmp_class_creation_2__bases);
+        if (tmp_truth_name_2 == -1) {
+            assert(ERROR_OCCURRED());
+
+            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+
+
+            exception_lineno = 20;
+
+            goto try_except_handler_4;
+        }
+        tmp_condition_result_8 = tmp_truth_name_2 == 0 ? NUITKA_BOOL_FALSE : NUITKA_BOOL_TRUE;
+        if (tmp_condition_result_8 == NUITKA_BOOL_TRUE) {
+            goto condexpr_true_4;
+        } else {
+            goto condexpr_false_4;
+        }
+        condexpr_true_4:;
         CHECK_OBJECT(tmp_class_creation_2__bases);
         tmp_expression_name_6 = tmp_class_creation_2__bases;
         tmp_subscript_name_2 = mod_consts[3];
@@ -4140,7 +4261,12 @@ PyObject *modulecode_animation(PyObject *module, struct Nuitka_MetaPathBasedLoad
 
             goto try_except_handler_4;
         }
-        condexpr_end_2:;
+        goto condexpr_end_4;
+        condexpr_false_4:;
+        tmp_metaclass_name_2 = (PyObject *)&PyType_Type;
+        Py_INCREF(tmp_metaclass_name_2);
+        condexpr_end_4:;
+        condexpr_end_3:;
         CHECK_OBJECT(tmp_class_creation_2__bases);
         tmp_bases_name_2 = tmp_class_creation_2__bases;
         tmp_assign_source_13 = SELECT_METACLASS(tmp_metaclass_name_2, tmp_bases_name_2);
@@ -4159,7 +4285,7 @@ PyObject *modulecode_animation(PyObject *module, struct Nuitka_MetaPathBasedLoad
         tmp_class_creation_2__metaclass = tmp_assign_source_13;
     }
     {
-        nuitka_bool tmp_condition_result_6;
+        nuitka_bool tmp_condition_result_9;
         PyObject *tmp_key_name_6;
         PyObject *tmp_dict_arg_name_6;
         tmp_key_name_6 = mod_consts[26];
@@ -4167,14 +4293,14 @@ PyObject *modulecode_animation(PyObject *module, struct Nuitka_MetaPathBasedLoad
         tmp_dict_arg_name_6 = tmp_class_creation_2__class_decl_dict;
         tmp_res = DICT_HAS_ITEM(tmp_dict_arg_name_6, tmp_key_name_6);
         assert(!(tmp_res == -1));
-        tmp_condition_result_6 = (tmp_res != 0) ? NUITKA_BOOL_TRUE : NUITKA_BOOL_FALSE;
-        if (tmp_condition_result_6 == NUITKA_BOOL_TRUE) {
-            goto branch_yes_4;
+        tmp_condition_result_9 = (tmp_res != 0) ? NUITKA_BOOL_TRUE : NUITKA_BOOL_FALSE;
+        if (tmp_condition_result_9 == NUITKA_BOOL_TRUE) {
+            goto branch_yes_5;
         } else {
-            goto branch_no_4;
+            goto branch_no_5;
         }
     }
-    branch_yes_4:;
+    branch_yes_5:;
     CHECK_OBJECT(tmp_class_creation_2__class_decl_dict);
     tmp_dictdel_dict = tmp_class_creation_2__class_decl_dict;
     tmp_dictdel_key = mod_consts[26];
@@ -4189,21 +4315,21 @@ PyObject *modulecode_animation(PyObject *module, struct Nuitka_MetaPathBasedLoad
 
         goto try_except_handler_4;
     }
-    branch_no_4:;
+    branch_no_5:;
     {
-        nuitka_bool tmp_condition_result_7;
+        nuitka_bool tmp_condition_result_10;
         PyObject *tmp_expression_name_7;
         CHECK_OBJECT(tmp_class_creation_2__metaclass);
         tmp_expression_name_7 = tmp_class_creation_2__metaclass;
         tmp_result = HAS_ATTR_BOOL(tmp_expression_name_7, mod_consts[27]);
-        tmp_condition_result_7 = (tmp_result) ? NUITKA_BOOL_TRUE : NUITKA_BOOL_FALSE;
-        if (tmp_condition_result_7 == NUITKA_BOOL_TRUE) {
-            goto branch_yes_5;
+        tmp_condition_result_10 = (tmp_result) ? NUITKA_BOOL_TRUE : NUITKA_BOOL_FALSE;
+        if (tmp_condition_result_10 == NUITKA_BOOL_TRUE) {
+            goto branch_yes_6;
         } else {
-            goto branch_no_5;
+            goto branch_no_6;
         }
     }
-    branch_yes_5:;
+    branch_yes_6:;
     {
         PyObject *tmp_assign_source_14;
         PyObject *tmp_called_name_3;
@@ -4224,7 +4350,7 @@ PyObject *modulecode_animation(PyObject *module, struct Nuitka_MetaPathBasedLoad
 
             goto try_except_handler_4;
         }
-        tmp_tuple_element_4 = mod_consts[38];
+        tmp_tuple_element_4 = mod_consts[39];
         tmp_args_name_3 = PyTuple_New(2);
         PyTuple_SET_ITEM0(tmp_args_name_3, 0, tmp_tuple_element_4);
         CHECK_OBJECT(tmp_class_creation_2__bases);
@@ -4250,7 +4376,7 @@ PyObject *modulecode_animation(PyObject *module, struct Nuitka_MetaPathBasedLoad
         tmp_class_creation_2__prepared = tmp_assign_source_14;
     }
     {
-        nuitka_bool tmp_condition_result_8;
+        nuitka_bool tmp_condition_result_11;
         PyObject *tmp_operand_name_2;
         PyObject *tmp_expression_name_9;
         CHECK_OBJECT(tmp_class_creation_2__prepared);
@@ -4268,14 +4394,14 @@ PyObject *modulecode_animation(PyObject *module, struct Nuitka_MetaPathBasedLoad
 
             goto try_except_handler_4;
         }
-        tmp_condition_result_8 = (tmp_res == 0) ? NUITKA_BOOL_TRUE : NUITKA_BOOL_FALSE;
-        if (tmp_condition_result_8 == NUITKA_BOOL_TRUE) {
-            goto branch_yes_6;
+        tmp_condition_result_11 = (tmp_res == 0) ? NUITKA_BOOL_TRUE : NUITKA_BOOL_FALSE;
+        if (tmp_condition_result_11 == NUITKA_BOOL_TRUE) {
+            goto branch_yes_7;
         } else {
-            goto branch_no_6;
+            goto branch_no_7;
         }
     }
-    branch_yes_6:;
+    branch_yes_7:;
     {
         PyObject *tmp_raise_type_2;
         PyObject *tmp_raise_value_2;
@@ -4352,16 +4478,16 @@ PyObject *modulecode_animation(PyObject *module, struct Nuitka_MetaPathBasedLoad
 
         goto try_except_handler_4;
     }
+    branch_no_7:;
+    goto branch_end_6;
     branch_no_6:;
-    goto branch_end_5;
-    branch_no_5:;
     {
         PyObject *tmp_assign_source_15;
         tmp_assign_source_15 = PyDict_New();
         assert(tmp_class_creation_2__prepared == NULL);
         tmp_class_creation_2__prepared = tmp_assign_source_15;
     }
-    branch_end_5:;
+    branch_end_6:;
     {
         PyObject *tmp_assign_source_16;
         {
@@ -4385,7 +4511,7 @@ PyObject *modulecode_animation(PyObject *module, struct Nuitka_MetaPathBasedLoad
 
             goto try_except_handler_6;
         }
-        tmp_dictset_value = mod_consts[38];
+        tmp_dictset_value = mod_consts[39];
         tmp_res = PyObject_SetItem(locals_animation$$$class__2_AnimeManager_20, mod_consts[34], tmp_dictset_value);
         if (tmp_res != 0) {
             assert(ERROR_OCCURRED());
@@ -4448,7 +4574,7 @@ PyObject *modulecode_animation(PyObject *module, struct Nuitka_MetaPathBasedLoad
 
             tmp_dictset_value = MAKE_FUNCTION_animation$$$function__3_create_anime(tmp_defaults_2);
 
-            tmp_res = PyObject_SetItem(locals_animation$$$class__2_AnimeManager_20, mod_consts[40], tmp_dictset_value);
+            tmp_res = PyObject_SetItem(locals_animation$$$class__2_AnimeManager_20, mod_consts[41], tmp_dictset_value);
             Py_DECREF(tmp_dictset_value);
             if (tmp_res != 0) {
                 assert(ERROR_OCCURRED());
@@ -4465,7 +4591,7 @@ PyObject *modulecode_animation(PyObject *module, struct Nuitka_MetaPathBasedLoad
 
         tmp_dictset_value = MAKE_FUNCTION_animation$$$function__4_create_pic();
 
-        tmp_res = PyObject_SetItem(locals_animation$$$class__2_AnimeManager_20, mod_consts[42], tmp_dictset_value);
+        tmp_res = PyObject_SetItem(locals_animation$$$class__2_AnimeManager_20, mod_consts[43], tmp_dictset_value);
         Py_DECREF(tmp_dictset_value);
         if (tmp_res != 0) {
             assert(ERROR_OCCURRED());
@@ -4481,7 +4607,7 @@ PyObject *modulecode_animation(PyObject *module, struct Nuitka_MetaPathBasedLoad
 
         tmp_dictset_value = MAKE_FUNCTION_animation$$$function__5_update();
 
-        tmp_res = PyObject_SetItem(locals_animation$$$class__2_AnimeManager_20, mod_consts[44], tmp_dictset_value);
+        tmp_res = PyObject_SetItem(locals_animation$$$class__2_AnimeManager_20, mod_consts[45], tmp_dictset_value);
         Py_DECREF(tmp_dictset_value);
         if (tmp_res != 0) {
             assert(ERROR_OCCURRED());
@@ -4497,7 +4623,7 @@ PyObject *modulecode_animation(PyObject *module, struct Nuitka_MetaPathBasedLoad
 
         tmp_dictset_value = MAKE_FUNCTION_animation$$$function__6_draw();
 
-        tmp_res = PyObject_SetItem(locals_animation$$$class__2_AnimeManager_20, mod_consts[46], tmp_dictset_value);
+        tmp_res = PyObject_SetItem(locals_animation$$$class__2_AnimeManager_20, mod_consts[47], tmp_dictset_value);
         Py_DECREF(tmp_dictset_value);
         if (tmp_res != 0) {
             assert(ERROR_OCCURRED());
@@ -4565,6 +4691,45 @@ PyObject *modulecode_animation(PyObject *module, struct Nuitka_MetaPathBasedLoad
         goto try_except_handler_6;
         skip_nested_handling_2:;
         {
+            nuitka_bool tmp_condition_result_12;
+            PyObject *tmp_compexpr_left_2;
+            PyObject *tmp_compexpr_right_2;
+            CHECK_OBJECT(tmp_class_creation_2__bases);
+            tmp_compexpr_left_2 = tmp_class_creation_2__bases;
+            tmp_compexpr_right_2 = mod_consts[25];
+            tmp_condition_result_12 = RICH_COMPARE_NE_NBOOL_OBJECT_TUPLE(tmp_compexpr_left_2, tmp_compexpr_right_2);
+            if (tmp_condition_result_12 == NUITKA_BOOL_EXCEPTION) {
+                assert(ERROR_OCCURRED());
+
+                FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+
+
+                exception_lineno = 20;
+
+                goto try_except_handler_6;
+            }
+            if (tmp_condition_result_12 == NUITKA_BOOL_TRUE) {
+                goto branch_yes_8;
+            } else {
+                goto branch_no_8;
+            }
+            assert(tmp_condition_result_12 != NUITKA_BOOL_UNASSIGNED);
+        }
+        branch_yes_8:;
+        tmp_dictset_value = mod_consts[25];
+        tmp_res = PyObject_SetItem(locals_animation$$$class__2_AnimeManager_20, mod_consts[38], tmp_dictset_value);
+        if (tmp_res != 0) {
+            assert(ERROR_OCCURRED());
+
+            FETCH_ERROR_OCCURRED(&exception_type, &exception_value, &exception_tb);
+
+
+            exception_lineno = 20;
+
+            goto try_except_handler_6;
+        }
+        branch_no_8:;
+        {
             PyObject *tmp_assign_source_17;
             PyObject *tmp_called_name_4;
             PyObject *tmp_args_name_4;
@@ -4572,7 +4737,7 @@ PyObject *modulecode_animation(PyObject *module, struct Nuitka_MetaPathBasedLoad
             PyObject *tmp_kwargs_name_4;
             CHECK_OBJECT(tmp_class_creation_2__metaclass);
             tmp_called_name_4 = tmp_class_creation_2__metaclass;
-            tmp_tuple_element_6 = mod_consts[38];
+            tmp_tuple_element_6 = mod_consts[39];
             tmp_args_name_4 = PyTuple_New(3);
             PyTuple_SET_ITEM0(tmp_args_name_4, 0, tmp_tuple_element_6);
             CHECK_OBJECT(tmp_class_creation_2__bases);
@@ -4663,7 +4828,7 @@ PyObject *modulecode_animation(PyObject *module, struct Nuitka_MetaPathBasedLoad
         exception_lineno = 20;
         goto try_except_handler_4;
         outline_result_2:;
-        UPDATE_STRING_DICT1(moduledict_animation, (Nuitka_StringObject *)mod_consts[38], tmp_assign_source_16);
+        UPDATE_STRING_DICT1(moduledict_animation, (Nuitka_StringObject *)mod_consts[39], tmp_assign_source_16);
     }
     goto try_end_2;
     // Exception handler code:

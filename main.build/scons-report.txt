@@ -2,11 +2,11 @@ CC=<clcache>
 CCCOM=${TEMPFILE("$CC $_MSVC_OUTPUT_FLAG /c $CHANGED_SOURCES $CFLAGS $CCFLAGS $_CCCOMCOM","$CCCOMSTR")}
 CFILESUFFIX=.c
 CLCACHE_DIR=C:\Users\Etern\AppData\Local\Nuitka\Nuitka\Cache\clcache
-CLCACHE_STATS=C:\Users\Etern\Documents\大学课程\python\assi4\pyFuujinrokuDestiny\main.build\clcache-stats.31796.txt
-CPPDEFINES=['_NUITKA_STANDALONE', '__NUITKA_NO_ASSERT__', '_NUITKA_CONSTANTS_FROM_RESOURCE', '_NUITKA_FROZEN=170', '_NUITKA_EXE']
+CLCACHE_STATS=C:\Users\Etern\Documents\大学课程\python\assi4\pyFuujinrokuDestiny\main.build\clcache-stats.31072.txt
+CPPDEFINES=['_NUITKA_STANDALONE', '__NUITKA_NO_ASSERT__', '_NUITKA_CONSTANTS_FROM_RESOURCE', '_NUITKA_FROZEN=168', '_NUITKA_EXE']
 CPPDEFPREFIX=/D
 CPPDEFSUFFIX=
-CPPPATH=['C:\\Program Files\\Python36\\include', '.', 'C:\\Users\\Etern\\AppData\\Roaming\\Python\\Python36\\SITE-P~1\\nuitka\\build\\include', 'C:\\Users\\Etern\\AppData\\Roaming\\Python\\Python36\\SITE-P~1\\nuitka\\build\\static_src']
+CPPPATH=['C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\Python37_64\\include', '.', 'C:\\Users\\Etern\\DOCUME~1\\大学课程\\python\\assi4\\PYFUUJ~1\\lib\\SITE-P~1\\nuitka\\build\\include', 'C:\\Users\\Etern\\DOCUME~1\\大学课程\\python\\assi4\\PYFUUJ~1\\lib\\SITE-P~1\\nuitka\\build\\static_src']
 CPPSUFFIXES=['.c', '.C', '.cxx', '.cpp', '.c++', '.cc', '.h', '.H', '.hxx', '.hpp', '.hh', '.F', '.fpp', '.FPP', '.m', '.mm', '.S', '.spp', '.SPP', '.sx']
 CXX=<clcache>
 CXXCOM=${TEMPFILE("$CXX $_MSVC_OUTPUT_FLAG /c $CHANGED_SOURCES $CXXFLAGS $CCFLAGS $_CCCOMCOM","$CXXCOMSTR")}
@@ -23,10 +23,10 @@ LIBDIRPREFIX=/LIBPATH:
 LIBDIRSUFFIX=
 LIBLINKPREFIX=
 LIBLINKSUFFIX=$LIBSUFFIX
-LIBPATH=['C:\\Program Files\\Python36\\libs']
+LIBPATH=['C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\Python37_64\\libs']
 LIBPREFIX=
 LIBPREFIXES=['$LIBPREFIX']
-LIBS=['Shell32', 'python36']
+LIBS=['Shell32', 'python37']
 LIBSUFFIX=.lib
 LIBSUFFIXES=['$LIBSUFFIX']
 LINK=link
