@@ -3,6 +3,7 @@
 
 import globe
 import leancloud
+import chardet
 import win32con,win32api
 import threading
 
@@ -48,6 +49,11 @@ class DatabaseManager:
         # 用户登录
         if globe.username == "":
             self.message("Logon Fail.\nusername missing.", "ERROR")
+            globe.online = False
+            globe.logonflag = True
+            return
+        if chardet.detect(str.encode(globe.username)).get("encoding") != "ascii":
+            self.message("Logon Fail.\nIllegal encoding.", "ERROR")
             globe.online = False
             globe.logonflag = True
             return

@@ -5,6 +5,8 @@ Assignment for python course, BUPT 2021.
 
 **.exe unavailable.**
 
+**`username` and `password` must be utf-8 encoding.**
+
 ## Config
 
 In `!config.yaml`:

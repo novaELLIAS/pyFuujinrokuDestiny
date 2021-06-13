@@ -39,7 +39,6 @@ class Scene_Loading(object):
         globe.updateflag = True
         globe.getrankflag = True
 
-        print(globe.destiny.sync_flag)
         for i in globe.destiny.sync_flag:
             if i == "login":
                 globe.logonflag = False
