@@ -20,7 +20,7 @@ DB:
 
 **`user_name` `user_password` and `email` must be provided, or you'll not be allowed to use online features.**
 
-## Environment
+## Environment & Reliance
 
 - python `3.7`
 - pygame `2.0.1`
@@ -28,6 +28,12 @@ DB:
 - pywin32 `301`
 - PyYAML `5.4.1`
 - Pillow `8.2.0`
+
+## Run
+
+```shell
+python main.py
+```
 
 ## Introduction
 
