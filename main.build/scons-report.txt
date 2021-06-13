@@ -2,7 +2,7 @@ CC=<clcache>
 CCCOM=${TEMPFILE("$CC $_MSVC_OUTPUT_FLAG /c $CHANGED_SOURCES $CFLAGS $CCFLAGS $_CCCOMCOM","$CCCOMSTR")}
 CFILESUFFIX=.c
 CLCACHE_DIR=C:\Users\Etern\AppData\Local\Nuitka\Nuitka\Cache\clcache
-CLCACHE_STATS=C:\Users\Etern\Documents\大学课程\python\assi4\pyFuujinrokuDestiny\main.build\clcache-stats.31072.txt
+CLCACHE_STATS=C:\Users\Etern\Documents\大学课程\python\assi4\pyFuujinrokuDestiny\main.build\clcache-stats.20988.txt
 CPPDEFINES=['_NUITKA_STANDALONE', '__NUITKA_NO_ASSERT__', '_NUITKA_CONSTANTS_FROM_RESOURCE', '_NUITKA_FROZEN=168', '_NUITKA_EXE']
 CPPDEFPREFIX=/D
 CPPDEFSUFFIX=
