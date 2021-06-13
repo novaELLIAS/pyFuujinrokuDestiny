@@ -48,6 +48,11 @@ class DatabaseManager:
 
     def logon(self):
         # 用户登录
+        if globe.username == "":
+            self.message("Logon Fail.\nusername missing.", "ERROR")
+            globe.online = False
+            globe.logonflag = True
+            return
         try:
             if self.isUserExist():
                 self.user.login(globe.username, globe.password)
