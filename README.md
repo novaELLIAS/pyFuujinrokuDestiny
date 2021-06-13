@@ -18,7 +18,7 @@ DB:
   email: ""  # Your email, for the administrator to contact you if necessary.
 ```
 
-**`user_name` and `user_password` must be provided.**
+**`user_name` `user_password` and `email` must be provided, or you'll not be allowed to use online features.**
 
 ## Environment
 
