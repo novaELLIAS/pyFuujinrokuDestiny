@@ -1,5 +1,6 @@
 # loading.py
 # 维护加载页面
+import threading
 
 import pygame
 import sys
@@ -13,14 +14,41 @@ clock = pygame.time.Clock()
 class Scene_Loading(object):
 
     def __init__(self):
+
+        globe.logonflag = False
+        globe.updateflag = False
+        globe.getrankflag = False
+
         globe.destiny.msManager.stop()
         self.screen = pygame.display.set_mode((640, 480))
         self.res = globe.destiny.rsManager.image["loading"]
         self.loading = self.res.subsurface(4, 0, 124, 57)
         self.count = 0
+        self.fincount = 100000
+        self.unfinflag = True
         # 淡出切换效果
         self.fade = pygame.Surface(globe.destiny.screen.get_size())
         self.fade.fill((0, 0, 0))
+
+        T = threading.Thread(target=self.dbinit)
+        T.start()
+
+    def dbinit(self):
+
+        globe.logonflag = True
+        globe.updateflag = True
+        globe.getrankflag = True
+
+        print(globe.destiny.sync_flag)
+        for i in globe.destiny.sync_flag:
+            if i == "login":
+                globe.logonflag = False
+            elif i == "sync":
+                globe.updateflag = False
+            elif i == "getrank":
+                globe.getrankflag = False
+
+        globe.destiny.dbManager.asyncprocess()
 
     def draw(self, screen):
         screen.blit(self.fade, (0, 0))
@@ -32,8 +60,11 @@ class Scene_Loading(object):
             newRect.center = (maple.rect.x, maple.rect.y)
             screen.blit(new, newRect)
         screen.blit(self.loading, [460, 380])
-        if self.count >= 120:
-            self.fade.set_alpha((self.count - 120) * 12)  # 对遮罩进行透明化
+        if globe.logonflag and globe.updateflag and globe.getrankflag:
+            if self.unfinflag:
+                self.fincount = self.count
+                self.unfinflag = False
+            self.fade.set_alpha((self.count - self.fincount) * 12)  # 对遮罩进行透明化
             screen.blit(self.fade, (0, 0))
 
     def update(self):
@@ -48,7 +79,7 @@ class Scene_Loading(object):
             maples.append(maple)
         maple_update()
         self.count += 1
-        if self.count >= 150:
+        if globe.logonflag and globe.updateflag and globe.getrankflag and (self.count - self.fincount >= 30):
             globe.destiny.goto(globe.destiny.navigate_to)
 
 

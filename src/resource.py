@@ -282,11 +282,15 @@ class ResourceManager(object):
         self.font = {}
         font_file = [
             "BIZ-UDMinchoM.ttc",
-            "BIZ-UDGothicR.ttc"
+            "BIZ-UDGothicR.ttc",
+            "courbd.ttf",
+            "cour.ttf"
         ]
         my_font = [
             "JAP1",
-            "JAP2"
+            "JAP2",
+            "courdb",
+            "cour"
         ]
         for i in range(len(font_file)):
             self.font[my_font[i]] = "src\\font\\" + font_file[i]

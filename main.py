@@ -2,7 +2,9 @@
 # 程序入口
 
 import pygame
+import yaml
 import sys
+import database
 from src import resource
 
 from pygame.locals import *
@@ -17,7 +19,15 @@ import cache
 class GameWindow(object):
 
     def __init__(self):
-        pass
+        # 读取yaml中的设定数据
+        globe.logon = False
+        f = open("!config.yaml")
+        f = yaml.load(f, Loader=yaml.FullLoader)
+        globe.username = f["DB"]["user_name"]
+        globe.password = f["DB"]["user_password"]
+        globe.appid = f["DB"]["appid"]
+        globe.appkey = f["DB"]["appkey"]
+        globe.useremail = f["DB"]["email"]
 
     def init(self):
         # 初始化函数, 实测放在__init__中会失效.
@@ -34,18 +44,19 @@ class GameWindow(object):
         pygame.display.set_icon(logo)
         pygame.display.set_caption("pyFuujinroku ~Destiny~")
 
+        globe.hiscore = 0
+
         self.rsManager = resource.ResourceManager()
         self.msManager = music.SoundManager()
+        self.dbManager = database.DatabaseManager()
         globe.destiny.navigate_to = title.Scene_Title
-        globe.destiny.sync_flag = True
+        globe.destiny.sync_flag = ["login", "sync", "getrank"]
         self.goto(loading.Scene_Loading)
         self.stack = []
 
         self.myfont = pygame.font.SysFont(None, 20)
 
         self.tst = 0
-
-        globe.hiscore = 0
 
     def goto(self, sc):
         # 直接跳转到指定scene

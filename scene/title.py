@@ -57,13 +57,16 @@ class Title_Menu(object):
             self.flash += 1
             if self.flash >= 20:
                 if self.index == 1:
+                    # 用户退出登录
+                    if globe.online:
+                        globe.destiny.dbManager.logout()
                     pygame.quit()
                     sys.exit()
                 else:
                     if self.flash >= 40:
                         globe.destiny.msManager.stop()
                         globe.destiny.navigate_to = game.Scene_Game
-                        globe.destiny.sync_flag = False
+                        globe.destiny.sync_flag = []
                         globe.destiny.goto(loading.Scene_Loading)
 
             if self.flash % 2 == 0 and self.flash <= 40:
@@ -87,9 +90,93 @@ class Scene_Title(object):
         self.rs = globe.destiny.rsManager
         self.menu = Title_Menu()
 
+        # ranklist
+        self.imglist = list()
+        self.reclist = list()
+
+        myfont15 = pygame.font.Font(globe.destiny.rsManager.font["cour"], 15)
+        myfontdb30 = pygame.font.Font(globe.destiny.rsManager.font["courdb"], 30)
+        myfontdb18 = pygame.font.Font(globe.destiny.rsManager.font["courdb"], 18)
+
+        # 用户名
+        img = myfontdb30.render(globe.username, True, (0, 0, 0))
+        rec = img.get_rect()
+        rec.topleft = (10, 10)
+        self.imglist.append(img)
+        self.reclist.append(rec)
+
+        # 历史最高成绩
+        img = myfont15.render("score: " + str(globe.hiscore), True, (0, 0, 0))
+        rec = img.get_rect()
+        rec.topleft = (10, 40)
+        self.imglist.append(img)
+        self.reclist.append(rec)
+
+        # 个人排名
+        notlegendflag = True
+        for i in globe.ranklist:
+            if i.get("username") == globe.username:
+                img = myfont15.render("rank: " + str(i.get("rank")), True, (0, 0, 0))
+                notlegendflag = False
+                break
+        if notlegendflag:
+            img = myfont15.render("Not on List of Legends.", True, (0, 0, 0))
+        rec = img.get_rect()
+        rec.topleft = (10, 55)
+        self.imglist.append(img)
+        self.reclist.append(rec)
+
+        # 英雄榜排名靠前
+        index = 1
+        nowpos = 75
+
+        img = myfontdb18.render("1.", True, (0, 0, 0))
+        rec = img.get_rect()
+        rec.topleft = (10, nowpos)
+        self.imglist.append(img)
+        self.reclist.append(rec)
+
+        img = myfontdb18.render(globe.ranklist[0]["username"], True, (0, 0, 0))
+        rec = img.get_rect()
+        rec.topleft = (50, nowpos)
+        self.imglist.append(img)
+        self.reclist.append(rec)
+
+        img = myfontdb18.render(str(globe.ranklist[0]["score"]), True, (0, 0, 0))
+        rec = img.get_rect()
+        rec.topright = (350, nowpos)
+        self.imglist.append(img)
+        self.reclist.append(rec)
+
+        for i in range(1, min(len(globe.ranklist), 20)):
+            if globe.ranklist[i]["score"] ^ globe.ranklist[i-1]["score"]:
+                index += 1
+
+            img = myfontdb18.render(str(index) + '.', True, (0, 0, 0))
+            rec = img.get_rect()
+            rec.topleft = (10, nowpos + i * 20)
+            self.imglist.append(img)
+            self.reclist.append(rec)
+
+            img = myfontdb18.render(globe.ranklist[i]["username"], True, (0, 0, 0))
+            rec = img.get_rect()
+            rec.topleft = (50, nowpos + i * 20)
+            self.imglist.append(img)
+            self.reclist.append(rec)
+
+            img = myfontdb18.render(str(globe.ranklist[i]["score"]), True, (0, 0, 0))
+            rec = img.get_rect()
+            rec.topright = (350, nowpos + i * 20)
+            self.imglist.append(img)
+            self.reclist.append(rec)
+
     def update(self):
         self.menu.update()
 
     def draw(self, screen):
+
         screen.blit(self.rs.image["background"], (0, 0))
+        for i in range(0, len(self.imglist)):
+            screen.blit(self.imglist[i], self.reclist[i])
+
         self.menu.draw(screen)

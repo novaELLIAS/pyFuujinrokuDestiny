@@ -63,13 +63,13 @@ class PauseMenu(object):
 				# To title
 				self.replace()
 				globe.destiny.navigate_to = title.Scene_Title
-				globe.destiny.sync_flag = True
+				globe.destiny.sync_flag = ["sync", "getrank"]
 				globe.destiny.goto(loading.Scene_Loading)
 			if self.index == 1:
 				# Replay
 				self.replace()
 				globe.destiny.navigate_to = game.Scene_Game
-				globe.destiny.sync_flag = True
+				globe.destiny.sync_flag = ["sync"]
 				globe.destiny.goto(loading.Scene_Loading)
 
 	def draw(self, screen):
@@ -103,6 +103,7 @@ class Scene_GameOver(object):
 			self.title = self.rs["Dead"]
 		else:
 			# 演目终演
+			globe.scgame.score += globe.scgame.player.life * 10000
 			globe.destiny.msManager.play_BGM("win")
 			self.title = self.rs["Clear"]
 
