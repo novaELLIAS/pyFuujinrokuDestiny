@@ -25,11 +25,9 @@ class DatabaseManager:
             globe.logonflag = True
             return
         if not globe.updateflag and globe.online:
-            t1 = threading.Thread(target=self.update)
-            t1.start()
+            self.update()
         if not globe.getrankflag and globe.online:
-            t2 = threading.Thread(target=self.getrank)
-            t2.start()
+            self.getrank()
 
     def message(self, content, title):
         # 消息对话框
