@@ -46,3 +46,11 @@ python main.py
 ![top language](https://img.shields.io/github/languages/top/novaELLIAS/pyFuujinrokuDestiny)
 ![repo size](https://img.shields.io/github/repo-size/novaELLIAS/pyFuujinrokuDestiny?label=repo%20size)
 ![activity](https://img.shields.io/github/commit-activity/m/novaELLIAS/pyFuujinrokuDestiny)
+
+## Referance
+
+[SiodomeHuu/pygame-touhou](https://github.com/SiodomeHuu/pygame-touhou)
+
+[TkhiienLok /Touhou](https://github.com/TkhiienLok/Touhou)
+
+[takahirox/toho-like-js](https://github.com/takahirox/toho-like-js)

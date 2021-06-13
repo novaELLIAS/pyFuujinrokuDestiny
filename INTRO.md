@@ -233,3 +233,7 @@
 ### 爆分
 
 分数达到显示上限，不再增加。
+
+## Referance
+
+[thbwiki](https://thwiki.cc/)
