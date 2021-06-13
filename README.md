@@ -5,8 +5,6 @@ Assignment for python course, BUPT 2021.
 
 **.exe unavailable.**
 
-**offline mode unavailable.**
-
 ## Config
 
 In `!config.yaml`:

@@ -112,63 +112,64 @@ class Scene_Title(object):
         self.imglist.append(img)
         self.reclist.append(rec)
 
-        # 个人排名
-        notlegendflag = True
-        for i in globe.ranklist:
-            if i.get("username") == globe.username:
-                img = myfont15.render("rank: " + str(i.get("rank")), True, (0, 0, 0))
-                notlegendflag = False
-                break
-        if notlegendflag:
-            img = myfont15.render("Not on List of Legends.", True, (0, 0, 0))
-        rec = img.get_rect()
-        rec.topleft = (10, 55)
-        self.imglist.append(img)
-        self.reclist.append(rec)
-
-        # 英雄榜排名靠前
-        index = 1
-        nowpos = 75
-
-        img = myfontdb18.render("1.", True, (0, 0, 0))
-        rec = img.get_rect()
-        rec.topleft = (10, nowpos)
-        self.imglist.append(img)
-        self.reclist.append(rec)
-
-        img = myfontdb18.render(globe.ranklist[0]["username"], True, (0, 0, 0))
-        rec = img.get_rect()
-        rec.topleft = (50, nowpos)
-        self.imglist.append(img)
-        self.reclist.append(rec)
-
-        img = myfontdb18.render(str(globe.ranklist[0]["score"]), True, (0, 0, 0))
-        rec = img.get_rect()
-        rec.topright = (350, nowpos)
-        self.imglist.append(img)
-        self.reclist.append(rec)
-
-        for i in range(1, min(len(globe.ranklist), 20)):
-            if globe.ranklist[i]["score"] ^ globe.ranklist[i-1]["score"]:
-                index += 1
-
-            img = myfontdb18.render(str(index) + '.', True, (0, 0, 0))
+        if globe.online:
+            # 个人排名
+            notlegendflag = True
+            for i in globe.ranklist:
+                if i.get("username") == globe.username:
+                    img = myfont15.render("rank: " + str(i.get("rank")), True, (0, 0, 0))
+                    notlegendflag = False
+                    break
+            if notlegendflag:
+                img = myfont15.render("Not on List of Legends.", True, (0, 0, 0))
             rec = img.get_rect()
-            rec.topleft = (10, nowpos + i * 20)
+            rec.topleft = (10, 55)
             self.imglist.append(img)
             self.reclist.append(rec)
 
-            img = myfontdb18.render(globe.ranklist[i]["username"], True, (0, 0, 0))
+            # 英雄榜排名靠前
+            index = 1
+            nowpos = 75
+
+            img = myfontdb18.render("1.", True, (0, 0, 0))
             rec = img.get_rect()
-            rec.topleft = (50, nowpos + i * 20)
+            rec.topleft = (10, nowpos)
             self.imglist.append(img)
             self.reclist.append(rec)
 
-            img = myfontdb18.render(str(globe.ranklist[i]["score"]), True, (0, 0, 0))
+            img = myfontdb18.render(globe.ranklist[0]["username"], True, (0, 0, 0))
             rec = img.get_rect()
-            rec.topright = (350, nowpos + i * 20)
+            rec.topleft = (50, nowpos)
             self.imglist.append(img)
             self.reclist.append(rec)
+
+            img = myfontdb18.render(str(globe.ranklist[0]["score"]), True, (0, 0, 0))
+            rec = img.get_rect()
+            rec.topright = (350, nowpos)
+            self.imglist.append(img)
+            self.reclist.append(rec)
+
+            for i in range(1, min(len(globe.ranklist), 20)):
+                if globe.ranklist[i]["score"] ^ globe.ranklist[i-1]["score"]:
+                    index += 1
+
+                img = myfontdb18.render(str(index) + '.', True, (0, 0, 0))
+                rec = img.get_rect()
+                rec.topleft = (10, nowpos + i * 20)
+                self.imglist.append(img)
+                self.reclist.append(rec)
+
+                img = myfontdb18.render(globe.ranklist[i]["username"], True, (0, 0, 0))
+                rec = img.get_rect()
+                rec.topleft = (50, nowpos + i * 20)
+                self.imglist.append(img)
+                self.reclist.append(rec)
+
+                img = myfontdb18.render(str(globe.ranklist[i]["score"]), True, (0, 0, 0))
+                rec = img.get_rect()
+                rec.topright = (350, nowpos + i * 20)
+                self.imglist.append(img)
+                self.reclist.append(rec)
 
     def update(self):
         self.menu.update()

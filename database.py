@@ -19,6 +19,11 @@ class DatabaseManager:
         # 供外部调用的流程
         if not globe.logonflag:
             self.logon()
+        if not globe.online:
+            globe.getrankflag = True
+            globe.updateflag = True
+            globe.logonflag = True
+            return
         if not globe.updateflag and globe.online:
             t1 = threading.Thread(target=self.update)
             t1.start()
@@ -53,6 +58,7 @@ class DatabaseManager:
         except Exception as e:
             self.message("Logon Fail.\nUsing offline mode.", "ERROR")
             globe.online = False
+            globe.logonflag = True
             print(e)
         globe.logonflag = True
 
@@ -87,6 +93,8 @@ class DatabaseManager:
         return self.score.get("score")
 
     def update(self):
+        if not globe.online:
+            pass
         # 更新在线成绩
         onlinebest = self.getscore()
         if globe.hiscore > onlinebest:
@@ -98,6 +106,8 @@ class DatabaseManager:
         globe.updateflag = True
 
     def getrank(self):
+        if not globe.online:
+            pass
         # 查询前1000名
         scoreframe = leancloud.Object.extend("score")
         query = scoreframe.query
