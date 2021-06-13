@@ -29,6 +29,10 @@ DB:
 - PyYAML `5.4.1`
 - Pillow `8.2.0`
 
+## Introduction
+
+[INTRO.md](https://github.com/novaELLIAS/pyFuujinrokuDestiny/blob/master/INTRO.md)
+
 ## Statistics
 
 ![LICENSE](https://img.shields.io/github/license/novaELLIAS/pyFuujinrokuDestiny)
