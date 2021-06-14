@@ -262,6 +262,7 @@ class ResourceManager(object):
             "se_damage00.wav",
             "se_pause.wav",
             "se_extend.wav",
+            "se_item.ogg",
         ]
         se_myname = [
             "bonus",
@@ -273,7 +274,8 @@ class ResourceManager(object):
             "cancel",
             "damage",
             "pause",
-            "extend"
+            "extend",
+            "item",
         ]
         for i in range(len(se_name)):
             self.se[se_myname[i]] = pygame.mixer.Sound("src\\se\\" + se_name[i])
