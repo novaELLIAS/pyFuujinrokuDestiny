@@ -75,8 +75,11 @@ def bl_inter_check_graze(embullet: EnemyBullet):
     # 根据子弹类型 (圆形/矩形) 进行对应检测
     if type(area) == float or type(area) == int:
         dis2 = (blpoint[0] - plpoint[0]) ** 2 + (blpoint[1] - plpoint[1]) ** 2
-        if dis2 < (area + grazedis) ** 2 and embullet.ungrazed:
-            bl_inter_real_graze(embullet)
+        if dis2 < (area + grazedis) ** 2:
+            if embullet.ungrazed:
+                bl_inter_real_graze(embullet)
+        elif dis2 >= (area + (grazedis << 2)) ** 2:
+            embullet.ungrazed = True
         return
 
     theta = embullet.orbit.theta
@@ -84,13 +87,16 @@ def bl_inter_check_graze(embullet: EnemyBullet):
         rctuple = (area.left, area.top, area.width, area.height)
     else:
         rctuple = area
+
     disx = plpoint[0] - blpoint[0]
     disy = plpoint[1] - blpoint[1]
     left_right = cos(theta / 180.0 * pi) * disx + sin(theta / 180.0 * pi) * disy
     top_bottom = sin(theta / 180.0 * pi) * disx - cos(theta / 180.0 * pi) * disy
-    if (abs(left_right) < rctuple[3] / 2 + grazedis and
-            abs(top_bottom) < rctuple[2] / 2 + grazedis and embullet.ungrazed):
-        bl_inter_real_graze(embullet)
+    if abs(left_right) < rctuple[3] / 2 + grazedis and abs(top_bottom) < rctuple[2] / 2 + grazedis:
+        if embullet.ungrazed:
+            bl_inter_real_graze(embullet)
+    elif abs(left_right) >= rctuple[3] / 2 + (grazedis << 2) and abs(top_bottom) >= rctuple[2] / 2 + (grazedis << 2):
+        embullet.ungrazed = True
 
 
 def bl_inter_outscr(embullet):
