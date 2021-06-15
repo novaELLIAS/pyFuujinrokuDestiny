@@ -12,6 +12,7 @@ import item
 
 global plpoint
 played_se = False
+played_fx_biu = False
 
 
 class EnemyBullet(object):
@@ -54,12 +55,17 @@ def bl_inter_collide(embullet):
 def bl_inter_real_graze(embullet: EnemyBullet):
     # 疯狂擦弹的时候撞可能无 biu 音效, 所以控制每帧只播一次擦弹音效
     global played_se
+    global plpoint
+    global played_fx_biu
     globe.scgame.graze += 1
     embullet.ungrazed = False
     if globe.scgame.player.status != globe.cstatus["hit"] and not played_se:
         globe.destiny.msManager.play_SE("item")
         played_se = True
     # TODO: 加分
+    # 显示擦弹特效
+    if globe.scgame.player.status != globe.cstatus["hit"]:
+        globe.scgame.fxManager.grazeFX(plpoint[0], plpoint[1])
 
 
 def bl_inter_check_graze(embullet: EnemyBullet):
@@ -130,6 +136,8 @@ class BulletManager(object):
 
     def update(self):
         global played_se
+        global plpoint
+        global played_fx_biu
         enbl_tmp = []
         played_se = False
         for i in self.plbullet:
@@ -143,10 +151,15 @@ class BulletManager(object):
                 if bl_inter_outscr(i):
                     enbl_tmp.append(i)
         else:
+            if globe.scgame.player.status != globe.cstatus["hit"]:
+                played_fx_biu = False
             for i in self.enbullet:
                 if bl_inter_collide(i):
                     enbl_tmp.append(i)
                     globe.scgame.player.hit()
+                    if globe.scgame.player.status == globe.cstatus["hit"] and not played_fx_biu:
+                        played_fx_biu = True
+                        globe.scgame.fxManager.hitFX(plpoint[0], plpoint[1])
                 else:
                     i.orbit.update(i.bltype)
                     if bl_inter_outscr(i):
