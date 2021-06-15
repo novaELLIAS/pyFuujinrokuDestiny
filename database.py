@@ -85,6 +85,8 @@ class DatabaseManager:
             self.message("Register Fail.\nUsing offline mode.", "ERROR")
             print(e)
 
+        self.message("Register success.\nRegistered as " + globe.username + '.', "REGISTER")
+
     def getscore(self) -> int:
         # 查询在线分数
         scoreframe = leancloud.Object.extend("score")
