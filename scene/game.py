@@ -1,21 +1,17 @@
 # game.py
 # 游戏流程控制
 
-import pygame
-from pygame.locals import *
 import sys
+from pygame.locals import *
 
 import player
 import tama
 import background
-import globe
 import item
 import animation
 import bullet
-import orbit
 import enemy
 import dialogue
-import effect
 
 from hud import *
 
@@ -44,7 +40,6 @@ class Scene_Game(object):
         self.blManager = bullet.BulletManager()
         self.anManager = animation.AnimeManager()
         self.enManager = enemy.EnemyManager()
-        self.fxManager = effect.EffectManager()
 
         self.txplayer = dialogue.TextPlayer()
 
@@ -112,7 +107,6 @@ class Scene_Game(object):
     def draw(self, screen):
         screen.fill((255, 255, 255))
         self.bgManager.draw(screen)
-        self.fxManager.draw(screen)
         self.itManager.draw(screen)
         self.enManager.draw(screen)
         self.player.draw(screen)

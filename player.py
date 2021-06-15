@@ -29,7 +29,7 @@ class Player(object):
         global cstatus
         global canime
         cstatus = {"normal": 0, "wudi": 1, "crash": 2, "sc": 3, "scwudi": 4, "hit": 5}
-        # 状态: 通常状态, 撞后无敌状态(放boom), 扔雷状态, 扔雷后无敌状态, 撞了
+        # 状态: 通常状态, Miss, 撞后无敌状态(放bomb), 扔雷状态, 扔雷后无敌状态, 被弹
 
         self.status = cstatus["normal"]
 
@@ -72,6 +72,7 @@ class Player(object):
             "scwudi"] and not globe.scgame.timestop:
             self.power -= 100
             self.status = cstatus["sc"]
+            globe.scgame.itManager.getitem()
             globe.destiny.msManager.play_SE("wudi")
 
     def hit(self):
@@ -82,9 +83,9 @@ class Player(object):
             self.status = cstatus["hit"]
 
     def miss(self):
-        # 撞了之后没挽回, miss
+        # 撞了之后没决死, miss
         if self.status == cstatus["hit"]:
-            globe.scgame.anManager.create_anime(resource.anime["bubble"], self.rect.topleft, 5)
+            globe.scgame.anManager.hitFX(self.point[0], self.point[1])
             globe.scgame.blManager.clear_enbl()
             rc = self.rect.copy()
             rc.left -= 20
@@ -204,7 +205,7 @@ class Player(object):
             self.power = 500
 
         if self.status == cstatus["hit"]:
-            # 如果撞了, 处理决死(20个算法周期)
+            # 如果撞了, 处理决死(20帧)
             if self.tcount >= 20:
                 self.miss()
             else:

@@ -2,7 +2,6 @@
 # 这个模块用于维护屏幕右侧的信息显示.
 
 import pygame
-from pygame.locals import *
 import globe
 
 
@@ -78,6 +77,7 @@ class Hud(object):
         if score/500000 >= self.bonusCnt:
             globe.scgame.player.life += 1
             globe.destiny.msManager.play_SE("extend")
+            globe.scgame.blManager.clear_enbl()
             self.bonusCnt += 1
 
         if globe.hiscore < globe.scgame.hiscore:
