@@ -37,6 +37,7 @@ class Hud(object):
 
         self.blood = blood
         self.blood_show = False
+        self.font_bimini = pygame.font.Font(globe.destiny.rsManager.font["bimini"], 19)
 
     def create_bonus(self, fp=60):
         # 创建"get spell card bonus"字样
@@ -123,3 +124,11 @@ class Hud(object):
             pygame.draw.line(screen, (255, 255, 255), (d, 16), (d + int(len2), 16))
             # 非符血量为白色, 处于右侧位置
         # 在boss战中的显示元素: boss进度
+
+        font = self.font_bimini
+        grz = str(globe.scgame.graze)
+        gzimg = font.render("Graze  " + grz, True,
+            (255, 255, 255), (0, 0, 0))
+        rc = gzimg.get_rect()
+        rc.bottomleft = (444, 170)
+        globe.destiny.screen.blit(gzimg, rc)
