@@ -6,6 +6,7 @@ from pygame.locals import *
 import globe
 
 global entype
+played_se = False
 
 
 class EnemyType(object):
@@ -159,6 +160,13 @@ class EnemyManager(object):
 
         globe.entype = entype
 
+    def play_damage_se(self):
+        # 射击时撞可能无 biu 音效, 所以控制每帧只播一次擦弹音效
+        global played_se
+        if globe.scgame.player.status != globe.cstatus["hit"] and not played_se:
+            globe.destiny.msManager.play_SE("damage")
+            played_se = True
+
     def create_enemy(self, entype, orbit, oristatus=0, bump=False, wdtime=0):
         # 创建敌机(对外接口)
         tp = Enemy(entype, orbit, oristatus, bump, wdtime)
@@ -172,6 +180,9 @@ class EnemyManager(object):
         return tp
 
     def update(self):
+
+        global played_se
+        played_se = False
 
         # 根据自机火力判断伤害
         if globe.scgame.player.power >= 500:
@@ -196,7 +207,8 @@ class EnemyManager(object):
                         if j[0].colliderect(i.rect) and i.status == globe.enstatus["normal"]:
                             # 被自机击中
                             globe.scgame.blManager.plbullet.remove(j)
-                            globe.destiny.msManager.play_SE("damage")
+                            self.play_damage_se()
+                            # globe.destiny.msManager.play_SE("damage")
                             globe.scgame.score += damage
                             if not i.wudi:
                                 i.health -= damage

@@ -58,11 +58,11 @@ def bl_inter_real_graze(embullet: EnemyBullet):
     global plpoint
     global played_fx_biu
     globe.scgame.graze += 1
+    globe.scgame.score += 100
     embullet.ungrazed = False
     if globe.scgame.player.status != globe.cstatus["hit"] and not played_se:
         globe.destiny.msManager.play_SE("item")
         played_se = True
-    # TODO: 加分
     # 显示擦弹特效
     if globe.scgame.player.status != globe.cstatus["hit"]:
         globe.scgame.fxManager.grazeFX(plpoint[0], plpoint[1])
@@ -76,7 +76,7 @@ def bl_inter_check_graze(embullet: EnemyBullet):
     area = embullet.bltype.area
 
     # 根据子弹类型 (圆形/矩形) 进行对应检测
-    #-_- area 不是面积
+    # -_- area 不是面积
     if type(area) == float or type(area) == int:
         dis2 = (blpoint[0] - plpoint[0]) ** 2 + (blpoint[1] - plpoint[1]) ** 2
         if dis2 < (area + grazedis) ** 2 and embullet.ungrazed:
@@ -93,7 +93,7 @@ def bl_inter_check_graze(embullet: EnemyBullet):
     left_right = cos(theta / 180.0 * pi) * disx + sin(theta / 180.0 * pi) * disy
     top_bottom = sin(theta / 180.0 * pi) * disx - cos(theta / 180.0 * pi) * disy
     if (abs(left_right) < rctuple[3] / 2 + grazedis and
-        abs(top_bottom) < rctuple[2] / 2 + grazedis and embullet.ungrazed):
+            abs(top_bottom) < rctuple[2] / 2 + grazedis and embullet.ungrazed):
         bl_inter_real_graze(embullet)
 
 
@@ -164,7 +164,7 @@ class BulletManager(object):
                     i.orbit.update(i.bltype)
                     if bl_inter_outscr(i):
                         enbl_tmp.append(i)
-                bl_inter_check_graze(i);
+                bl_inter_check_graze(i)
 
         for i in enbl_tmp:
             self.enbullet.remove(i)

@@ -3,9 +3,12 @@ Assignment for python course, BUPT 2021.
 
 ## Notice
 
-**.exe unavailable.**
+`username` and `password` must be **`ASCII` encoding**.
 
-**`username` and `password` must be utf-8 encoding.**
+If `username` exists in database, system will logon with current `username` and `password`.
+
+Else, a new account will be registered with current `username`, `password` and **`email`**.
+
 
 ## Config
 
