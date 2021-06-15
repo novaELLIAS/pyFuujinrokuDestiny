@@ -52,6 +52,7 @@ class Scene_Game(object):
         globe.destiny.msManager.play_BGM("lv1")
 
         self.score = 0
+        self.graze = 0
         self.hiscore = globe.hiscore
         print(globe.hiscore)
 
