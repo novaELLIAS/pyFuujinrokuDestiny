@@ -68,7 +68,8 @@ class Player(object):
 
     def throwbomb(self):
         # 扔雷
-        if self.power >= 100 and self.status != cstatus["sc"] and self.status != cstatus["scwudi"] and not globe.scgame.timestop:
+        if self.power >= 100 and self.status != cstatus["sc"] and self.status != cstatus[
+            "scwudi"] and not globe.scgame.timestop:
             self.power -= 100
             self.status = cstatus["sc"]
             globe.destiny.msManager.play_SE("wudi")
@@ -107,7 +108,7 @@ class Player(object):
                 self.power = 0
 
     def isThough(self) -> bool:
-        return self.status==cstatus["wudi"] or self.status==cstatus["sc"] or self.status==cstatus["scwudi"]
+        return self.status == cstatus["wudi"] or self.status == cstatus["sc"] or self.status == cstatus["scwudi"]
 
     def move(self):
         # 处理自机状态变化(键位操作)
