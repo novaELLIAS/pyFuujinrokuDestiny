@@ -1,11 +1,10 @@
 # database.py
 # 用于处理数据库操作
 
-import globe
+from utility import globe
 import leancloud
 import chardet
 import win32con,win32api
-import threading
 
 globe.online = False  # 在线标志(是否登录)
 
@@ -47,8 +46,8 @@ class DatabaseManager:
 
     def logon(self):
         # 用户登录
-        if globe.username == "":
-            self.message("Logon Fail.\nusername missing.", "ERROR")
+        if globe.username == "" or len(globe.username) > 20:
+            self.message("Logon Fail.\nusername unavailable.", "ERROR")
             globe.online = False
             globe.logonflag = True
             return

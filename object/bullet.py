@@ -5,9 +5,9 @@ import pygame
 
 from math import *
 
-import globe
-import cache
-import item
+from utility import globe
+from render import cache
+from object import item
 
 global plpoint
 played_se = False

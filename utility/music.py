@@ -1,5 +1,5 @@
 import pygame
-import globe
+from utility import globe
 
 global se
 

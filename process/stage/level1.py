@@ -1,15 +1,15 @@
 # level1.py
 # 用于维护stage1流程
 
-import globe
-import bullet
-import orbit
-import item
+from utility import globe
+from object import bullet
+from render import orbit
+from object import item
 
 import random
 import time
 
-from scene import gameover
+from process.scene import gameover
 
 global lbltype
 global orb

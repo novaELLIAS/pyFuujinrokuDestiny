@@ -2,8 +2,8 @@
 # 用于维护敌机和子弹的轨迹
 
 from math import *
-import globe
-import cache
+from utility import globe
+from render import cache
 
 
 class StraightBullet(object):

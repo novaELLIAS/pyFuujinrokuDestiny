@@ -4,7 +4,7 @@ import threading
 
 import pygame
 import sys
-import globe
+from utility import globe
 from random import *
 
 maples = []

@@ -2,10 +2,9 @@
 # tama(阴阳玉)为设定中的自机攻击道具, 这个模块维护自机火力.
 
 import pygame
-from pygame.locals import *
 
-import globe
-import cache
+from utility import globe
+from render import cache
 
 global ziji
 

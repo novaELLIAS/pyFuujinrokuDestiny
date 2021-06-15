@@ -4,20 +4,14 @@
 import sys
 from pygame.locals import *
 
-import player
-import tama
-import background
-import item
-import animation
-import bullet
-import enemy
-import dialogue
+from render import background, animation
+from object import bullet, tama, enemy, item, player
+from process.stage import level1
+from utility import dialogue
 
-from hud import *
+from render.hud import *
 
-from scene import menu
-
-import level1
+from process.scene import menu
 
 
 class Scene_Game(object):

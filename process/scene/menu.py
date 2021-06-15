@@ -4,8 +4,8 @@
 import pygame
 from pygame.locals import *
 import sys
-import globe
-from scene import menu_confirm
+from utility import globe
+from process.scene import menu_confirm
 from PIL import Image, ImageFilter
 
 

@@ -2,7 +2,7 @@
 # 这个模块用于维护屏幕右侧的信息显示.
 
 import pygame
-import globe
+from utility import globe
 
 
 class Hud(object):

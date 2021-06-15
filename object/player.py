@@ -4,10 +4,10 @@
 import pygame
 from pygame.locals import *
 
-import globe
-import cache
-import item
-from scene import gameover
+from utility import globe
+from render import cache
+from object import item
+from process.scene import gameover
 from math import *
 
 global resource

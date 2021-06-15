@@ -4,8 +4,8 @@
 import pygame
 from pygame.locals import *
 
-import globe
-import cache
+from utility import globe
+from render import cache
 
 
 class BackgroundManager(object):

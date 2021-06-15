@@ -2,8 +2,7 @@
 # 用于维护敌机
 
 import pygame
-from pygame.locals import *
-import globe
+from utility import globe
 
 global entype
 played_se = False

@@ -4,7 +4,7 @@
 import pygame
 from pygame.locals import *
 import sys
-import globe
+from utility import globe
 
 global globaltext
 

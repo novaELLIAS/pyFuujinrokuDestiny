@@ -4,8 +4,8 @@
 import pygame
 from pygame.locals import *
 import sys
-import globe
-from scene import title
+from utility import globe
+from process.scene import title
 
 
 class PauseMenu_Confirm(object):

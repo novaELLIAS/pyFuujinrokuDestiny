@@ -4,7 +4,7 @@
 import pygame
 from math import *
 
-import globe
+from utility import globe
 
 global itstatus
 itstatus = {"normal": 0, "fly": 1}

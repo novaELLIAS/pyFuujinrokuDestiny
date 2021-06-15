@@ -3,17 +3,12 @@
 
 import pygame
 import yaml
-import sys
-import database
 from src import resource
 
-from pygame.locals import *
+from process.scene import loading, title
 
-from scene import title, loading
-
-import globe
-import music
-import cache
+from utility import globe, database, music
+from render import cache
 
 
 class GameWindow(object):

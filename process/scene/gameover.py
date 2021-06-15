@@ -5,9 +5,9 @@ import pygame
 from pygame.locals import *
 import sys
 
-import globe
+from utility import globe
 
-from scene import title, game, loading
+from process.scene import game, loading, title
 from PIL import Image, ImageFilter
 
 
