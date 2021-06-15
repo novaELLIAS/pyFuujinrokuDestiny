@@ -78,6 +78,7 @@ class Hud(object):
             globe.scgame.player.life += 1
             globe.destiny.msManager.play_SE("extend")
             globe.scgame.blManager.clear_enbl()
+            globe.scgame.itManager.getitem()
             self.bonusCnt += 1
 
         if globe.hiscore < globe.scgame.hiscore:

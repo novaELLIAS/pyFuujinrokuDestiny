@@ -237,6 +237,7 @@ class Player(object):
             if self.tcount > 360:
                 self.status = cstatus["scwudi"]
                 globe.scgame.blManager.clear_enbl()
+                globe.scgame.itManager.getitem()
                 self.tcount = 0
         elif self.status == cstatus["scwudi"]:
             # 扔雷后的无敌状态
