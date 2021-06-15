@@ -39,6 +39,8 @@ class Hud(object):
         self.blood_show = False
         self.font_bimini = pygame.font.Font(globe.destiny.rsManager.font["bimini"], 19)
 
+        self.bonusCnt = 1
+
     def create_bonus(self, fp=60):
         # 创建"get spell card bonus"字样
         self.fb = fp
@@ -72,6 +74,11 @@ class Hud(object):
         if hiscore < score:
             hiscore = score
             globe.scgame.hiscore = globe.scgame.score
+
+        if score/500000 >= self.bonusCnt:
+            globe.scgame.player.life += 1
+            globe.destiny.msManager.play_SE("extend")
+            self.bonusCnt += 1
 
         if globe.hiscore < globe.scgame.hiscore:
             globe.hiscore = globe.scgame.hiscore
@@ -127,8 +134,7 @@ class Hud(object):
 
         font = self.font_bimini
         grz = str(globe.scgame.graze)
-        gzimg = font.render("Graze  " + grz, True,
-            (255, 255, 255), (0, 0, 0))
+        gzimg = font.render("Graze  " + grz, True, (255, 255, 255))
         rc = gzimg.get_rect()
         rc.bottomleft = (444, 170)
         globe.destiny.screen.blit(gzimg, rc)
