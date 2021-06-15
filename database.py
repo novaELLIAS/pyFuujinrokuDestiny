@@ -61,8 +61,14 @@ class DatabaseManager:
             if self.isUserExist():
                 self.user.login(globe.username, globe.password)
             else:
-                self.register()
-                self.user.login(globe.username, globe.password)
+                if globe.useremail == "":
+                    self.message("Register Fail.\nEmail missing.\nUsing offline mode.", "ERROR")
+                    globe.online = False
+                    globe.logonflag = True
+                    return
+                else:
+                    self.register()
+                    self.user.login(globe.username, globe.password)
             globe.online = True
         except Exception as e:
             self.message("Logon Fail.\nUsing offline mode.", "ERROR")
