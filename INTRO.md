@@ -1,4 +1,4 @@
-# Introduction to pyFuujinrolu ~Destiny~
+# Introduction to pyFuujinroluDestiny
 
 ## 系统名词简介
 
