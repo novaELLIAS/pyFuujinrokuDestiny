@@ -43,7 +43,7 @@ class LPowerItem(object):
         rc = self.image.get_rect()
         rc.width = int(rc.width * 0.7)
         rc.height = int(rc.height * 0.7)
-        # 由于源中的贴图大小过大, 需要进行缩放
+        # 贴图放大, 与小P进行区分
         self.image = pygame.transform.scale(self.image, rc.size)
         self.rect = self.image.get_rect()
         self.rect.center = point
@@ -148,7 +148,7 @@ class ItemManager(object):
                 if i.rect.left < globe.playrc.left or i.rect.right > globe.playrc.right:
                     tmp.append(i)
                 i.frame += 1
-            else:
+            elif i.status == itstatus["fly"]:
                 # 维护道具被自机的吸引
                 dx = player.point[0] - i.rect.centerx
                 dy = player.point[1] - i.rect.centery
@@ -161,10 +161,14 @@ class ItemManager(object):
                 i.rect.top += i.vy
                 if i.rect.collidepoint(player.point):
                     i.buffer()
-                    tmp.append(i)
+                    if i not in tmp:
+                        tmp.append(i)
         for i in tmp:
             # 消除无效道具
-            self.item.remove(i)
+            try:
+                self.item.remove(i)
+            except Exception as e:
+                continue
 
     def getitem(self):
         # 吸收得点, 这里使用打tag的形式实现.

@@ -234,11 +234,11 @@ class ResourceManager(object):
 
         self.bgm = {}
         bgm_name = [
-            "title.wav",
-            "level1.wav",
-            "level1boss.wav",
-            "win.wav",
-            "gameover.wav",
+            "title.ogg",
+            "level1.ogg",
+            "level1boss.ogg",
+            "win.ogg",
+            "gameover.ogg",
         ]
         bgm_myname = [
             "title",

@@ -184,6 +184,7 @@ class BulletManager(object):
     def clear_enbl(self):
         for i in self.enbullet:
             globe.scgame.itManager.create(item.CleanBlItem, i.orbit.point)
+        # 造成全局伤害
         for i in globe.scgame.enManager.enemy:
             if i.health * 0.2 <= 2000:
                 i.health -= 2000
