@@ -13,6 +13,7 @@ global globaltext
 # 对话文本
 globaltext = [
     ['みんなー！', 'チルノのさんすう教室はじまるよー！'],
+    "showleft",
     ['あたいみたいな天才目指して、', 'がんばっていってね！'],
     "showright",
     ['１＋１に等しい?'],
@@ -31,6 +32,7 @@ class TextPlayer(object):
         self.rpic = globe.destiny.rsManager.image["reimu"]
         self.lpic_av = False
         self.rpic_av = False
+        # 左右角色贴图可见性 (available)
 
         # pygame自带字体无法渲染日文
         self.font = pygame.font.Font(globe.destiny.rsManager.font["JAP1"], 15)

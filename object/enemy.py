@@ -64,15 +64,16 @@ class Enemy(object):
 
     def tishu(self):
         # 体术
+        if self.bump is None:
+            # 无定义, 不处理
+            return
         if not self.bump:
             # 如果不抗撞, 被撞坠机
             self.health = 0
             self.crash()
-        elif self.bump:
+        else:
             # 如果抗撞, 将自机撞落
             globe.scgame.player.hit()
-        elif self.bump is None:
-            pass
 
 
 class Boss(object):  # BOSS类

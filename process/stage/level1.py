@@ -134,7 +134,7 @@ def enbossNSC1(this):
 
 
 def enbossSC1(this):
-    # boss战非符2
+    # boss战符1
     tmp = boss.rect
     tmp.centerx = globe.playrc.centerx
     tmp.centery = boss.rect.centery
@@ -467,7 +467,7 @@ def update(now_time):
             scgame.enManager.create_enemy(lentype["p4e2"], tmp, bump=False)
 
     elif now_time == 6500:
-        boss = scgame.enManager.create_enemy(lentype["ebinto"], orb["ebinto"], bump=None, wdtime=100)
+        boss = scgame.enManager.create_enemy(lentype["ebinto"], orb["ebinto"], bump=True, wdtime=100)
         boss.life = 3
 
     elif now_time == 6560:
