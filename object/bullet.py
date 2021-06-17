@@ -58,7 +58,8 @@ def bl_inter_real_graze(embullet: EnemyBullet):
     globe.scgame.score += 100
     embullet.ungrazed = False
     if globe.scgame.player.status != globe.cstatus["hit"] and not played_se:
-        globe.destiny.msManager.play_SE("item")
+        globe.destiny.msManager.play_SE("graze")
+        globe.scgame.score += 20
         played_se = True
     # 显示擦弹特效
     if globe.scgame.player.status != globe.cstatus["hit"]:

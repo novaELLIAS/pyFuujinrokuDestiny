@@ -34,6 +34,7 @@ class Pause_Menu(object):
     def replace(self):
         if self.index ^ 3:
             self.image[self.index].set_alpha(90)
+            self.button_rect[self.index][0] += 5
         self.index = 3
 
     def update(self):
@@ -48,8 +49,11 @@ class Pause_Menu(object):
                         sys.exit()
                     if event.key == K_UP:
                         if self.index == 3:
-                            self.index = 1
-                        if self.index != 0:
+                            self.index = 0
+                            self.button_rect[self.index][0] -= 5      # 按键微移
+                            self.image[self.index].set_alpha(1000)    # 增大透明度, 突出显示
+                            globe.destiny.msManager.play_SE("select")
+                        elif self.index != 0:
                             self.index -= 1
                             self.button_rect[self.index][0] -= 5      # 按键微移
                             self.image[self.index].set_alpha(1000)    # 增大透明度, 突出显示
@@ -66,7 +70,10 @@ class Pause_Menu(object):
                     if event.key == K_DOWN:
                         if self.index == 3:
                             self.index = 2
-                        if self.index != 2:
+                            self.button_rect[self.index][0] -= 5      # 按键微移
+                            self.image[self.index].set_alpha(1000)    # 增大透明度, 突出显示
+                            globe.destiny.msManager.play_SE("select")
+                        elif self.index != 2:
                             self.index += 1
                             self.button_rect[self.index][0] -= 5
                             self.image[self.index].set_alpha(1000)

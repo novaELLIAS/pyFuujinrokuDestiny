@@ -103,8 +103,8 @@ class CleanBlItem(object):
         self.frame = 0
 
     def buffer(self):
-        # 每个道具可以增加50分
-        globe.scgame.score += 50
+        # 每个道具可以增加100分
+        globe.scgame.score += 100
 
 
 class ItemManager(object):

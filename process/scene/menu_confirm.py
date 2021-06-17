@@ -43,12 +43,18 @@ class PauseMenu_Confirm(object):
 						sys.exit()
 					if event.key == K_UP or event.key == K_DOWN:
 						if self.index == 3:
-							self.index = 1
-						self.index ^= 1
-						self.button_rect[self.index][0] -= 5      # 按键微移
-						self.image[self.index].set_alpha(1000)    # 选中项高亮显示
-						self.button_rect[self.index ^ 1][0] += 5  # 按键微移
-						self.image[self.index ^ 1].set_alpha(90)  # 重置透明度
+							if event.key == K_UP:
+								self.index = 0
+							elif event.key == K_DOWN:
+								self.index = 1
+							self.button_rect[self.index][0] -= 5      # 按键微移
+							self.image[self.index].set_alpha(1000)    # 选中项高亮显示
+						else:
+							self.index ^= 1
+							self.button_rect[self.index][0] -= 5      # 按键微移
+							self.image[self.index].set_alpha(1000)    # 选中项高亮显示
+							self.button_rect[self.index ^ 1][0] += 5  # 按键微移
+							self.image[self.index ^ 1].set_alpha(90)  # 重置透明度
 						globe.destiny.msManager.play_SE("select")
 					if event.key == K_z and self.index ^ 3:
 						self.choose = True
