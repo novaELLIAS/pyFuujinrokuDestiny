@@ -55,11 +55,10 @@ def bl_inter_real_graze(embullet: EnemyBullet):
     global played_se
     global plpoint
     globe.scgame.graze += 1
-    globe.scgame.score += 100
+    globe.scgame.score += 200
     embullet.ungrazed = False
     if globe.scgame.player.status != globe.cstatus["hit"] and not played_se:
         globe.destiny.msManager.play_SE("graze")
-        globe.scgame.score += 20
         played_se = True
     # 显示擦弹特效
     if globe.scgame.player.status != globe.cstatus["hit"]:
@@ -152,6 +151,7 @@ class BulletManager(object):
                 i.orbit.update(i.bltype)
                 if bl_inter_outscr(i):
                     enbl_tmp.append(i)
+                bl_inter_check_graze(i)
         else:
             for i in self.enbullet:
                 if bl_inter_collide(i):

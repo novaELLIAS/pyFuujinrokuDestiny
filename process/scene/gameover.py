@@ -97,13 +97,14 @@ class Scene_GameOver(object):
 			imgblur_pygame = pygame.image.fromstring(raw_str, imgblur.size, "RGBA")
 			self.imgtmp = imgblur_pygame
 
+		globe.scgame.score += globe.scgame.player.life * 500 * (1 + globe.scgame.player.power)
+
 		if globe.scgame.player.life < 0:
 			# 满身疮痍
 			globe.destiny.msManager.play_BGM("gameover")
 			self.title = self.rs["Dead"]
 		else:
 			# 演目终演
-			globe.scgame.score += globe.scgame.player.life * 10000
 			globe.destiny.msManager.play_BGM("win")
 			self.title = self.rs["Clear"]
 
@@ -120,3 +121,4 @@ class Scene_GameOver(object):
 		screen.blit(self.imgtmp, (30, 14))
 		screen.blit(self.title, (160, 140))
 		self.menu.draw(screen)
+		globe.scgame.hud.draw(screen, False)

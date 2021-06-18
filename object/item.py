@@ -32,6 +32,7 @@ class SPowerItem(object):
             player.power += 5
         else:
             player.power = 500
+            globe.scgame.score += 5
 
 
 class LPowerItem(object):
@@ -51,11 +52,12 @@ class LPowerItem(object):
         self.frame = 0
 
     def buffer(self):
-        # 每个道具增加50灵力
-        if globe.scgame.player.power < 450:
-            player.power += 50
+        # 每个道具增加100灵力
+        if globe.scgame.player.power < 400:
+            player.power += 100
         else:
             player.power = 500
+            globe.scgame.score += 100
 
 
 class PointItem(object):
@@ -103,8 +105,8 @@ class CleanBlItem(object):
         self.frame = 0
 
     def buffer(self):
-        # 每个道具可以增加100分
-        globe.scgame.score += 100
+        # 每个道具可以增加500分
+        globe.scgame.score += 500
 
 
 class ItemManager(object):

@@ -104,7 +104,7 @@ class Player(object):
             self.point[1] = self.rect.centery
             self.tcount = 0
             self.life -= 1
-            self.power -= 200
+            self.power *= 0.6
             if self.power <= 0:
                 self.power = 0
 

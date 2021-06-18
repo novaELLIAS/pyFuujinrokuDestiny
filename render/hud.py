@@ -54,7 +54,7 @@ class Hud(object):
         # 转移血量数据
         self.blood_show = blo_bool
 
-    def draw(self, screen):
+    def draw(self, screen, lifeUpdateFlag=True):
         for i in range(0, 6):
             screen.blit(self.im[i], self.posi[i])
         # 绘制基础元素
@@ -74,7 +74,7 @@ class Hud(object):
             hiscore = score
             globe.scgame.hiscore = globe.scgame.score
 
-        if score/500000 >= self.bonusCnt:
+        if score/500000 >= self.bonusCnt and lifeUpdateFlag:
             globe.scgame.player.life += 1
             globe.destiny.msManager.play_SE("extend")
             globe.scgame.blManager.clear_enbl()
