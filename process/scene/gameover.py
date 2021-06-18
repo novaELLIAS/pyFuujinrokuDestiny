@@ -97,7 +97,7 @@ class Scene_GameOver(object):
 			imgblur_pygame = pygame.image.fromstring(raw_str, imgblur.size, "RGBA")
 			self.imgtmp = imgblur_pygame
 
-		globe.scgame.score += globe.scgame.player.life * 500 * (1 + globe.scgame.player.power)
+		globe.scgame.score += int(globe.scgame.player.life * 500 * (1 + globe.scgame.player.power))
 
 		if globe.scgame.player.life < 0:
 			# 满身疮痍

@@ -150,7 +150,7 @@ class Scene_Title(object):
             self.reclist.append(rec)
 
             for i in range(1, min(len(globe.ranklist), 20)):
-                if globe.ranklist[i]["score"] ^ globe.ranklist[i - 1]["score"]:
+                if globe.ranklist[i]["score"] != globe.ranklist[i - 1]["score"]:
                     index += 1
 
                 img = myfontdb18.render(str(index) + '.', True, (0, 0, 0))
